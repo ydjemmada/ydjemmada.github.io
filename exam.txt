@@ -1,5 +1,0 @@
-1;Zouhir;Bachir;76;admitted;
-2;dsfsd;sdfdfsf;23;rejected;
-43;dfsd;dsfsdf;23;admitted;
-4;dfsd;gsdfg;22;deferred;
-444;fgf;dggdf;3;admitted;
