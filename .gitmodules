@@ -1,8 +1,0 @@
-[submodule "blog/my_website/public"]
-	path = blog/my_website/public
-	url = https://github.com/ydjemmada/ydjemmada.github.io.git
-	branch = main
-[submodule "blog/ydjemmada/public"]
-	path = blog/ydjemmada/public
-	url = https://github.com/ydjemmada/ydjemmada.github.io.git
-	branch = main
