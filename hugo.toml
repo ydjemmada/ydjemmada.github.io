@@ -10,11 +10,11 @@ googleAnalytics = 'G-BLPCZY56GF'  # add your tracking id
   author = 'YAHIA DJEMMADA'
   description = '#'
   favicon = 'favicon.ico'  # path to a .ico to use as favicon
-  logo = '/avatar.png'  # url or path to a logo to put in the header
+  logo = 'avatar.png'  # url or path to a logo to put in the header
   [params.footer]
     text = 'By Yahia Djemmada'
     url = 'https://ydjemmada.github.io'
-    imgurl='/logo.png'
+    imgurl='logo.png'
   [params.style]  # appearance options (can be omitted)
     fontFamily = 'Inconsolata'
     fontSize = '14pt'
