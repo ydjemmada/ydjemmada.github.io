@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ydjemmada.github.io/cp1_nhsm/</loc>
+    <loc>http://localhost:1313/cp1_nhsm/</loc>
   </url><url>
-    <loc>https://ydjemmada.github.io/subjects/alg1/</loc>
+    <loc>http://localhost:1313/subjects/alg1/</loc>
   </url><url>
-    <loc>https://ydjemmada.github.io/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>https://ydjemmada.github.io/subjects/md1/</loc>
+    <loc>http://localhost:1313/subjects/md1/</loc>
   </url><url>
-    <loc>https://ydjemmada.github.io/cmaterials/</loc>
+    <loc>http://localhost:1313/cmaterials/</loc>
   </url><url>
-    <loc>https://ydjemmada.github.io/subjects/mct/</loc>
+    <loc>http://localhost:1313/subjects/mct/</loc>
   </url><url>
-    <loc>https://ydjemmada.github.io/subjects/</loc>
+    <loc>http://localhost:1313/subjects/</loc>
   </url><url>
-    <loc>https://ydjemmada.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
   </url>
 </urlset>
