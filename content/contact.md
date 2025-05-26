@@ -7,7 +7,7 @@ title = "Contact"
 </center>
 
 * Email: [yahia.djemmada@nhsm.edu.dz](mailto:yahia.djemmada@nhsm.edu.dz)
-* Telegram: [@mathxro](https://t.me/mathxro)
+<!-- * Telegram: [@mathxro](https://t.me/mathxro) -->
 
 ---
 

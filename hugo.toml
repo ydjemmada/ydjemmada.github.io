@@ -1,60 +1,73 @@
+baseurl = 'https://ydjemmada.github.io/'
 title = 'YAHIA DJEMMADA'
-baseURL = 'https://ydjemmada.github.io/'
 theme = 'researcher'
-disableKinds = ['taxonomy', 'term']
-enableEmoji = true
-math = false          # enable KaTeX (https://katex.org/) globally
-googleAnalytics = 'G-BLPCZY56GF'  # add your tracking id
+relativeURLs = true
+canonifyURLs = true
 
+# Disable certain content types (taxonomy and term)
+disableKinds = ['taxonomy', 'term']
+
+# Enable emoji support and disable KaTeX globally
+enableEmoji = true
+math = false  # Disable KaTeX globally (set true to enable KaTeX)
+
+# Google Analytics tracking ID
+googleAnalytics = 'G-BLPCZY56GF'
+
+# Custom parameters for site appearance and settings
 [params]
   author = 'YAHIA DJEMMADA'
   description = '#'
-  favicon = 'favicon.ico'  # path to a .ico to use as favicon
-  logo = 'avatar.png'  # url or path to a logo to put in the header
-  [params.footer]
-    text = 'By Yahia Djemmada'
-    url = 'https://ydjemmada.github.io'
-    imgurl='logo.png'
-  [params.style]  # appearance options (can be omitted)
-    fontFamily = 'Inconsolata'
-    fontSize = '14pt'
-    pageWidth = '750px'
-    avatarSize = '90px' 
-    colorBlack = '#222222'
-    colorRed = '#dc3545'
+  favicon = 'favicon.ico'  # Path to a favicon.ico for the site
+  logo = 'avatar.png'  # Path or URL to the logo image for the header
+  
+  # Footer settings
+  #[params.footer]
+   # text = 'By Yahia Djemmada'
+   # url = 'https://ydjemmada.github.io/'
+   # imgurl = '/logo.png'  # URL or path to an image to appear in the footer
+  
+  # Style settings (can be omitted if not needed)
+  [params.style]  
+    fontFamily = 'Inconsolata'  # Font family for the site
+    fontSize = '14pt'  # Font size for the site
+    pageWidth = '750px'  # Width of the content area
+    avatarSize = '90px'  # Avatar size for user profile
+    colorBlack = '#222222'  # Primary color for black text
+    colorRed = '#dc3545'  # Primary color for red accents
+
+  # Social media links (icons for social media in the header/footer)
   [[params.socialIcons]]
     icon = 'fas fa-envelope'
     title = 'E-mail'
     url = 'mailto:yahia.djemmada@nhsm.edu.dz'
+
   [[params.socialIcons]]
     icon = 'fab fa-telegram'
     title = 'Telegram'
     url = 'https://t.me/mathxro'
-[permalinks]
-  '/' = '/:filename'
 
+# Permalink configuration for your pages
+[permalinks]
+  '/' = '/:filename'  # Use filename for the homepage URL
+
+# Main menu configuration
 [menu]
   [[menu.main]]
     name = 'About Me'
     url = '/'
     weight = 1
-  #[[menu.main]]
-    #name = 'Resume'
-    #url = '/resume.pdf'
-    # 'pre' and 'post' hooks are available
-    # here we use an icon from Bootstrap https://icons.getbootstrap.com/
-    #pre = '<svg width='1em' height='1em' viewBox='0 0 16 16' class='bi bi-file-earmark-person-fill' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755S12 12 8 12s-5 1.755-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z'/></svg> '
-    #weight = 2
+
   [[menu.main]]
     name = 'Contact'
     url = '/contact'
     weight = 3
+
   [[menu.main]]
     name = 'Resources'
     url = '/CMaterials'
     weight = 2
 
+# Markdown rendering settings
 [markup.goldmark.renderer]
-  unsafe = true  # allow raw HTML in markdown files
-
-  
+  unsafe = true  # Allow raw HTML in markdown files
