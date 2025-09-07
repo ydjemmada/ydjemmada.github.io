@@ -8,6 +8,7 @@ title = "Discrete Mathematics 2"
 - **Chapter 1**: Solving Recurrence Relations: {{% button href="../lectures/MD2_Ch1.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}
  - **Chapter 2**: Stirling numbers: {{% button href="../lectures/MD2_Ch2.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}
  - **Chapter 3**: Other Important Combinatorial Sequences: {{% button href="../lectures/MD2_Ch3.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}
+- **Chapter 4**: Integer partitions: {{% button href="../lectures/MD2_Ch4.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}
 
 <!--
 ## Worksheets

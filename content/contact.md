@@ -6,7 +6,7 @@ title = "Contact"
 <h2> Contact</h2>
 </center>
 
-* Email: [yahia.djemmada@nhsm.edu.dz](mailto:yahia.djemmada@nhsm.edu.dz)
+* Email : [yahia.djemmada@nhsm.edu.dz](mailto:yahia.djemmada@nhsm.edu.dz)
 <!-- * Telegram: [@mathxro](https://t.me/mathxro) -->
 
 ---

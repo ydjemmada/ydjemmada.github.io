@@ -42,10 +42,10 @@ googleAnalytics = 'G-BLPCZY56GF'
     title = 'E-mail'
     url = 'mailto:yahia.djemmada@nhsm.edu.dz'
 
-  [[params.socialIcons]]
-    icon = 'fab fa-telegram'
-    title = 'Telegram'
-    url = 'https://t.me/mathxro'
+#  [[params.socialIcons]]
+#    icon = 'fab fa-telegram'
+#    title = 'Telegram'
+#    url = 'https://t.me/mathxro'
 
 # Permalink configuration for your pages
 [permalinks]

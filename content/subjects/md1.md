@@ -5,9 +5,9 @@ title = "Discrete Mathematics 1"
 # Discrete Mathematics 1
 <center><h3>Lectures</h3></center> 
 
-- **Chapter 1**: Counting: {{% button href="../lectures/MD1_Ch1.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}
+<!-- - **Chapter 1**: Counting: {{% button href="../lectures/MD1_Ch1.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}
 - **Chapter 2**: Advanced Counting Principles: {{% button href="../lectures/MD1_Ch2.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}
-- **Chapter 3**: Introduction to Graph Theory: {{% button href="../lectures/MD1_Ch3.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}
+- **Chapter 3**: Introduction to Graph Theory: {{% button href="../lectures/MD1_Ch3.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}} -->
 <!--
 ## Worksheets
 
