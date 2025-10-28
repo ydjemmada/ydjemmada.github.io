@@ -33,7 +33,7 @@
       <link>http://localhost:1313/subjects/md1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/subjects/md1/</guid>
-      <description>Discrete Mathematics 1 Lectures Chapter 1: Counting: PDF Chapter 2: Advanced Counting Principles: PDF Chapter 3: Introduction to Graph Theory: PDF Worksheets&#39; Answers Worksheet 0: PDF Worksheet 1: PDF Worksheet 2: PDF Worksheet 3: PDF </description>
+      <description>Discrete Mathematics 1 Lectures Chapter 1: Counting: PDF </description>
     </item>
     <item>
       <title>Discrete Mathematics 2</title>
@@ -47,7 +47,7 @@
       <link>http://localhost:1313/cmaterials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/cmaterials/</guid>
-      <description>Learning Resources 1st Year: 2nd Year: Mathematical Computing Tools Materials</description>
+      <description>Learning Resources 1st Year: Discrete Mathematics 1 Materials&#xA;2nd Year: Mathematical Computing Tools Materials</description>
     </item>
     <item>
       <title>MCT Lectures</title>
