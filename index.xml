@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>YAHIA DJEMMADA</title>
-    <link>https://ydjemmada.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on YAHIA DJEMMADA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="https://ydjemmada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://ydjemmada.github.io/cp1_nhsm/</link>
+      <link>http://localhost:1313/cp1_nhsm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ydjemmada.github.io/cp1_nhsm/</guid>
+      <guid>http://localhost:1313/cp1_nhsm/</guid>
       <description></description>
     </item>
     <item>
       <title>Algebra 1</title>
-      <link>https://ydjemmada.github.io/subjects/alg1/</link>
+      <link>http://localhost:1313/subjects/alg1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ydjemmada.github.io/subjects/alg1/</guid>
+      <guid>http://localhost:1313/subjects/alg1/</guid>
       <description>Algebra 1 Solutions Worksheet 2: PDF </description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https://ydjemmada.github.io/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ydjemmada.github.io/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description> Contact Email : yahia.djemmada@nhsm.edu.dz Mailing Address National Higher School of Mathematics, P.O.Box 75&#xA;Mahelma 16093, Sidi Abdellah&#xA;Algiers, Algeria&#xA;Social | Researchgate | Google scholar | LinkedIn | </description>
     </item>
     <item>
       <title>Discrete Mathematics 1</title>
-      <link>https://ydjemmada.github.io/subjects/md1/</link>
+      <link>http://localhost:1313/subjects/md1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ydjemmada.github.io/subjects/md1/</guid>
-      <description>Discrete Mathematics 1 Lectures Worksheets&#39; Answers Worksheet 0: PDF Worksheet 1: PDF Worksheet 2: PDF Worksheet 3: PDF </description>
+      <guid>http://localhost:1313/subjects/md1/</guid>
+      <description>Discrete Mathematics 1 Lectures Chapter 1: Counting: PDF </description>
     </item>
     <item>
       <title>Discrete Mathematics 2</title>
-      <link>https://ydjemmada.github.io/subjects/md2/</link>
+      <link>http://localhost:1313/subjects/md2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ydjemmada.github.io/subjects/md2/</guid>
+      <guid>http://localhost:1313/subjects/md2/</guid>
       <description>Discrete Mathematics 2 Lectures Chapter 1: Solving Recurrence Relations: PDF Chapter 2: Stirling numbers: PDF Chapter 3: Other Important Combinatorial Sequences: PDF Chapter 4: Integer partitions: PDF </description>
     </item>
     <item>
       <title>Learning Resources</title>
-      <link>https://ydjemmada.github.io/cmaterials/</link>
+      <link>http://localhost:1313/cmaterials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ydjemmada.github.io/cmaterials/</guid>
-      <description>Learning Resources 1st Year: Discrete Mathematics 1 Materials&#xA;Discrete Mathematics 2 Materials&#xA;2nd Year: Mathematical Computing Tools Materials</description>
+      <guid>http://localhost:1313/cmaterials/</guid>
+      <description>Learning Resources 1st Year: Discrete Mathematics 1 Materials&#xA;2nd Year: Mathematical Computing Tools Materials</description>
     </item>
     <item>
       <title>MCT Lectures</title>
-      <link>https://ydjemmada.github.io/subjects/mct/</link>
+      <link>http://localhost:1313/subjects/mct/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ydjemmada.github.io/subjects/mct/</guid>
+      <guid>http://localhost:1313/subjects/mct/</guid>
       <description>Mathematical Computing Tools Lectures Lecture 0: Introduction to python Part 1 (Python basics review) PDF . Part 2 (Data Structures) PDF . Part 3 (Comprehensions and Functions) PDF . Lecture 1: Files and Exceptions PDF . Lecture 2:Introduction to numpy and scipy PDF . Lecture 3:Matplotlib Basics PDF . Worksheets and Labworks: Worksheets: Worksheet 0: PDF . Worksheet 0 Solutions: PDF . Worksheet 1: PDF . Worksheet 2: PDF .</description>
     </item>
   </channel>
