@@ -1,7 +1,7 @@
 baseURL = 'https://ydjemmada.github.io/'
 languageCode = 'en-us'
 title = 'YAHIA DJEMMADA'
-theme = 'researcher'
+theme = 'PaperMod'
 
 enableEmoji = true
 googleAnalytics = 'G-BLPCZY56GF'

@@ -19,9 +19,16 @@ if [ "$current_branch" != "source" ]; then
     git checkout source
 fi
 
+# Use the newer Hugo version if available
+HUGO_BIN="hugo"
+if [ -f "$HOME/.local/bin/hugo" ]; then
+    HUGO_BIN="$HOME/.local/bin/hugo"
+    echo "Using Hugo $(${HUGO_BIN} version | head -1)"
+fi
+
 # Build the Hugo site
 echo "🔨 Building Hugo site..."
-hugo --cleanDestinationDir
+$HUGO_BIN --cleanDestinationDir
 
 # Check if build was successful
 if [ ! -d "public" ]; then
