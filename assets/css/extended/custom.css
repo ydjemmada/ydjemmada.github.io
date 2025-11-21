@@ -136,27 +136,21 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    /* Add gap between logo and menu */
+}
+
+.logo {
+    flex-shrink: 0;
+    /* Prevent logo from shrinking */
+    max-width: 60%;
+    /* Don't take more than 60% on mobile */
+    overflow: hidden;
 }
 
 .logo a {
     font-weight: 700;
     font-size: 1.25rem;
-    color: var(--text-main);
-    text-decoration: none;
-}
-
-#menu {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#menu li a {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--text-muted);
 }
 
 #menu li a:hover {
@@ -426,6 +420,23 @@ th {
     /* Navigation */
     .nav {
         padding: 0 1rem;
+        gap: 0.5rem;
+        /* Tighter gap on mobile */
+    }
+
+    .logo {
+        max-width: 50%;
+        /* Even smaller on mobile */
+        min-width: 0;
+        /* Allow full shrinking */
+    }
+
+    .logo a {
+        font-size: 1rem;
+        /* Smaller logo text */
+        white-space: normal;
+        /* Allow wrapping on very small screens */
+        line-height: 1.2;
     }
 
     #menu {
