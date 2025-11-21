@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+<div class="hero-minimal">
+    <p class="hero-intro">Hello, I am</p>
+    <h1 class="hero-name">Yahia Djemmada</h1>
+    <p class="hero-bio">
+        Mathematics Lecturer & Researcher at the National Higher School of Mathematics (NHSM), Algiers.
+        Specializing in <strong>Combinatorics</strong>, <strong>Discrete Mathematics</strong>, and <strong>Operations
+            Research</strong>.
+    </p>
+    <div class="hero-actions">
+        <a href="/publications" class="btn btn-primary">View Research</a>
+        <a href="/cv" class="btn btn-outline">Download CV</a>
+    </div>
+</div>
+
+<section class="section">
+    <div class="section-header">
+        <h2>Latest Research</h2>
+    </div>
+    <div class="card-grid">
+        <div class="card">
+            <h3 class="card-title"><a href="/publications">An identity for two sequences and its combinatorial
+                    interpretation</a></h3>
+            <div class="card-meta">Annales Mathematicae et Informaticae • 2024</div>
+            <p class="card-desc">Exploring new identities in combinatorial sequences with applications in number theory.
+            </p>
+        </div>
+        <div class="card">
+            <h3 class="card-title"><a href="/publications">The (l, r)-Stirling numbers: a combinatorial approach</a>
+            </h3>
+            <div class="card-meta">Filomat • 2023</div>
+            <p class="card-desc">A novel approach to Stirling numbers using combinatorial arguments.</p>
+        </div>
+        <div class="card">
+            <h3 class="card-title"><a href="/publications">The deranged Bell numbers</a></h3>
+            <div class="card-meta">Mathematica Slovaca • 2023</div>
+            <p class="card-desc">Investigation of Bell numbers in the context of derangements.</p>
+        </div>
+    </div>
+    <div style="margin-top: 2rem; text-align: center;">
+        <a href="/publications" style="font-weight: 600;">View All Publications &rarr;</a>
+    </div>
+</section>
+
+<section class="section" style="margin-top: 4rem;">
+    <div class="section-header">
+        <h2>Teaching & Resources</h2>
+    </div>
+    <div class="card-grid">
+        <div class="card">
+            <h3 class="card-title"><a href="/subjects/md1/">Discrete Mathematics 1</a></h3>
+            <p class="card-desc">Lecture notes and problem sets for first-year students. Covers counting, logic, and
+                sets.</p>
+        </div>
+        <div class="card">
+            <h3 class="card-title"><a href="/subjects/mct/">Mathematical Computing Tools</a></h3>
+            <p class="card-desc">Python programming, NumPy, SciPy, and Matplotlib resources for mathematics.</p>
+        </div>
+    </div>
+</section>
+
+{{ end }}

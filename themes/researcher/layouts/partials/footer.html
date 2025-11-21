@@ -1,0 +1,17 @@
+<div id="footer" class="mb-5">
+    <hr>
+    {{ if .Site.Params.socialIcons }}
+    <div class="container text-center">
+        {{ range $item := .Site.Params.socialIcons }}
+            <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>
+        {{ end }}
+    </div>
+    {{ end }}
+        <div class="container text-center">
+            <a href="{{ .Site.BaseURL }}" title="By Yahia Djemmada">
+                <small>By {{ .Site.Title }}</small><br>
+                <img src="/logo.png" alt="Logo" style="width: 100px; height: auto;">
+            </a>
+            <br>
+        </div>
+</div>
