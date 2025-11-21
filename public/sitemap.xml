@@ -4,9 +4,15 @@
   <url>
     <loc>http://localhost:1313/cp1_nhsm/</loc>
   </url><url>
+    <loc>http://localhost:1313/about/</loc>
+  </url><url>
     <loc>http://localhost:1313/subjects/alg1/</loc>
   </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
     <loc>http://localhost:1313/contact/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cv/</loc>
   </url><url>
     <loc>http://localhost:1313/subjects/md1/</loc>
   </url><url>
@@ -16,7 +22,11 @@
   </url><url>
     <loc>http://localhost:1313/subjects/mct/</loc>
   </url><url>
+    <loc>http://localhost:1313/publications/</loc>
+  </url><url>
     <loc>http://localhost:1313/subjects/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url>

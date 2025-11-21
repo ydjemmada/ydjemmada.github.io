@@ -5,7 +5,7 @@
     <link>http://localhost:1313/</link>
     <description>Recent content on YAHIA DJEMMADA</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
@@ -15,46 +15,75 @@
       <description></description>
     </item>
     <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Hello and welcome to my website! My name is Yahia Djemmada, and I&amp;rsquo;m a lecturer at the National Higher School of Mathematics (NHSM) in Algiers, Algeria.
+I&amp;rsquo;ve always been passionate about mathematics and computer sciences, and have pursued this interest through my education and career. I obtained my PhD degree in mathematics at University Of Science And Technology Houari Boumediene (USTHB).
+In addition to my work as a lecturer, I&amp;rsquo;m also an active researcher in the fields of combinatorics and discrete mathematics, and have published some papers on these topics.</description>
+    </item>
+    <item>
       <title>Algebra 1</title>
       <link>http://localhost:1313/subjects/alg1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/subjects/alg1/</guid>
-      <description>Algebra 1 Solutions Worksheet 2: PDF </description>
+      <description>Algebra 1 Solutions Worksheet 2 Solutions Download PDF </description>
     </item>
     <item>
       <title>Contact</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description> Contact Email : yahia.djemmada@nhsm.edu.dz Mailing Address National Higher School of Mathematics, P.O.Box 75&#xA;Mahelma 16093, Sidi Abdellah&#xA;Algiers, Algeria&#xA;Social | Researchgate | Google scholar | LinkedIn | </description>
+      <description>Contact Email : yahia.djemmada@nhsm.edu.dz Mailing Address National Higher School of Mathematics, P.O.Box 75
+Mahelma 16093, Sidi Abdellah
+Algiers, Algeria
+Social Researchgate Google Scholar LinkedIn </description>
+    </item>
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>http://localhost:1313/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cv/</guid>
+      <description>Curriculum Vitae Download Full CV (PDF) Personal Information Name: Yahia DJEMMADA Current Position: Assistant Professor Affiliations: RECTS Lab., University of Science and Technology Houari Boumediene (USTHB) &amp;amp; National School of Mathematics, Algiers. Email: yahia.djem@gmail.com / yahia.djemmada@nhsm.edu.dz Education PhD in Mathematics (Discrete Mathematics &amp;amp; Operations Research) USTHB, Algiers | Feb 2021
+Thesis: &amp;ldquo;An arithmetic and combinatorial study of the geometric polynomials&amp;rdquo; MSc in Mathematics (Operations Research) USTHB, Algiers | June 2015</description>
     </item>
     <item>
       <title>Discrete Mathematics 1</title>
       <link>http://localhost:1313/subjects/md1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/subjects/md1/</guid>
-      <description>Discrete Mathematics 1 Lectures Chapter 1: Counting: PDF Chapter 2: Advanced Counting Principles: PDF </description>
+      <description>Discrete Mathematics 1 Lectures Chapter 1: Counting Download PDF Chapter 2: Advanced Counting Principles Download PDF </description>
     </item>
     <item>
       <title>Discrete Mathematics 2</title>
       <link>http://localhost:1313/subjects/md2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/subjects/md2/</guid>
-      <description>Discrete Mathematics 2 Lectures Chapter 1: Solving Recurrence Relations: PDF Chapter 2: Stirling numbers: PDF Chapter 3: Other Important Combinatorial Sequences: PDF Chapter 4: Integer partitions: PDF </description>
+      <description>Discrete Mathematics 2 Lectures Chapter 1: Solving Recurrence Relations Download PDF Chapter 2: Stirling numbers Download PDF Chapter 3: Other Important Combinatorial Sequences Download PDF Chapter 4: Integer partitions Download PDF </description>
     </item>
     <item>
       <title>Learning Resources</title>
       <link>http://localhost:1313/cmaterials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/cmaterials/</guid>
-      <description>Learning Resources 1st Year: Discrete Mathematics 1 Materials&#xA;2nd Year: Mathematical Computing Tools Materials</description>
+      <description>Learning Resources 1st Year Discrete Mathematics 1 Materials Course materials for 1st Year students View Materials &amp;rarr; 2nd Year Mathematical Computing Tools Materials Course materials for 2nd Year students View Materials &amp;rarr; </description>
     </item>
     <item>
       <title>MCT Lectures</title>
       <link>http://localhost:1313/subjects/mct/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/subjects/mct/</guid>
-      <description>Mathematical Computing Tools Lectures Lecture 0: Introduction to python Part 1 (Python basics review) PDF . Part 2 (Data Structures) PDF . Part 3 (Comprehensions and Functions) PDF . Lecture 1: Files and Exceptions PDF . Lecture 2:Introduction to numpy and scipy PDF . Lecture 3:Matplotlib Basics PDF . Worksheets and Labworks: Worksheets: Worksheet 0: PDF . Worksheet 0 Solutions: PDF . Worksheet 1: PDF . Worksheet 2: PDF .</description>
+      <description>Mathematical Computing Tools Lectures Lecture 0: Introduction to Python (Part 1) Python basics review Download PDF Lecture 0: Introduction to Python (Part 2) Data Structures Download PDF Lecture 0: Introduction to Python (Part 3) Comprehensions and Functions Download PDF &amp;lt;!-- Other Lectures --&amp;gt; &amp;lt;div class=&amp;quot;resource-item&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;resource-info&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;resource-title&amp;quot;&amp;gt;Lecture 1: Files and Exceptions&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;a href=&amp;quot;../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf&amp;quot; class=&amp;quot;download-btn&amp;quot;&amp;gt;Download PDF&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;resource-item&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;resource-info&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;resource-title&amp;quot;&amp;gt;Lecture 2: Introduction to Numpy and Scipy&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;a href=&amp;quot;.</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/</guid>
+      <description>You can find my full list of publications on Google Scholar.
+2025 Partial Deranged Bell Numbers and Their Combinatorial Properties Djemmada, Yahia; Kargın, Levent; Can, Mümün arXiv preprint arXiv:2507.21643 We introduce partial deranged Bell numbers and investigate their combinatorial properties, providing generating functions and recurrence relations.
+PDF Cite @article{djemmada2025partial, title={Partial Deranged Bell Numbers and Their Combinatorial Properties}, author={Djemmada, Yahia and Karg{\i}n, Levent and Can, M{\&amp;amp;#34;u}m{\&amp;amp;#34;u}n}, journal={arXiv preprint arXiv:2507.21643}, year={2025} } 2025 The generalized $r$-Stirling numbers of the first kind Bazeniar, Abdelghfour; Ahmia, Moussa RAIRO - Operations Research We introduce a generalization of the $r$-Stirling numbers of the first kind and their analogues.</description>
     </item>
   </channel>
 </rss>

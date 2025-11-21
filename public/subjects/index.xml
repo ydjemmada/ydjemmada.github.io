@@ -5,7 +5,7 @@
     <link>http://localhost:1313/subjects/</link>
     <description>Recent content in Subjects on YAHIA DJEMMADA</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <atom:link href="http://localhost:1313/subjects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algebra 1</title>
@@ -33,7 +33,7 @@
       <link>http://localhost:1313/subjects/mct/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/subjects/mct/</guid>
-      <description>Mathematical Computing Tools Lectures Lecture 0: Introduction to python Part 1 (Python basics review) PDF . Part 2 (Data Structures) PDF . Part 3 (Comprehensions and Functions) PDF . Lecture 1: Files and Exceptions PDF . Lecture 2:Introduction to numpy and scipy PDF . Lecture 3:Matplotlib Basics PDF . Worksheets and Labworks: Worksheets: Worksheet 0: PDF . Worksheet 0 Solutions: PDF . Worksheet 1: PDF . Worksheet 2: PDF .</description>
+      <description>Mathematical Computing Tools Lectures Lecture 0: Introduction to python Part 1 (Python basics review) PDF Part 2 (Data Structures) PDF Part 3 (Comprehensions and Functions) PDF Lecture 1: Files and Exceptions PDF Lecture 2: Introduction to numpy and scipy PDF Lecture 3: Matplotlib Basics PDF Worksheets and Labworks Worksheets Worksheet 0: PDF Worksheet 0 Solutions: PDF Worksheet 1: PDF Worksheet 2: PDF Labworks Labwork 01: PDF Labwork 02: PDF Projects Projects list: PDF </description>
     </item>
   </channel>
 </rss>
