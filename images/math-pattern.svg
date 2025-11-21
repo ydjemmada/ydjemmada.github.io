@@ -1,0 +1,17 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="math-grid" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <!-- Subtle Graph Nodes -->
+      <circle cx="10" cy="10" r="1" fill="#94a3b8" opacity="0.2"/>
+      <circle cx="90" cy="90" r="1" fill="#94a3b8" opacity="0.2"/>
+      <circle cx="10" cy="90" r="1" fill="#94a3b8" opacity="0.2"/>
+      <circle cx="90" cy="10" r="1" fill="#94a3b8" opacity="0.2"/>
+      <circle cx="50" cy="50" r="1" fill="#94a3b8" opacity="0.2"/>
+      
+      <!-- Connecting Lines (Graph Theory) -->
+      <path d="M10 10 L50 50 L90 10" stroke="#94a3b8" stroke-width="0.5" opacity="0.1" fill="none"/>
+      <path d="M10 90 L50 50 L90 90" stroke="#94a3b8" stroke-width="0.5" opacity="0.1" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#math-grid)" />
+</svg>
