@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Subjects on YAHIA DJEMMADA</title>
     <link>https://ydjemmada.github.io/subjects/</link>
     <description>Recent content in Subjects on YAHIA DJEMMADA</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <atom:link href="https://ydjemmada.github.io/subjects/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,28 +12,172 @@
       <link>https://ydjemmada.github.io/subjects/alg1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ydjemmada.github.io/subjects/alg1/</guid>
-      <description>Algebra 1 Solutions Worksheet 2 Solutions Download PDF </description>
+      <description>&lt;h1 id=&#34;algebra-1&#34;&gt;Algebra 1&lt;/h1&gt;
+&lt;h2 id=&#34;solutions&#34;&gt;Solutions&lt;/h2&gt;
+&lt;div class=&#34;resource-list&#34;&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Worksheet 2 Solutions&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../worksheets/alg1_ws_2_sol.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</description>
     </item>
     <item>
       <title>Discrete Mathematics 1</title>
       <link>https://ydjemmada.github.io/subjects/md1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ydjemmada.github.io/subjects/md1/</guid>
-      <description>Discrete Mathematics 1 Lectures Chapter 1: Counting Download PDF Chapter 2: Advanced Counting Principles Download PDF </description>
+      <description>&lt;h1 id=&#34;discrete-mathematics-1&#34;&gt;Discrete Mathematics 1&lt;/h1&gt;
+&lt;h3 id=&#34;lectures&#34;&gt;Lectures&lt;/h3&gt;
+&lt;div class=&#34;resource-list&#34;&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Chapter 1: Counting&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../lectures/MD1_Ch1.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Chapter 2: Advanced Counting Principles&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../lectures/MD1_Ch2.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</description>
     </item>
     <item>
       <title>Discrete Mathematics 2</title>
       <link>https://ydjemmada.github.io/subjects/md2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ydjemmada.github.io/subjects/md2/</guid>
-      <description>Discrete Mathematics 2 Lectures Chapter 1: Solving Recurrence Relations Download PDF Chapter 2: Stirling numbers Download PDF Chapter 3: Other Important Combinatorial Sequences Download PDF Chapter 4: Integer partitions Download PDF </description>
+      <description>&lt;h1 id=&#34;discrete-mathematics-2&#34;&gt;Discrete Mathematics 2&lt;/h1&gt;
+&lt;h3 id=&#34;lectures&#34;&gt;Lectures&lt;/h3&gt;
+&lt;div class=&#34;resource-list&#34;&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Chapter 1: Solving Recurrence Relations&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../lectures/MD2_Ch1.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Chapter 2: Stirling numbers&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../lectures/MD2_Ch2.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Chapter 3: Other Important Combinatorial Sequences&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../lectures/MD2_Ch3.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Chapter 4: Integer partitions&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../lectures/MD2_Ch4.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</description>
     </item>
     <item>
       <title>MCT Lectures</title>
       <link>https://ydjemmada.github.io/subjects/mct/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ydjemmada.github.io/subjects/mct/</guid>
-      <description>Mathematical Computing Tools Lectures Lecture 0: Introduction to Python (Part 1) Python basics review Download PDF Lecture 0: Introduction to Python (Part 2) Data Structures Download PDF Lecture 0: Introduction to Python (Part 3) Comprehensions and Functions Download PDF &amp;lt;!-- Other Lectures --&amp;gt; &amp;lt;div class=&amp;quot;resource-item&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;resource-info&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;resource-title&amp;quot;&amp;gt;Lecture 1: Files and Exceptions&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;a href=&amp;quot;../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf&amp;quot; class=&amp;quot;download-btn&amp;quot;&amp;gt;Download PDF&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;resource-item&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;resource-info&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;resource-title&amp;quot;&amp;gt;Lecture 2: Introduction to Numpy and Scipy&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;a href=&amp;quot;.</description>
+      <description>&lt;h1 id=&#34;mathematical-computing-tools&#34;&gt;Mathematical Computing Tools&lt;/h1&gt;
+&lt;h3 id=&#34;lectures&#34;&gt;Lectures&lt;/h3&gt;
+&lt;div class=&#34;resource-list&#34;&gt;
+    &lt;!-- Lecture 0 --&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Lecture 0: Introduction to Python (Part 1)&lt;/span&gt;
+            &lt;span class=&#34;resource-desc&#34;&gt;Python basics review&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../../lectures/Lecture_0_Part_1_Python_basics_review.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Lecture 0: Introduction to Python (Part 2)&lt;/span&gt;
+            &lt;span class=&#34;resource-desc&#34;&gt;Data Structures&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../../lectures/Lecture_0_Part_2_Data_structures.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Lecture 0: Introduction to Python (Part 3)&lt;/span&gt;
+            &lt;span class=&#34;resource-desc&#34;&gt;Comprehensions and Functions&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../../lectures/Lecture_0_Part_3_Comprehensions_and_Functions.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!-- Other Lectures --&amp;gt;
+&amp;lt;div class=&amp;quot;resource-item&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;resource-info&amp;quot;&amp;gt;
+        &amp;lt;span class=&amp;quot;resource-title&amp;quot;&amp;gt;Lecture 1: Files and Exceptions&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;a href=&amp;quot;../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf&amp;quot; class=&amp;quot;download-btn&amp;quot;&amp;gt;Download PDF&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;resource-item&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;resource-info&amp;quot;&amp;gt;
+        &amp;lt;span class=&amp;quot;resource-title&amp;quot;&amp;gt;Lecture 2: Introduction to Numpy and Scipy&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;a href=&amp;quot;../../lectures/Lecture_2_part_1_Introduction_to_numpy_and_scipy.pdf&amp;quot; class=&amp;quot;download-btn&amp;quot;&amp;gt;Download PDF&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;resource-item&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;resource-info&amp;quot;&amp;gt;
+        &amp;lt;span class=&amp;quot;resource-title&amp;quot;&amp;gt;Lecture 3: Matplotlib Basics&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;a href=&amp;quot;../../lectures/Lecture_3_Matplotlib_Basics.pdf&amp;quot; class=&amp;quot;download-btn&amp;quot;&amp;gt;Download PDF&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;worksheets-and-labworks&#34;&gt;Worksheets and Labworks&lt;/h3&gt;
+&lt;div class=&#34;resource-list&#34;&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Worksheet 0&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../ws/WS_0.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Worksheet 0 Solutions&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../ws/WS_0_Sol.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Worksheet 1&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../ws/WS_1.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Worksheet 2&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../ws/WS_2.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Labwork 01&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../ws/LW_1.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Labwork 02&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../ws/LW_2.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;projects&#34;&gt;Projects&lt;/h3&gt;
+&lt;div class=&#34;resource-list&#34;&gt;
+    &lt;div class=&#34;resource-item&#34;&gt;
+        &lt;div class=&#34;resource-info&#34;&gt;
+            &lt;span class=&#34;resource-title&#34;&gt;Projects List&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href=&#34;../../projects/MCT_Projects.pdf&#34; class=&#34;download-btn&#34;&gt;Download PDF&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>
