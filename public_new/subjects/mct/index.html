@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>MCT Lectures | YAHIA DJEMMADA</title>
+<meta name="keywords" content="">
+<meta name="description" content="Mathematical Computing Tools Lectures Lecture 0: Introduction to Python (Part 1) Python basics review Download PDF Lecture 0: Introduction to Python (Part 2) Data Structures Download PDF Lecture 0: Introduction to Python (Part 3) Comprehensions and Functions Download PDF &lt;!-- Other Lectures --&gt; &lt;div class=&quot;resource-item&quot;&gt; &lt;div class=&quot;resource-info&quot;&gt; &lt;span class=&quot;resource-title&quot;&gt;Lecture 1: Files and Exceptions&lt;/span&gt; &lt;/div&gt; &lt;a href=&quot;../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf&quot; class=&quot;download-btn&quot;&gt;Download PDF&lt;/a&gt; &lt;/div&gt; &lt;div class=&quot;resource-item&quot;&gt; &lt;div class=&quot;resource-info&quot;&gt; &lt;span class=&quot;resource-title&quot;&gt;Lecture 2: Introduction to Numpy and Scipy&lt;/span&gt; &lt;/div&gt; &lt;a href=&quot;.">
+<meta name="author" content="">
+<link rel="canonical" href="https://ydjemmada.github.io/subjects/mct/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5995963ce45f830b9ce6d5702629fd5937cca0b9bef8b91cc06b2b64a9961ac0.css" integrity="sha256-WZWWPORfgwuc5tVwJin9WTfMoLm&#43;&#43;LkcwGsrZKmWGsA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://ydjemmada.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ydjemmada.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ydjemmada.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://ydjemmada.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://ydjemmada.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://ydjemmada.github.io/subjects/mct/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+    };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BLPCZY56GF"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-BLPCZY56GF', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="MCT Lectures" />
+<meta property="og:description" content="Mathematical Computing Tools Lectures Lecture 0: Introduction to Python (Part 1) Python basics review Download PDF Lecture 0: Introduction to Python (Part 2) Data Structures Download PDF Lecture 0: Introduction to Python (Part 3) Comprehensions and Functions Download PDF &lt;!-- Other Lectures --&gt; &lt;div class=&quot;resource-item&quot;&gt; &lt;div class=&quot;resource-info&quot;&gt; &lt;span class=&quot;resource-title&quot;&gt;Lecture 1: Files and Exceptions&lt;/span&gt; &lt;/div&gt; &lt;a href=&quot;../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf&quot; class=&quot;download-btn&quot;&gt;Download PDF&lt;/a&gt; &lt;/div&gt; &lt;div class=&quot;resource-item&quot;&gt; &lt;div class=&quot;resource-info&quot;&gt; &lt;span class=&quot;resource-title&quot;&gt;Lecture 2: Introduction to Numpy and Scipy&lt;/span&gt; &lt;/div&gt; &lt;a href=&quot;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ydjemmada.github.io/subjects/mct/" /><meta property="article:section" content="subjects" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MCT Lectures"/>
+<meta name="twitter:description" content="Mathematical Computing Tools Lectures Lecture 0: Introduction to Python (Part 1) Python basics review Download PDF Lecture 0: Introduction to Python (Part 2) Data Structures Download PDF Lecture 0: Introduction to Python (Part 3) Comprehensions and Functions Download PDF &lt;!-- Other Lectures --&gt; &lt;div class=&quot;resource-item&quot;&gt; &lt;div class=&quot;resource-info&quot;&gt; &lt;span class=&quot;resource-title&quot;&gt;Lecture 1: Files and Exceptions&lt;/span&gt; &lt;/div&gt; &lt;a href=&quot;../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf&quot; class=&quot;download-btn&quot;&gt;Download PDF&lt;/a&gt; &lt;/div&gt; &lt;div class=&quot;resource-item&quot;&gt; &lt;div class=&quot;resource-info&quot;&gt; &lt;span class=&quot;resource-title&quot;&gt;Lecture 2: Introduction to Numpy and Scipy&lt;/span&gt; &lt;/div&gt; &lt;a href=&quot;."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Subjects",
+      "item": "https://ydjemmada.github.io/subjects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "MCT Lectures",
+      "item": "https://ydjemmada.github.io/subjects/mct/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "MCT Lectures",
+  "name": "MCT Lectures",
+  "description": "Mathematical Computing Tools Lectures Lecture 0: Introduction to Python (Part 1) Python basics review Download PDF Lecture 0: Introduction to Python (Part 2) Data Structures Download PDF Lecture 0: Introduction to Python (Part 3) Comprehensions and Functions Download PDF \u0026lt;!-- Other Lectures --\u0026gt; \u0026lt;div class=\u0026quot;resource-item\u0026quot;\u0026gt; \u0026lt;div class=\u0026quot;resource-info\u0026quot;\u0026gt; \u0026lt;span class=\u0026quot;resource-title\u0026quot;\u0026gt;Lecture 1: Files and Exceptions\u0026lt;/span\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;a href=\u0026quot;../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf\u0026quot; class=\u0026quot;download-btn\u0026quot;\u0026gt;Download PDF\u0026lt;/a\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;div class=\u0026quot;resource-item\u0026quot;\u0026gt; \u0026lt;div class=\u0026quot;resource-info\u0026quot;\u0026gt; \u0026lt;span class=\u0026quot;resource-title\u0026quot;\u0026gt;Lecture 2: Introduction to Numpy and Scipy\u0026lt;/span\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;a href=\u0026quot;.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Mathematical Computing Tools Lectures Lecture 0: Introduction to Python (Part 1) Python basics review Download PDF Lecture 0: Introduction to Python (Part 2) Data Structures Download PDF Lecture 0: Introduction to Python (Part 3) Comprehensions and Functions Download PDF Lecture 1: Files and Exceptions Download PDF Lecture 2: Introduction to Numpy and Scipy Download PDF Lecture 3: Matplotlib Basics Download PDF Worksheets and Labworks Worksheet 0 Download PDF Worksheet 0 Solutions Download PDF Worksheet 1 Download PDF Worksheet 2 Download PDF Labwork 01 Download PDF Labwork 02 Download PDF Projects Projects List Download PDF ",
+  "wordCount" : "125",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ydjemmada.github.io/subjects/mct/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "YAHIA DJEMMADA",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ydjemmada.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://ydjemmada.github.io/" accesskey="h" title="YAHIA DJEMMADA (Alt + H)">YAHIA DJEMMADA</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://ydjemmada.github.io/publications" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ydjemmada.github.io/cmaterials" title="Teaching">
+                    <span>Teaching</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ydjemmada.github.io/cv" title="CV">
+                    <span>CV</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ydjemmada.github.io/contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      MCT Lectures
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="mathematical-computing-tools">Mathematical Computing Tools<a hidden class="anchor" aria-hidden="true" href="#mathematical-computing-tools">#</a></h1>
+<h3 id="lectures">Lectures<a hidden class="anchor" aria-hidden="true" href="#lectures">#</a></h3>
+<div class="resource-list">
+    <!-- Lecture 0 -->
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Lecture 0: Introduction to Python (Part 1)</span>
+            <span class="resource-desc">Python basics review</span>
+        </div>
+        <a href="../../lectures/Lecture_0_Part_1_Python_basics_review.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Lecture 0: Introduction to Python (Part 2)</span>
+            <span class="resource-desc">Data Structures</span>
+        </div>
+        <a href="../../lectures/Lecture_0_Part_2_Data_structures.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Lecture 0: Introduction to Python (Part 3)</span>
+            <span class="resource-desc">Comprehensions and Functions</span>
+        </div>
+        <a href="../../lectures/Lecture_0_Part_3_Comprehensions_and_Functions.pdf" class="download-btn">Download PDF</a>
+    </div>
+<pre><code>&lt;!-- Other Lectures --&gt;
+&lt;div class=&quot;resource-item&quot;&gt;
+    &lt;div class=&quot;resource-info&quot;&gt;
+        &lt;span class=&quot;resource-title&quot;&gt;Lecture 1: Files and Exceptions&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf&quot; class=&quot;download-btn&quot;&gt;Download PDF&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;resource-item&quot;&gt;
+    &lt;div class=&quot;resource-info&quot;&gt;
+        &lt;span class=&quot;resource-title&quot;&gt;Lecture 2: Introduction to Numpy and Scipy&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;../../lectures/Lecture_2_part_1_Introduction_to_numpy_and_scipy.pdf&quot; class=&quot;download-btn&quot;&gt;Download PDF&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;resource-item&quot;&gt;
+    &lt;div class=&quot;resource-info&quot;&gt;
+        &lt;span class=&quot;resource-title&quot;&gt;Lecture 3: Matplotlib Basics&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;../../lectures/Lecture_3_Matplotlib_Basics.pdf&quot; class=&quot;download-btn&quot;&gt;Download PDF&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+<h3 id="worksheets-and-labworks">Worksheets and Labworks<a hidden class="anchor" aria-hidden="true" href="#worksheets-and-labworks">#</a></h3>
+<div class="resource-list">
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Worksheet 0</span>
+        </div>
+        <a href="../ws/WS_0.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Worksheet 0 Solutions</span>
+        </div>
+        <a href="../ws/WS_0_Sol.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Worksheet 1</span>
+        </div>
+        <a href="../ws/WS_1.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Worksheet 2</span>
+        </div>
+        <a href="../ws/WS_2.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Labwork 01</span>
+        </div>
+        <a href="../ws/LW_1.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Labwork 02</span>
+        </div>
+        <a href="../ws/LW_2.pdf" class="download-btn">Download PDF</a>
+    </div>
+</div>
+<h3 id="projects">Projects<a hidden class="anchor" aria-hidden="true" href="#projects">#</a></h3>
+<div class="resource-list">
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Projects List</span>
+        </div>
+        <a href="../../projects/MCT_Projects.pdf" class="download-btn">Download PDF</a>
+    </div>
+</div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://ydjemmada.github.io/">YAHIA DJEMMADA</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,31 +1,104 @@
 +++
 title = "MCT Lectures"
 +++
-<center><h1> Mathematical Computing Tools</h1></center>
- 
-<center><h3>Lectures</h3></center> 
 
-- ##### Lecture 0: Introduction to python
-   - ###### Part 1 (Python basics review){{% button href="../../lectures/Lecture_0_Part_1_Python_basics_review.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-   - ###### Part 2 (Data Structures){{% button href="../../lectures/Lecture_0_Part_2_Data_structures.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-   - ###### Part 3 (Comprehensions and Functions){{% button href="../../lectures/Lecture_0_Part_3_Comprehensions_and_Functions.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-- ##### Lecture 1: Files and Exceptions {{% button href="../../lectures/Lecture_1 Files and Excepitons.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-- ##### Lecture 2:Introduction to numpy and scipy {{% button href="../../lectures/Lecture_2_part_1_Introduction_to_numpy_and_scipy.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-- ##### Lecture 3:Matplotlib Basics {{% button href="../../lectures/Lecture_3_Matplotlib_Basics.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
+# Mathematical Computing Tools
 
-<center><h3>Worksheets and Labworks:</h3></center> 
- 
-- #### Worksheets:
-   - ##### Worksheet 0:{{% button href="../ws/WS_0.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-   - ##### Worksheet 0 Solutions:{{% button href="../ws/WS_0_Sol.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-   - ##### Worksheet 1:{{% button href="../ws/WS_1.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-   - ##### Worksheet 2:{{% button href="../ws/WS_2.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-- #### Labworks:
-   - ##### Labwork 01:{{% button href="../ws/LW_1.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-   - ##### Labwork 02:{{% button href="../ws/LW_2.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
+### Lectures
 
-<center><h3>Projects</h3></center> 
+<div class="resource-list">
+    <!-- Lecture 0 -->
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Lecture 0: Introduction to Python (Part 1)</span>
+            <span class="resource-desc">Python basics review</span>
+        </div>
+        <a href="../../lectures/Lecture_0_Part_1_Python_basics_review.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Lecture 0: Introduction to Python (Part 2)</span>
+            <span class="resource-desc">Data Structures</span>
+        </div>
+        <a href="../../lectures/Lecture_0_Part_2_Data_structures.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Lecture 0: Introduction to Python (Part 3)</span>
+            <span class="resource-desc">Comprehensions and Functions</span>
+        </div>
+        <a href="../../lectures/Lecture_0_Part_3_Comprehensions_and_Functions.pdf" class="download-btn">Download PDF</a>
+    </div>
 
-- #### Projects list:{{% button href="../../projects/MCT_Projects.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-<!-- - #### Teams:{{% button href="../../projects/MCT_Teams.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
-- #### Assignment (Projects,Team,Deadline):{{% button href="../../projects/MCT_Projects_Assignment.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}. -->
+    <!-- Other Lectures -->
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Lecture 1: Files and Exceptions</span>
+        </div>
+        <a href="../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Lecture 2: Introduction to Numpy and Scipy</span>
+        </div>
+        <a href="../../lectures/Lecture_2_part_1_Introduction_to_numpy_and_scipy.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Lecture 3: Matplotlib Basics</span>
+        </div>
+        <a href="../../lectures/Lecture_3_Matplotlib_Basics.pdf" class="download-btn">Download PDF</a>
+    </div>
+</div>
+
+### Worksheets and Labworks
+
+<div class="resource-list">
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Worksheet 0</span>
+        </div>
+        <a href="../ws/WS_0.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Worksheet 0 Solutions</span>
+        </div>
+        <a href="../ws/WS_0_Sol.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Worksheet 1</span>
+        </div>
+        <a href="../ws/WS_1.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Worksheet 2</span>
+        </div>
+        <a href="../ws/WS_2.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Labwork 01</span>
+        </div>
+        <a href="../ws/LW_1.pdf" class="download-btn">Download PDF</a>
+    </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Labwork 02</span>
+        </div>
+        <a href="../ws/LW_2.pdf" class="download-btn">Download PDF</a>
+    </div>
+</div>
+
+### Projects
+
+<div class="resource-list">
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Projects List</span>
+        </div>
+        <a href="../../projects/MCT_Projects.pdf" class="download-btn">Download PDF</a>
+    </div>
+</div>

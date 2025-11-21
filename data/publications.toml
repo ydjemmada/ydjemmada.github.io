@@ -1,0 +1,149 @@
+[[papers]]
+title = "An identity for two sequences and its combinatorial interpretation"
+authors = "Djemmada, Yahia; Mehdaoui, Abdelghani; Németh, László; Szalay, László"
+journal = "Annales Mathematicae et Informaticae"
+year = 2024
+abstract = "We establish a new identity relating two combinatorial sequences and provide a bijective proof demonstrating its combinatorial interpretation."
+pdf_url = "#"
+code_url = ""
+bibtex = """@article{djemmada2024identity,
+  title={An identity for two sequences and its combinatorial interpretation},
+  author={Djemmada, Yahia and Mehdaoui, Abdelghani and N{\\'e}meth, L{\\'a}szl{\\'o} and Szalay, L{\\'a}szl{\\'o}},
+  journal={Annales Mathematicae et Informaticae},
+  year={2024}
+}"""
+
+[[papers]]
+title = "The (l, r)-Stirling numbers: a combinatorial approach"
+authors = "Belbachir, Hacène; Djemmada, Yahia"
+journal = "Filomat"
+year = 2023
+abstract = "We present a combinatorial approach to the (l, r)-Stirling numbers, establishing new identities and connections with classical Stirling numbers."
+pdf_url = "#"
+code_url = ""
+bibtex = """@article{belbachir2023stirling,
+  title={The (l, r)-Stirling numbers: a combinatorial approach},
+  author={Belbachir, Hac{\\`e}ne and Djemmada, Yahia},
+  journal={Filomat},
+  year={2023}
+}"""
+
+[[papers]]
+title = "The deranged Bell numbers"
+authors = "Belbachir, Hacène; Djemmada, Yahia; Németh, László"
+journal = "Mathematica Slovaca"
+year = 2023
+abstract = "We introduce and study the deranged Bell numbers, exploring their combinatorial properties and connections to classical Bell numbers."
+pdf_url = "#"
+code_url = ""
+bibtex = """@article{belbachir2023deranged,
+  title={The deranged Bell numbers},
+  author={Belbachir, Hac{\\`e}ne and Djemmada, Yahia and N{\\'e}meth, L{\\'a}szl{\\'o}},
+  journal={Mathematica Slovaca},
+  year={2023}
+}"""
+
+[[papers]]
+title = "Unified Bernoulli-Euler polynomials of Apostol type"
+authors = "Belbachir, Hacène; Djemmada, Yahia; Hadj-Brahim, Slimane"
+journal = "Indian Journal of Pure and Applied Mathematics"
+year = 2022
+abstract = "We develop a unified approach to Bernoulli-Euler polynomials of Apostol type, deriving new properties and identities."
+pdf_url = "#"
+code_url = ""
+bibtex = """@article{belbachir2022unified,
+  title={Unified Bernoulli-Euler polynomials of Apostol type},
+  author={Belbachir, Hac{\\`e}ne and Djemmada, Yahia and Hadj-Brahim, Slimane},
+  journal={Indian Journal of Pure and Applied Mathematics},
+  year={2022}
+}"""
+
+[[papers]]
+title = "On central Fubini-like numbers and polynomials"
+authors = "Belbachir, Hacène; Djemmada, Yahia"
+journal = "Miskolc Mathematical Notes"
+year = 2021
+abstract = "We investigate central Fubini-like numbers and polynomials, establishing their properties and relationships with other combinatorial sequences."
+pdf_url = "#"
+code_url = ""
+bibtex = """@article{belbachir2021fubini,
+  title={On central Fubini-like numbers and polynomials},
+  author={Belbachir, Hac{\\`e}ne and Djemmada, Yahia},
+  journal={Miskolc Mathematical Notes},
+  year={2021}
+}"""
+
+[[papers]]
+title = "Generalized geometric polynomials via Steffensen's generalized factorials and Tanny's operators"
+authors = "Belbachir, Hacène; Djemmada, Yahia"
+journal = "Indian Journal of Pure and Applied Mathematics"
+year = 2020
+abstract = "We develop a theory of generalized geometric polynomials using Steffensen's factorials and Tanny's operators, revealing new connections in combinatorics."
+pdf_url = "#"
+code_url = ""
+bibtex = """@article{belbachir2020geometric,
+  title={Generalized geometric polynomials via Steffensen's generalized factorials and Tanny's operators},
+  author={Belbachir, Hac{\\`e}ne and Djemmada, Yahia},
+  journal={Indian Journal of Pure and Applied Mathematics},
+  year={2020}
+}"""
+
+[[papers]]
+title = "Congruence for geometric polynomials"
+authors = "Belbachir, Hacène; Djemmada, Yahia"
+journal = "Les Annales RECITS"
+year = 2019
+abstract = "We establish congruence relations for geometric polynomials and explore their number-theoretic properties."
+pdf_url = "#"
+code_url = ""
+bibtex = """@article{belbachir2019congruence,
+  title={Congruence for geometric polynomials},
+  author={Belbachir, Hac{\\`e}ne and Djemmada, Yahia},
+  journal={Les Annales RECITS},
+  year={2019}
+}"""
+
+[[papers]]
+title = "Partial Deranged Bell Numbers and Their Combinatorial Properties"
+authors = "Djemmada, Yahia; Kargın, Levent; Can, Mümün"
+journal = "arXiv preprint arXiv:2507.21643"
+year = 2025
+abstract = "We introduce partial deranged Bell numbers and investigate their combinatorial properties, providing generating functions and recurrence relations."
+pdf_url = "https://arxiv.org/abs/2507.21643"
+code_url = ""
+bibtex = """@article{djemmada2025partial,
+  title={Partial Deranged Bell Numbers and Their Combinatorial Properties},
+  author={Djemmada, Yahia and Karg{\\i}n, Levent and Can, M{\\\"u}m{\\\"u}n},
+  journal={arXiv preprint arXiv:2507.21643},
+  year={2025}
+}"""
+
+[[papers]]
+title = "The Fibonacci-Fubini and Lucas-Fubini numbers"
+authors = "Djemmada, Yahia; Mehdaoui, Abdelghani; Németh, László; Szalay, László"
+journal = "arXiv preprint arXiv:2407.04409"
+year = 2024
+abstract = "We introduce and study Fibonacci-Fubini and Lucas-Fubini numbers, establishing their properties and connections to known sequences."
+pdf_url = "https://arxiv.org/abs/2407.04409"
+code_url = ""
+bibtex = """@article{djemmada2024fibonacci,
+  title={The Fibonacci-Fubini and Lucas-Fubini numbers},
+  author={Djemmada, Yahia and Mehdaoui, Abdelghani and N{\\'e}meth, L{\\'a}szl{\\'o} and Szalay, L{\\'a}szl{\\'o}},
+  journal={arXiv preprint arXiv:2407.04409},
+  year={2024}
+}"""
+
+[[papers]]
+title = "The generalized $r$-Stirling numbers of the first kind"
+authors = "Bazeniar, Abdelghfour; Ahmia, Moussa"
+journal = "RAIRO - Operations Research"
+year = 2025
+abstract = "We introduce a generalization of the $r$-Stirling numbers of the first kind and their analogues. These numbers arise as specific cases of a new class of symmetric functions."
+pdf_url = "#"
+code_url = ""
+bibtex = """@article{bazeniar2025stirling,
+  title={The generalized $r$-Stirling numbers of the first kind},
+  author={Bazeniar, Abdelghfour and Ahmia, Moussa},
+  journal={RAIRO-Operations Research},
+  year={2025}
+}"""

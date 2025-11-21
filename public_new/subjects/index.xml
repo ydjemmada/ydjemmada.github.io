@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Subjects on YAHIA DJEMMADA</title>
+    <link>https://ydjemmada.github.io/subjects/</link>
+    <description>Recent content in Subjects on YAHIA DJEMMADA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://ydjemmada.github.io/subjects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algebra 1</title>
+      <link>https://ydjemmada.github.io/subjects/alg1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ydjemmada.github.io/subjects/alg1/</guid>
+      <description>Algebra 1 Solutions Worksheet 2 Solutions Download PDF </description>
+    </item>
+    <item>
+      <title>Discrete Mathematics 1</title>
+      <link>https://ydjemmada.github.io/subjects/md1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ydjemmada.github.io/subjects/md1/</guid>
+      <description>Discrete Mathematics 1 Lectures Chapter 1: Counting Download PDF Chapter 2: Advanced Counting Principles Download PDF </description>
+    </item>
+    <item>
+      <title>Discrete Mathematics 2</title>
+      <link>https://ydjemmada.github.io/subjects/md2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ydjemmada.github.io/subjects/md2/</guid>
+      <description>Discrete Mathematics 2 Lectures Chapter 1: Solving Recurrence Relations Download PDF Chapter 2: Stirling numbers Download PDF Chapter 3: Other Important Combinatorial Sequences Download PDF Chapter 4: Integer partitions Download PDF </description>
+    </item>
+    <item>
+      <title>MCT Lectures</title>
+      <link>https://ydjemmada.github.io/subjects/mct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ydjemmada.github.io/subjects/mct/</guid>
+      <description>Mathematical Computing Tools Lectures Lecture 0: Introduction to Python (Part 1) Python basics review Download PDF Lecture 0: Introduction to Python (Part 2) Data Structures Download PDF Lecture 0: Introduction to Python (Part 3) Comprehensions and Functions Download PDF &amp;lt;!-- Other Lectures --&amp;gt; &amp;lt;div class=&amp;quot;resource-item&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;resource-info&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;resource-title&amp;quot;&amp;gt;Lecture 1: Files and Exceptions&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;a href=&amp;quot;../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf&amp;quot; class=&amp;quot;download-btn&amp;quot;&amp;gt;Download PDF&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;resource-item&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;resource-info&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;resource-title&amp;quot;&amp;gt;Lecture 2: Introduction to Numpy and Scipy&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;a href=&amp;quot;.</description>
+    </item>
+  </channel>
+</rss>
