@@ -38,7 +38,10 @@ cd public
 if [ ! -d ".git" ]; then
     echo "📋 Initializing git in public folder..."
     git init
-    git remote add origin https://github.com/ydjemmada/ydjemmada.github.io.git
+    # Get the remote URL from the parent repository
+    REMOTE_URL=$(cd .. && git remote get-url origin)
+    git remote add origin "$REMOTE_URL"
+    git config --local credential.helper "$(cd .. && git config --get credential.helper)"
 else
     echo "📋 Updating existing git repository in public folder..."
 fi
