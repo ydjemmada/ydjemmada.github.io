@@ -1,6 +1,11 @@
 #!/bin/bash
 # Hugo Site Deployment Script
 # This script builds your Hugo site and deploys it to GitHub Pages
+# 
+# How it works:
+# 1. Builds the Hugo site (creates/updates public/ folder)
+# 2. Pushes ONLY the public/ folder contents to the main branch
+# 3. The main branch contains only the static site files
 
 set -e  # Exit on error
 
@@ -26,19 +31,17 @@ fi
 
 echo "✅ Hugo build complete!"
 
-# Switch to main branch
-echo "📋 Switching to main branch..."
-git checkout main
+# Navigate to public folder
+cd public
 
-# Remove old files (except .git)
-echo "🧹 Cleaning main branch..."
-find . -maxdepth 1 ! -name '.git' ! -name '.' ! -name '..' -exec rm -rf {} +
-
-# Copy built files from source branch's public folder
-echo "📦 Copying built site from source branch..."
-git checkout source -- public
-cp -r public/* .
-rm -rf public
+# Initialize git if needed, or update existing
+if [ ! -d ".git" ]; then
+    echo "📋 Initializing git in public folder..."
+    git init
+    git remote add origin https://github.com/ydjemmada/ydjemmada.github.io.git
+else
+    echo "📋 Updating existing git repository in public folder..."
+fi
 
 # Commit and push
 echo "💾 Committing changes..."
@@ -46,10 +49,10 @@ git add -A
 git commit -m "Deploy site - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
 
 echo "🚀 Pushing to GitHub..."
-git push origin main
+git push -f origin HEAD:main
 
-# Go back to source branch
-echo "🔄 Returning to source branch..."
-git checkout source
+# Go back to parent directory
+cd ..
 
 echo "✨ Deployment complete! Your site should be live shortly at https://ydjemmada.github.io"
+echo "💡 Tip: You're still on the 'source' branch. Continue editing your files here."
