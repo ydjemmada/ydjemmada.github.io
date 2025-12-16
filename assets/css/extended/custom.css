@@ -129,15 +129,59 @@ a:hover {
 
 .nav {
     max-width: 1000px;
-    /* Wider for nav */
     margin: 0 auto;
     width: 100%;
     padding: 0 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    /* Add gap between logo and menu */
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0.5rem;
+    }
+
+    .logo {
+        max-width: 80%;
+        margin-bottom: 0.5rem;
+    }
+
+    #menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    #menu li a {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .nav {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    .logo {
+        max-width: 40%;
+    }
+
+    #menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    #menu li a {
+        font-size: 0.8rem;
+    }
 }
 
 .logo {
@@ -151,6 +195,18 @@ a:hover {
 .logo a {
     font-weight: 700;
     font-size: 1.25rem;
+    color: var(--text-main);
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 420px) {
+    .logo a {
+        font-size: 1rem;
+        white-space: normal;
+    }
 }
 
 #menu li a:hover {
@@ -555,6 +611,31 @@ th {
     line-height: 1.6;
     margin: 0.75rem 0;
     font-size: 0.95rem;
+}
+
+#menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    /* Allow items to wrap on small screens */
+}
+
+/* Small screen navigation adjustments */
+@media (max-width: 420px) {
+    .nav {
+        justify-content: center;
+    }
+
+    #menu {
+        gap: 0.5rem;
+    }
+
+    #menu li a {
+        font-size: 0.8rem;
+    }
 }
 
 .pub-actions {

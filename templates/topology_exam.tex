@@ -1,0 +1,91 @@
+% Topology Exam
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath, amssymb, amsthm}
+
+%-----------------------------------------------------------------
+% Header with two logos side‑by‑side
+%-----------------------------------------------------------------
+\newcommand{\examheader}{
+  \noindent
+  \begin{minipage}[c]{0.25\textwidth}
+    \centering
+    % Replace with actual logo path
+    \includegraphics[width=0.9\linewidth]{/home/mathxro/.gemini/antigravity/brain/c9d19247-36aa-4bd4-8a32-512063437249/logo1_placeholder_1763810843086.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.45\textwidth}
+    \centering
+    {\Large \textbf{Topology Exam}}\\[0.2cm]
+    {\large Fall 2025}\\[0.2cm]
+    {\large Date: \today}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.25\textwidth}
+    \centering
+    % Replace with actual logo path
+    \includegraphics[width=0.9\linewidth]{/home/mathxro/.gemini/antigravity/brain/c9d19247-36aa-4bd4-8a32-512063437249/logo2_placeholder_1763810894171.png}
+  \end{minipage}
+  \vspace{0.5cm}
+}
+
+%-----------------------------------------------------------------
+% Document start
+%-----------------------------------------------------------------
+\begin{document}
+\examheader
+
+\vspace{0.5cm}
+
+%-----------------------------------------------------------------
+% Exercise 1: Topological Spaces
+%-----------------------------------------------------------------
+\section*{Exercise 1 (Topological Spaces)}
+Let $X = \{a, b, c\}$.
+\begin{enumerate}[label=\alph*)]
+  \item List all possible topologies on $X$ that contain the singleton set $\{a\}$.
+  \item For one of the topologies found in part (a) that is not the discrete topology, determine the closure of the set $\{b\}$.
+\end{enumerate}
+
+%-----------------------------------------------------------------
+% Exercise 2: Basis
+%-----------------------------------------------------------------
+\section*{Exercise 2 (Basis)}
+Consider the real line $\mathbb{R}$ with the standard topology.
+\begin{enumerate}[label=\alph*)]
+  \item Define what it means for a collection $\mathcal{B}$ of subsets of $X$ to be a basis for a topology on $X$.
+  \item Show that the collection of open intervals $(q_1, q_2)$ where $q_1, q_2 \in \mathbb{Q}$ is a basis for the standard topology on $\mathbb{R}$.
+\end{enumerate}
+
+%-----------------------------------------------------------------
+% Exercise 3: Continuity
+%-----------------------------------------------------------------
+\section*{Exercise 3 (Continuity)}
+Let $X$ and $Y$ be topological spaces and $f: X \to Y$ be a function.
+\begin{enumerate}[label=\alph*)]
+  \item State the definition of continuity in terms of open sets.
+  \item Prove that $f$ is continuous if and only if for every closed set $C \subseteq Y$, the preimage $f^{-1}(C)$ is closed in $X$.
+\end{enumerate}
+
+%-----------------------------------------------------------------
+% Exercise 4: Compactness
+%-----------------------------------------------------------------
+\section*{Exercise 4 (Compactness)}
+\begin{enumerate}[label=\alph*)]
+  \item Define what it means for a topological space $X$ to be compact.
+  \item Prove that a closed subset of a compact space is compact.
+\end{enumerate}
+
+%-----------------------------------------------------------------
+% Exercise 5: Connectedness
+%-----------------------------------------------------------------
+\section*{Exercise 5 (Connectedness)}
+Let $X$ be a topological space.
+\begin{enumerate}[label=\alph*)]
+  \item Define what it means for $X$ to be connected.
+  \item Let $A$ be a connected subset of $X$. Prove that if $A \subseteq B \subseteq \overline{A}$, then $B$ is connected.
+\end{enumerate}
+
+\end{document}

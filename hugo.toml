@@ -1,7 +1,8 @@
 baseURL = 'https://ydjemmada.github.io/'
 languageCode = 'en-us'
 title = 'YAHIA DJEMMADA'
-theme = 'PaperMod'
+theme = 'researcher'
+#theme = 'PaperMod'
 
 enableEmoji = true
 googleAnalytics = 'G-BLPCZY56GF'
@@ -25,7 +26,7 @@ googleAnalytics = 'G-BLPCZY56GF'
   [[menu.main]]
     identifier = "teaching"
     name = "Teaching"
-    url = "/CMaterials"
+    url = "/teaching"
     weight = 2
   [[menu.main]]
     identifier = "cv"
