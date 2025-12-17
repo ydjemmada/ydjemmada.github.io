@@ -133,17 +133,4 @@ bibtex = """@article{djemmada2024fibonacci,
   year={2024}
 }"""
 
-[[papers]]
-title = "The generalized $r$-Stirling numbers of the first kind"
-authors = "Bazeniar, Abdelghfour; Ahmia, Moussa"
-journal = "RAIRO - Operations Research"
-year = 2025
-abstract = "We introduce a generalization of the $r$-Stirling numbers of the first kind and their analogues. These numbers arise as specific cases of a new class of symmetric functions."
-pdf_url = "#"
-code_url = ""
-bibtex = """@article{bazeniar2025stirling,
-  title={The generalized $r$-Stirling numbers of the first kind},
-  author={Bazeniar, Abdelghfour and Ahmia, Moussa},
-  journal={RAIRO-Operations Research},
-  year={2025}
-}"""
+
