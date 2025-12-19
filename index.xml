@@ -6,7 +6,15 @@
     <description>Recent content on YAHIA DJEMMADA</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ydjemmada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uses</title>
+      <link>https://ydjemmada.github.io/uses/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://ydjemmada.github.io/uses/</guid>
+      <description>&lt;p&gt;This is a list of the tools and software I rely on for my mathematics research, teaching, and web development.&lt;/p&gt;&#xA;&lt;h2 id=&#34;hardware&#34;&gt;Hardware&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Laptop&lt;/strong&gt;: Linux Machine&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Peripherals&lt;/strong&gt;: Mechanical Keyboard (for those long LaTeX sessions)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;software--tools&#34;&gt;Software &amp;amp; Tools&lt;/h2&gt;&#xA;&lt;h3 id=&#34;editor--terminal&#34;&gt;Editor &amp;amp; Terminal&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Editor&lt;/strong&gt;: &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;VS Code&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;Theme&lt;/em&gt;: Default Dark / One Dark Pro&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Extensions&lt;/em&gt;: LaTeX Workshop, Hugo Language Helper, Python&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Terminal&lt;/strong&gt;: Zsh&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Version Control&lt;/strong&gt;: Git &amp;amp; GitHub&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;mathematics--research&#34;&gt;Mathematics &amp;amp; Research&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Typesetting&lt;/strong&gt;: LaTeX (TeX Live)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Computation&lt;/strong&gt;: Python (NumPy, SciPy, Matplotlib, SymPy) -&amp;gt; &lt;a href=&#34;https://ydjemmada.github.io/teaching/mct/&#34;&gt;See my MCT Course&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;website&#34;&gt;Website&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Generator&lt;/strong&gt;: &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; (Static Site Generator)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hosting&lt;/strong&gt;: GitHub Pages&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Modified Researcher theme with custom CSS&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;teaching&#34;&gt;Teaching&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Presentation&lt;/strong&gt;: Beamer (LaTeX)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt;: Markdown &amp;amp; LaTeX&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title></title>
       <link>https://ydjemmada.github.io/cp1_nhsm/</link>

@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ydjemmada.github.io/uses/</loc>
+    <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ydjemmada.github.io/</loc>
+    <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ydjemmada.github.io/cp1_nhsm/</loc>
   </url><url>
     <loc>https://ydjemmada.github.io/about/</loc>
@@ -25,7 +31,5 @@
     <loc>https://ydjemmada.github.io/tags/</loc>
   </url><url>
     <loc>https://ydjemmada.github.io/teaching/</loc>
-  </url><url>
-    <loc>https://ydjemmada.github.io/</loc>
   </url>
 </urlset>
