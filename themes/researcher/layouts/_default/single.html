@@ -1,5 +1,25 @@
 {{ define "main" }}
 <div class="container">
-    {{ .Content }}
+    {{ partial "breadcrumbs.html" . }}
+    <div class="post-header">
+        <h1>{{ .Title }}</h1>
+        <div class="post-meta">
+            {{ if .Date }}
+            <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+            {{ end }}
+            <span class="reading-time"><i class="far fa-clock"></i> {{ .ReadingTime }} min read</span>
+        </div>
+    </div>
+
+    {{ if .Params.toc }}
+    <aside class="table-of-contents">
+        <h3>Table of Contents</h3>
+        {{ .TableOfContents }}
+    </aside>
+    {{ end }}
+
+    <div class="post-content">
+        {{ .Content }}
+    </div>
 </div>
 {{ end }}
