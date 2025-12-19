@@ -41,3 +41,16 @@ googleAnalytics = 'G-BLPCZY56GF'
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+[[related.indices]]
+  name = "tags"
+  weight = 100
+
+[[related.indices]]
+  name = "section"
+  weight = 10
