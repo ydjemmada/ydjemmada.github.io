@@ -5,7 +5,7 @@ title = "Curriculum Vitae"
 ## Curriculum Vitae
 
 <div class="buttons">
-    <a class="button" href="/resume.pdf" target="_blank">
+    <a class="button" href="/DJEMMADA_Yahia.pdf" target="_blank">
         <span class="button-inner">Download Full CV (PDF)</span>
     </a>
 </div>

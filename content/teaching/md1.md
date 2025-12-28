@@ -21,7 +21,7 @@ title = "Discrete Mathematics 1"
     </div>
     <div class="resource-item">
         <div class="resource-info">
-            <span class="resource-title">Chapter 3</span>
+            <span class="resource-title">Chapter 3: Introduction to graph theory</span>
         </div>
         <a href="../lectures/MD1_Ch3.pdf" class="download-btn">Download PDF</a>
     </div>
