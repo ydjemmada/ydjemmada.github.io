@@ -25,4 +25,10 @@ title = "Discrete Mathematics 1"
         </div>
         <a href="../lectures/MD1_Ch3.pdf" class="download-btn">Download PDF</a>
     </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Chapter 4</span>
+        </div>
+        <a href="../lectures/MD1_Ch4.pdf" class="download-btn">Download PDF</a>
+    </div>
 </div>
