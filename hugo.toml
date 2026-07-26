@@ -38,6 +38,11 @@ googleAnalytics = 'G-BLPCZY56GF'
     name = "Contact"
     url = "/contact"
     weight = 4
+  [[menu.main]]
+    identifier = "dzjc"
+    name = "DZ Journal Check"
+    url = "/DZJC/"
+    weight = 5
 
 [markup.goldmark.renderer]
   unsafe = true
