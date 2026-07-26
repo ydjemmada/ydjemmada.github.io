@@ -14,28 +14,28 @@
         connect-src 'self' https://www.google-analytics.com;
     ">
 
-    <title> | YAHIA DJEMMADA</title>
-    <meta name="description" content="">
+    <title>Permissions | YAHIA DJEMMADA</title>
+    <meta name="description" content="Plain-language explanation of DZ Journal Check Chrome extension permissions.">
     <meta name="author" content=''>
 
     
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ydjemmada.github.io/cp1_nhsm/">
-    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ydjemmada.github.io/DZJC/permissions/">
+    <meta property="og:title" content="Permissions">
     <meta property="og:description"
-        content="">
+        content="Plain-language explanation of DZ Journal Check Chrome extension permissions.">
     
-    <meta property="og:image" content="https://ydjemmada.github.io/%20logo.png">
+    <meta property="og:image" content="https://ydjemmada.github.io/DZJC/assets/dzjc-logo-512.png">
     
 
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ydjemmada.github.io/cp1_nhsm/">
-    <meta property="twitter:title" content="">
+    <meta property="twitter:url" content="https://ydjemmada.github.io/DZJC/permissions/">
+    <meta property="twitter:title" content="Permissions">
     <meta property="twitter:description"
-        content="">
+        content="Plain-language explanation of DZ Journal Check Chrome extension permissions.">
     
-    <meta property="twitter:image" content="https://ydjemmada.github.io/%20logo.png">
+    <meta property="twitter:image" content="https://ydjemmada.github.io/DZJC/assets/dzjc-logo-512.png">
     
 
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
@@ -56,21 +56,7 @@
     
 
     
-    
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-BLPCZY56GF"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-BLPCZY56GF');
-        }
-      </script>
+    <link rel="alternate" type="application/rss+xml" href="https://ydjemmada.github.io/DZJC/permissions/index.xml" title="YAHIA DJEMMADA" />
     
 
     
@@ -99,30 +85,9 @@
 {
   "@context": "https://schema.org",
   
-  "@type": "Article",
-  "headline": "",
-  "image": [
-    "https:\/\/ydjemmada.github.io\/logo.png"
-   ],
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "author": {
-    "@type": "Person",
-    "name": ""
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https:\/\/ydjemmada.github.io\/cp1_nhsm\/"
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https:\/\/ydjemmada.github.io\/logo.png"
-    }
-  },
-  "description": ""
+  "@type": "WebSite",
+  "name": "YAHIA DJEMMADA",
+  "url": "https:\/\/ydjemmada.github.io\/"
   
 }
 </script>
@@ -177,38 +142,66 @@
 </div>
 <hr>
 <div id="content">
-<div class="container">
-    <nav class="breadcrumbs" aria-label="breadcrumb">
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="https://ydjemmada.github.io/">
-                <span itemprop="name">Home</span>
-            </a>
-            <meta itemprop="position" content="1" />
-        </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <span class="separator">/</span>
-            <a itemprop="item" href='https://ydjemmada.github.io/cp1_nhsm'>
-                <span itemprop="name">Cp1 nhsm</span>
-            </a>
-            <meta itemprop="position" content="2" />
-        </li></ol>
-</nav>
-    <div class="post-header">
-        <h1></h1>
-        <div class="post-meta">
-            
-            <span class="reading-time"><i class="far fa-clock"></i> 0 min read</span>
+<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title">
+    <nav class="dzjc-breadcrumb" aria-label="Breadcrumb">
+        <a href="/DZJC/">DZ Journal Check</a>
+        <span aria-hidden="true">/</span>
+        <span>Permissions</span>
+    </nav>
+    <article>
+        <header class="dzjc-page-header">
+            <p class="dzjc-kicker">DZJC</p>
+            <h1 id="dzjc-title">Permissions</h1>
+            <p class="dzjc-lead">Plain-language explanation of DZ Journal Check Chrome extension permissions.</p>
+        </header>
+        <div class="dzjc-content">
+            <p>DZ Journal Check requests only the permissions needed for its journal-classification purpose.</p>
+<h2 id="storage">Storage</h2>
+<p>The <code>storage</code> permission is used for:</p>
+<ul>
+<li>the bundled DGRSDT/MESRS journal database</li>
+<li>database metadata</li>
+<li>extension preferences if needed</li>
+<li>bounded local caches</li>
+</ul>
+<p>The extension does not request <code>unlimitedStorage</code>.</p>
+<h2 id="google-scholar-host-access">Google Scholar Host Access</h2>
+<p>Host access to <code>https://scholar.google.com/*</code> is used to:</p>
+<ul>
+<li>read visible publication metadata on Google Scholar pages</li>
+<li>identify journal titles, ISSNs, DOIs, and result links</li>
+<li>display classification badges</li>
+<li>calculate Category A and Category B statistics on public author profiles</li>
+<li>fetch same-origin Scholar versions or public profile pages when needed for classification</li>
+</ul>
+<h2 id="crossref-host-access">Crossref Host Access</h2>
+<p>Host access to <code>https://api.crossref.org/*</code> is used to:</p>
+<ul>
+<li>send DOI identifiers when journal title or ISSN metadata is needed</li>
+<li>receive publication metadata needed for classification</li>
+</ul>
+<p>Only DOI strings are sent to Crossref by the extension.</p>
+<h2 id="what-is-not-done">What Is Not Done</h2>
+<ul>
+<li>No browsing-history collection.</li>
+<li>No advertising.</li>
+<li>No user profiling.</li>
+<li>No sale of information.</li>
+<li>No authentication-data collection.</li>
+<li>No remote analytics.</li>
+<li>No broad host permissions.</li>
+<li>No cookies, history, downloads, identity, or tabs permissions.</li>
+</ul>
+<h2 id="related-pages">Related Pages</h2>
+<ul>
+<li><a href="/DZJC/PRIVACY_POLICY_PUBLIC.html">Privacy policy</a></li>
+<li><a href="/DZJC/SUPPORT.html">Support</a></li>
+<li><a href="/DZJC/faq/">FAQ</a></li>
+</ul>
+
         </div>
-    </div>
-
-    
-
-    <div class="post-content">
-        
-    </div>
-
-    
-    
-</div>
+    </article>
+</main>
 
         </div><div id="footer" class="mb-5">
     <hr>

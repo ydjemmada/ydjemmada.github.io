@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">DZ Journal Check logo</title>
+  <desc id="desc">A white academic journal with three classification levels and a red verification mark on an Algerian green background.</desc>
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="#006B3F"/>
+  <path d="M158 92h154c24 0 44 20 44 44v240c0 24-20 44-44 44H158c-24 0-44-20-44-44V136c0-24 20-44 44-44z" fill="#FFFFFF"/>
+  <path d="M312 92v72c0 13 11 24 24 24h20" fill="#DCEBE4"/>
+  <rect x="160" y="174" width="136" height="34" rx="17" fill="#006B3F"/>
+  <rect x="160" y="238" width="104" height="34" rx="17" fill="#006B3F" opacity="0.84"/>
+  <rect x="160" y="302" width="72" height="34" rx="17" fill="#006B3F" opacity="0.68"/>
+  <path d="M292 342l40 40 88-112" fill="none" stroke="#D21034" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M292 342l40 40 88-112" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+</svg>
