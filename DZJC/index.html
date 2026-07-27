@@ -148,8 +148,8 @@
     <p class="dzjc-kicker">DZJC</p>
     <h1 id="dzjc-title">DZ Journal Check</h1>
     <p class="dzjc-lead">Check Algerian journal classifications directly on Google Scholar.</p>
-    <p>DZ Journal Check is an independent Chrome extension that displays DGRSDT/MESRS Category A, Category B, Category C, Predatory, Book / Thesis, and Unclassified badges while you review scientific publications.</p>
-    <p class="dzjc-status">Chrome Web Store release coming soon</p>
+    <p>DZ Journal Check is an independent Chrome extension that displays DGRSDT/MESRS Category A, Category B, Category C, Predatory, Conference, Book / Thesis, Preprint / Repository, and Unclassified badges while you review scientific publications.</p>
+    <p class="dzjc-status">Chrome Web Store publication paused for final classification QA</p>
     <div class="dzjc-hero-actions" aria-label="Primary links">
       <a class="dzjc-button-secondary" href="/DZJC/PRIVACY_POLICY_PUBLIC.html">Privacy policy</a>
       <a class="dzjc-button-secondary" href="/DZJC/SUPPORT.html">Support</a>
@@ -168,8 +168,9 @@
     <div class="dzjc-card"><h3>Scholar badges</h3><p>Displays compact classification badges on Google Scholar search results when a reliable venue match is found.</p></div>
     <div class="dzjc-card"><h3>Categories A, B, and C</h3><p>Matches journal titles, ISSNs, and E-ISSNs against the bundled local DGRSDT/MESRS database.</p></div>
     <div class="dzjc-card"><h3>Predatory records</h3><p>Identifies records from the bundled predatory source data when the match is reliable.</p></div>
-    <div class="dzjc-card"><h3>Unclassified by design</h3><p>Marks unclear venues, arXiv-only items, repository copies, and unsupported results as Unclassified instead of forcing weak matches.</p></div>
+    <div class="dzjc-card"><h3>Conservative by design</h3><p>Separates conferences, books, theses, preprints, repositories, unclear venues, and unsupported results instead of forcing weak journal matches.</p></div>
     <div class="dzjc-card"><h3>Books and theses</h3><p>Distinguishes books, theses, monographs, and other non-journal items from journal publications.</p></div>
+    <div class="dzjc-card"><h3>Conference detection</h3><p>Marks conference papers and proceedings separately unless exact journal evidence proves publication in a classified journal.</p></div>
     <div class="dzjc-card"><h3>Manual popup search</h3><p>Searches by journal title, ISSN, E-ISSN, or DOI from the extension popup.</p></div>
     <div class="dzjc-card"><h3>DOI metadata</h3><p>When necessary, DOI strings may be sent to Crossref to retrieve journal title and ISSN metadata.</p></div>
     <div class="dzjc-card"><h3>Author statistics</h3><p>Shows Category A and Category B publication counts on public Google Scholar author profiles.</p></div>
@@ -180,10 +181,11 @@
   <h2 id="how-it-works">How it works</h2>
   <div class="dzjc-steps">
     <div class="dzjc-step">The extension reads visible publication metadata on Google Scholar pages in your browser.</div>
-    <div class="dzjc-step">It compares visible venue titles, ISSNs, E-ISSNs, and result links with the bundled local database.</div>
+    <div class="dzjc-step">It first detects likely publication type, such as journal article, conference, book, thesis, preprint, repository, report, or unknown.</div>
+    <div class="dzjc-step">It compares only trusted venue titles, ISSNs, E-ISSNs, and DOI journal metadata with the bundled local database.</div>
     <div class="dzjc-step">When a DOI is visible and more metadata is needed, only the DOI string may be sent to Crossref.</div>
     <div class="dzjc-step">A classification badge is added to the Scholar result or author profile.</div>
-    <div class="dzjc-step">Ambiguous or unsupported publications remain Unclassified to reduce false positives.</div>
+    <div class="dzjc-step">Ambiguous or unsupported publications remain non-journal or Unclassified to reduce false positives.</div>
   </div>
 </section>
 <section class="dzjc-section" aria-labelledby="legend">
@@ -193,7 +195,9 @@
     <span class="dzjc-badge dzjc-badge-b" role="listitem" aria-label="Category B">Category B</span>
     <span class="dzjc-badge dzjc-badge-c" role="listitem" aria-label="Category C">Category C</span>
     <span class="dzjc-badge dzjc-badge-p" role="listitem" aria-label="Predatory">Predatory</span>
+    <span class="dzjc-badge dzjc-badge-u" role="listitem" aria-label="Conference">Conference</span>
     <span class="dzjc-badge dzjc-badge-book" role="listitem" aria-label="Book or thesis">Book / Thesis</span>
+    <span class="dzjc-badge dzjc-badge-u" role="listitem" aria-label="Preprint or repository">Preprint / Repository</span>
     <span class="dzjc-badge dzjc-badge-u" role="listitem" aria-label="Unclassified">Unclassified</span>
   </div>
 </section>
@@ -205,7 +209,7 @@
     <div class="dzjc-card"><h3>17,318 Category B</h3><p>Category B records in the current bundled database.</p></div>
     <div class="dzjc-card"><h3>1,063 Category C</h3><p>MESRS recensement / Category C records.</p></div>
     <div class="dzjc-card"><h3>2,635 Predatory</h3><p>Predatory journal or publisher records in the bundled source data.</p></div>
-    <div class="dzjc-card"><h3>Version 1.0.1</h3><p>Current extension release candidate package metadata.</p></div>
+    <div class="dzjc-card"><h3>Version 1.0.2</h3><p>Classification audit build. Publication remains paused until final browser QA is complete.</p></div>
   </div>
 </section>
 <section class="dzjc-section" aria-labelledby="privacy">
@@ -220,19 +224,19 @@
   <p>The Scholar screenshots below are browser QA demonstrations produced with the real extension on deterministic Scholar-like pages because live Google Scholar returned automated-access protection in the capture environment. The popup screenshot shows the real extension popup.</p>
   <div class="dzjc-screenshot-grid">
     <figure class="dzjc-screenshot">
-      <img src="/DZJC/assets/screenshots/01-scholar-classification.png" alt="Google Scholar-like results with DZ Journal Check Category A and Category B badges">
+      <img src="/DZJC/assets/screenshots/01-scholar-category-a-b.png" alt="Google Scholar-like results with DZ Journal Check Category A and Category B badges">
       <figcaption>Scholar result badges for Category A and Category B journals.</figcaption>
     </figure>
     <figure class="dzjc-screenshot">
-      <img src="/DZJC/assets/screenshots/02-predatory-unclassified.png" alt="Google Scholar-like results with Category C, Predatory, Book or Thesis, and Unclassified badges">
-      <figcaption>Category C, Predatory, Book / Thesis, arXiv, repository, and Unclassified cases.</figcaption>
+      <img src="/DZJC/assets/screenshots/02-category-c-predatory-unclassified.png" alt="Google Scholar-like results with Category C, Predatory, Book or Thesis, Preprint or Repository, and Unclassified badges">
+      <figcaption>Category C, Predatory, Book / Thesis, Preprint / Repository, and Unclassified cases.</figcaption>
     </figure>
     <figure class="dzjc-screenshot">
       <img src="/DZJC/assets/screenshots/03-doi-resolution.png" alt="Google Scholar-like DOI result resolved to a Category A journal badge">
       <figcaption>DOI-assisted journal detection resolving a PNAS-style result.</figcaption>
     </figure>
     <figure class="dzjc-screenshot">
-      <img src="/DZJC/assets/screenshots/04-author-profile-stats.png" alt="Google Scholar-like author profile with DZ Journal Check Category A and Category B statistics">
+      <img src="/DZJC/assets/screenshots/04-author-profile-statistics.png" alt="Google Scholar-like author profile with DZ Journal Check Category A and Category B statistics">
       <figcaption>Author profile statistics with Category A and Category B counts.</figcaption>
     </figure>
     <figure class="dzjc-screenshot">
@@ -244,8 +248,8 @@
 <section class="dzjc-section" aria-labelledby="install">
   <h2 id="install">Chrome Web Store installation</h2>
   <div class="dzjc-panel dzjc-note">
-    <p><strong>Chrome Web Store release coming soon.</strong></p>
-    <p>No public Chrome Web Store URL has been issued yet. When the listing is approved, the installation link should be inserted in this section and in the store listing materials.</p>
+    <p><strong>Chrome Web Store publication is paused.</strong></p>
+    <p>No public Chrome Web Store URL has been issued yet. The extension is undergoing final classification QA to reduce false journal-category badges on books, conferences, repositories, and ambiguous Scholar records.</p>
   </div>
 </section>
 <section class="dzjc-section" aria-labelledby="limitations">
@@ -254,7 +258,7 @@
     <li>Official DGRSDT/MESRS journal lists can change after the bundled database is generated.</li>
     <li>Google Scholar HTML can change and may affect badge placement.</li>
     <li>Crossref metadata may be incomplete or temporarily unavailable.</li>
-    <li>Ambiguous publications may remain Unclassified to avoid false positives.</li>
+    <li>Ambiguous publications may remain Conference, Book / Thesis, Preprint / Repository, or Unclassified to avoid false positives.</li>
     <li>Profile statistics can be partial if Google Scholar limits or blocks profile page requests.</li>
     <li>Important academic or administrative decisions should be verified against official DGRSDT/MESRS sources.</li>
   </ul>
