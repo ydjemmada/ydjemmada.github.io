@@ -95,23 +95,33 @@ disable_analytics = true
   <p>The Scholar screenshots below are browser QA demonstrations produced with the real extension on deterministic Scholar-like pages because live Google Scholar returned automated-access protection in the capture environment. The popup screenshot shows the real extension popup.</p>
   <div class="dzjc-screenshot-grid">
     <figure class="dzjc-screenshot">
-      <img src="/DZJC/assets/screenshots/01-scholar-category-a-b.png" alt="Google Scholar-like results with DZ Journal Check Category A and Category B badges">
+      <a class="dzjc-screenshot-link" href="/DZJC/assets/screenshots/01-scholar-category-a-b.png" target="_blank" rel="noopener" aria-label="Open Category A and Category B screenshot full size">
+        <img src="/DZJC/assets/screenshots/01-scholar-category-a-b.png" alt="Google Scholar-like results with DZ Journal Check Category A and Category B badges">
+      </a>
       <figcaption>Scholar result badges for Category A and Category B journals.</figcaption>
     </figure>
     <figure class="dzjc-screenshot">
-      <img src="/DZJC/assets/screenshots/02-category-c-predatory-unclassified.png" alt="Google Scholar-like results with Category C, Predatory, Book or Thesis, Preprint or Repository, and Unclassified badges">
+      <a class="dzjc-screenshot-link" href="/DZJC/assets/screenshots/02-category-c-predatory-unclassified.png" target="_blank" rel="noopener" aria-label="Open Category C, Predatory, and Unclassified screenshot full size">
+        <img src="/DZJC/assets/screenshots/02-category-c-predatory-unclassified.png" alt="Google Scholar-like results with Category C, Predatory, Book or Thesis, Preprint or Repository, and Unclassified badges">
+      </a>
       <figcaption>Category C, Predatory, Book / Thesis, Preprint / Repository, and Unclassified cases.</figcaption>
     </figure>
     <figure class="dzjc-screenshot">
-      <img src="/DZJC/assets/screenshots/03-doi-resolution.png" alt="Google Scholar-like DOI result resolved to a Category A journal badge">
+      <a class="dzjc-screenshot-link" href="/DZJC/assets/screenshots/03-doi-resolution.png" target="_blank" rel="noopener" aria-label="Open DOI resolution screenshot full size">
+        <img src="/DZJC/assets/screenshots/03-doi-resolution.png" alt="Google Scholar-like DOI result resolved to a Category A journal badge">
+      </a>
       <figcaption>DOI-assisted journal detection resolving a PNAS-style result.</figcaption>
     </figure>
     <figure class="dzjc-screenshot">
-      <img src="/DZJC/assets/screenshots/04-author-profile-statistics.png" alt="Google Scholar-like author profile with DZ Journal Check Category A and Category B statistics">
+      <a class="dzjc-screenshot-link" href="/DZJC/assets/screenshots/04-author-profile-statistics.png" target="_blank" rel="noopener" aria-label="Open author profile statistics screenshot full size">
+        <img src="/DZJC/assets/screenshots/04-author-profile-statistics.png" alt="Google Scholar-like author profile with DZ Journal Check Category A and Category B statistics">
+      </a>
       <figcaption>Author profile statistics with Category A and Category B counts.</figcaption>
     </figure>
     <figure class="dzjc-screenshot">
-      <img src="/DZJC/assets/screenshots/05-popup-search.png" alt="DZ Journal Check popup showing a Category A result for Physical Review B">
+      <a class="dzjc-screenshot-link" href="/DZJC/assets/screenshots/05-popup-search.png" target="_blank" rel="noopener" aria-label="Open popup search screenshot full size">
+        <img src="/DZJC/assets/screenshots/05-popup-search.png" alt="DZ Journal Check popup showing a Category A result for Physical Review B">
+      </a>
       <figcaption>Popup search by journal title, ISSN, E-ISSN, or DOI.</figcaption>
     </figure>
   </div>

@@ -972,6 +972,16 @@ th {
     background: var(--bg-surface);
 }
 
+.dzjc-screenshot-link {
+    display: block;
+    cursor: zoom-in;
+    box-shadow: none;
+}
+
+.dzjc-screenshot-link:hover {
+    opacity: 0.92;
+}
+
 .dzjc-screenshot img {
     width: 100%;
     height: auto;
