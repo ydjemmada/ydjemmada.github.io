@@ -1,0 +1,22 @@
+<div class="site-header-shell">
+    <nav class="site-header-nav" aria-label="Main navigation">
+        <a class="site-brand" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}" aria-label="Yahia Djemmada home">
+            {{ with .Site.Params.logo }}
+                <img class="site-brand-logo" src="/avatar.png" alt="">
+            {{ end }}
+            <span class="site-brand-text">Yahia Djemmada</span>
+        </a>
+        <div class="site-menu">
+            <a class="site-menu-link" href="/" title="Home">Home</a>
+            {{ with .Site.Menus.main }}
+                {{ range $nav_item := . }}
+                    {{ $href := default $nav_item.URL $nav_item.Params.rawurl }}
+                    <a class="site-menu-link" href="{{ $href }}" title="{{ $nav_item.Name }}">
+                        {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
+                    </a>
+                {{ end }}
+            {{ end }}
+        </div>
+    </nav>
+</div>
+<hr class="site-header-divider">

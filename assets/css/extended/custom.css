@@ -67,6 +67,122 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.site-header-shell {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 0 1.5rem;
+}
+
+.site-header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    min-width: 0;
+}
+
+.site-brand {
+    display: inline-flex;
+    align-items: center;
+    flex: 0 1 auto;
+    min-width: 0;
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.site-brand:hover {
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.site-brand-logo {
+    width: 52px;
+    height: 52px;
+    flex: 0 0 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.75rem;
+}
+
+.site-brand-text {
+    font-size: clamp(1.05rem, 2vw, 1.45rem);
+    font-weight: 700;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.site-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 1 auto;
+    gap: clamp(0.6rem, 1.5vw, 1.15rem);
+    min-width: 0;
+}
+
+.site-menu-link {
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.25;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.site-menu-link:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.site-header-divider {
+    max-width: 1000px;
+    margin: 1rem auto 0;
+}
+
+@media (max-width: 700px) {
+    .site-header-shell {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+
+    .site-header-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .site-menu {
+        justify-content: flex-start;
+        flex: 0 1 auto;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 0.25rem;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 420px) {
+    .site-header-shell {
+        padding: 0 0.875rem;
+    }
+
+    .site-brand-logo {
+        width: 44px;
+        height: 44px;
+        flex-basis: 44px;
+    }
+
+    .site-brand-text {
+        font-size: 1.05rem;
+    }
+
+    .site-menu-link {
+        font-size: 0.86rem;
+    }
+}
+
 h1,
 h2,
 h3,
