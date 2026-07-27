@@ -8,7 +8,9 @@ image = "/DZJC/assets/dzjc-logo-512.png"
 disable_analytics = true
 +++
 
-For support, contact [yahia.djem@gmail.com](mailto:yahia.djem@gmail.com).
+Use the email template below to send a support request directly to [yahia.djem@gmail.com](mailto:yahia.djem@gmail.com).
+
+<p><a class="dzjc-button-secondary" href="mailto:yahia.djem@gmail.com?subject=DZ%20Journal%20Check%20support%20request&amp;body=Hello%20Yahia%2C%0A%0AI%20need%20support%20for%20DZ%20Journal%20Check.%0A%0AProblem%20summary%3A%0A%0AWhat%20I%20expected%3A%0A%0AWhat%20happened%20instead%3A%0A%0AChrome%20version%3A%0ADZ%20Journal%20Check%20version%3A%0AOperating%20system%3A%0A%0APage%20URL%20or%20public%20Google%20Scholar%20result%20URL%3A%0ASearch%20query%3A%0AJournal%20title%3A%0AISSN%20/%20E-ISSN%3A%0ADOI%3A%0A%0AScreenshot%20attached%3A%20yes/no%0A%0AI%20confirm%20that%20I%20did%20not%20include%20passwords%2C%20cookies%2C%20private%20account%20data%2C%20or%20private%20Google%20Scholar%20profile%20information.%0A">Open Support Email Template</a></p>
 
 DZ Journal Check is independent and unofficial. Please do not send passwords, authentication codes, cookies, private Google Scholar account details, or private profile information.
 
@@ -20,7 +22,7 @@ DZ Journal Check is independent and unofficial. Please do not send passwords, au
 - Check whether Google Scholar is showing a journal venue, repository copy, arXiv preprint, book, thesis, or incomplete metadata.
 - Refresh the page once if Google Scholar dynamically loaded results after the extension started.
 
-## What To Include In A Bug Report
+## What The Email Template Includes
 
 - Chrome version.
 - DZ Journal Check extension version.
@@ -36,18 +38,7 @@ DZ Journal Check is independent and unofficial. Please do not send passwords, au
 
 ## Incorrect Classification Reports
 
-For classification corrections, include:
-
-- Journal title.
-- ISSN.
-- E-ISSN.
-- Currently displayed category.
-- Expected category.
-- Official DGRSDT/MESRS evidence or source URL.
-- Screenshot showing the issue.
-- Page URL where the issue occurred, if public.
-
-Use the [classification correction page](/DZJC/report-classification/) for a copyable template.
+For incorrect or missing journal classifications, use the dedicated [classification report email template](/DZJC/report-classification/).
 
 ## Troubleshooting
 
