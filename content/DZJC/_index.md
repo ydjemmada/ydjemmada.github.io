@@ -14,7 +14,7 @@ disable_analytics = true
     <h1 id="dzjc-title">DZ Journal Check</h1>
     <p class="dzjc-lead">Check Algerian journal classifications directly on Google Scholar.</p>
     <p>DZ Journal Check is an independent Chrome extension that displays DGRSDT/MESRS Category A, Category B, Category C, Predatory, Conference, Book / Thesis, Preprint / Repository, and Unclassified badges while you review scientific publications.</p>
-    <p class="dzjc-status">Chrome Web Store publication paused for final classification QA</p>
+    <p class="dzjc-status">Version 1.0.7 submitted to the Chrome Web Store for review</p>
     <div class="dzjc-hero-actions" aria-label="Primary links">
       <a class="dzjc-button-secondary" href="/DZJC/PRIVACY_POLICY_PUBLIC.html">Privacy policy</a>
       <a class="dzjc-button-secondary" href="/DZJC/SUPPORT.html">Support</a>
@@ -78,7 +78,7 @@ disable_analytics = true
     <div class="dzjc-card"><h3>17,318 Category B</h3><p>Category B records in the current bundled database.</p></div>
     <div class="dzjc-card"><h3>1,063 Category C</h3><p>MESRS recensement / Category C records.</p></div>
     <div class="dzjc-card"><h3>2,635 Predatory</h3><p>Predatory journal or publisher records in the bundled source data.</p></div>
-    <div class="dzjc-card"><h3>Version 1.0.2</h3><p>Classification audit build. Publication remains paused until final browser QA is complete.</p></div>
+    <div class="dzjc-card"><h3>Version 1.0.7</h3><p>Submitted release build with final browser QA completed and publication materials prepared.</p></div>
   </div>
 </section>
 
@@ -120,8 +120,8 @@ disable_analytics = true
 <section class="dzjc-section" aria-labelledby="install">
   <h2 id="install">Chrome Web Store installation</h2>
   <div class="dzjc-panel dzjc-note">
-    <p><strong>Chrome Web Store publication is paused.</strong></p>
-    <p>No public Chrome Web Store URL has been issued yet. The extension is undergoing final classification QA to reduce false journal-category badges on books, conferences, repositories, and ambiguous Scholar records.</p>
+    <p><strong>Chrome Web Store submission is in review.</strong></p>
+    <p>No public Chrome Web Store URL has been issued yet. The extension has been submitted as a private release candidate and will be linked here after Chrome Web Store approval.</p>
   </div>
 </section>
 
