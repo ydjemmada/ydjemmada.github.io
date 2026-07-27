@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'YAHIA DJEMMADA'
 theme = 'researcher'
 #theme = 'PaperMod'
-
 enableEmoji = true
 googleAnalytics = 'G-BLPCZY56GF'
 
@@ -43,6 +42,8 @@ googleAnalytics = 'G-BLPCZY56GF'
     name = "DZ Journal Check"
     url = "/DZJC/"
     weight = 5
+    [menu.main.params]
+      rawurl = "/DZJC/"
 
 [markup.goldmark.renderer]
   unsafe = true
