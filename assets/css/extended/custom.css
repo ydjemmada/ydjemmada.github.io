@@ -331,8 +331,17 @@ a:hover {
 }
 
 /* Homepage Hero */
+.home-page {
+    width: min(750px, calc(100% - 2rem));
+    max-width: none;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .hero-minimal {
-    padding: 4rem 0 2rem;
+    padding: 2rem 0 2rem;
     border-bottom: 1px solid var(--border);
     margin-bottom: 3rem;
 }
