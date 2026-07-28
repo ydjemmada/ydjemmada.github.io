@@ -893,6 +893,15 @@ th {
     line-height: 1.2;
 }
 
+.dzjc-store-button,
+.dzjc-store-button:visited,
+.dzjc-store-button:hover,
+.dzjc-store-button:focus,
+.dzjc-store-button .dzjc-store-button-main,
+.dzjc-store-button .dzjc-store-button-sub {
+    color: #ffffff;
+}
+
 .dzjc-wrap[dir="rtl"] .dzjc-store-button {
     align-items: flex-end;
 }
@@ -903,7 +912,6 @@ th {
 
 .dzjc-store-button-sub {
     margin-top: 0.15rem;
-    color: rgba(255, 255, 255, 0.82);
     font-size: 0.82rem;
     font-weight: 700;
 }
