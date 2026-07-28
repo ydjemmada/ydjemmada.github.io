@@ -852,6 +852,11 @@ th {
     margin-top: 1.25rem;
 }
 
+.dzjc-install-cta {
+    display: flex;
+    margin-top: 1.25rem;
+}
+
 .dzjc-button,
 .dzjc-button-secondary {
     display: inline-flex;
@@ -873,6 +878,37 @@ th {
     background: #065f46;
     color: #ffffff;
     text-decoration: none;
+}
+
+.dzjc-store-button {
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: min(100%, 270px);
+    min-height: 64px;
+    padding: 0.75rem 1.2rem;
+    border: 1px solid #065f46;
+    box-shadow: 0 12px 24px rgba(4, 120, 87, 0.22);
+    line-height: 1.2;
+}
+
+.dzjc-wrap[dir="rtl"] .dzjc-store-button {
+    align-items: flex-end;
+}
+
+.dzjc-store-button-main {
+    font-size: 1.08rem;
+}
+
+.dzjc-store-button-sub {
+    margin-top: 0.15rem;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.dzjc-store-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 28px rgba(4, 120, 87, 0.26);
 }
 
 .dzjc-button-secondary {
@@ -1122,6 +1158,11 @@ th {
     .dzjc-language-switcher {
         justify-content: flex-start;
         flex-wrap: wrap;
+    }
+
+    .dzjc-store-button {
+        width: 100%;
+        min-width: 0;
     }
 }
 

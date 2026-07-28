@@ -16,8 +16,13 @@ disable_analytics = true
     <p class="dzjc-lead">Check Algerian journal classifications directly on Google Scholar.</p>
     <p>DZ Journal Check is an independent Chrome extension that displays DGRSDT/MESRS Category A, Category B, Category C, Predatory, Conference, Book / Thesis, Preprint / Repository, and Unclassified badges while you review scientific publications.</p>
     <p class="dzjc-status">Version 1.0.7 is publicly available on the Chrome Web Store.</p>
+    <div class="dzjc-install-cta">
+      <a class="dzjc-button dzjc-store-button" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn" target="_blank" rel="noopener" aria-label="Add DZ Journal Check to Chrome from the Chrome Web Store">
+        <span class="dzjc-store-button-main">Add to Chrome</span>
+        <span class="dzjc-store-button-sub">Chrome Web Store</span>
+      </a>
+    </div>
     <div class="dzjc-hero-actions" aria-label="Primary links">
-      <a class="dzjc-button-secondary" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn">Add DZ Journal Check to Chrome</a>
       <a class="dzjc-button-secondary" href="/DZJC/PRIVACY_POLICY_PUBLIC.html">Privacy policy</a>
       <a class="dzjc-button-secondary" href="/DZJC/SUPPORT.html">Support</a>
       <a class="dzjc-button-secondary" href="/DZJC/faq/">FAQ</a>
@@ -108,7 +113,7 @@ disable_analytics = true
   <h2 id="install-en">Chrome Web Store installation</h2>
   <div class="dzjc-panel dzjc-note">
     <p><strong>Version 1.0.7 is publicly available on the Chrome Web Store.</strong></p>
-    <p><a class="dzjc-button-secondary" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn">Add DZ Journal Check to Chrome</a></p>
+    <p><a class="dzjc-button dzjc-store-button" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn" target="_blank" rel="noopener" aria-label="Add DZ Journal Check to Chrome from the Chrome Web Store"><span class="dzjc-store-button-main">Add to Chrome</span><span class="dzjc-store-button-sub">Chrome Web Store</span></a></p>
   </div>
 </section>
 
@@ -150,8 +155,13 @@ disable_analytics = true
     <p class="dzjc-lead">تحقّق من تصنيف المجلات الجزائرية مباشرةً أثناء تصفح Google Scholar.</p>
     <p>DZ Journal Check إضافة مستقلة لمتصفح Chrome تساعد الباحثين وطلبة الدكتوراه على إظهار تصنيفات DGRSDT/MESRS للمجلات: الصنف أ، الصنف ب، الصنف ج، المجلات المفترسة، المؤتمر، كتاب / أطروحة، نسخة أولية / مستودع، وغير مصنف.</p>
     <p class="dzjc-status">الإصدار <span class="dzjc-ltr">1.0.7</span> متاح الآن للجميع على Chrome Web Store.</p>
+    <div class="dzjc-install-cta">
+      <a class="dzjc-button dzjc-store-button" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn" target="_blank" rel="noopener" aria-label="إضافة DZ Journal Check إلى Chrome من Chrome Web Store">
+        <span class="dzjc-store-button-main">إضافة إلى Chrome</span>
+        <span class="dzjc-store-button-sub">Chrome Web Store</span>
+      </a>
+    </div>
     <div class="dzjc-hero-actions" aria-label="روابط رئيسية">
-      <a class="dzjc-button-secondary" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn">إضافة DZ Journal Check إلى Chrome</a>
       <a class="dzjc-button-secondary" href="/DZJC/PRIVACY_POLICY_PUBLIC.html">سياسة الخصوصية</a>
       <a class="dzjc-button-secondary" href="/DZJC/SUPPORT.html">الدعم</a>
       <a class="dzjc-button-secondary" href="/DZJC/faq/">الأسئلة الشائعة</a>
@@ -242,7 +252,7 @@ disable_analytics = true
   <h2 id="install-ar">التثبيت من Chrome Web Store</h2>
   <div class="dzjc-panel dzjc-note">
     <p><strong>الإصدار <span class="dzjc-ltr">1.0.7</span> متاح الآن للجميع على Chrome Web Store.</strong></p>
-    <p><a class="dzjc-button-secondary" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn">إضافة DZ Journal Check إلى Chrome</a></p>
+    <p><a class="dzjc-button dzjc-store-button" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn" target="_blank" rel="noopener" aria-label="إضافة DZ Journal Check إلى Chrome من Chrome Web Store"><span class="dzjc-store-button-main">إضافة إلى Chrome</span><span class="dzjc-store-button-sub">Chrome Web Store</span></a></p>
   </div>
 </section>
 
