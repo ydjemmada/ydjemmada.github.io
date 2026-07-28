@@ -1,6 +1,6 @@
 +++
 title = "DZ Journal Check"
-description = "DZ Journal Check helps researchers check Algerian DGRSDT/MESRS journal classifications directly on Google Scholar."
+description = "DZ Journal Check is publicly available on the Chrome Web Store and helps researchers check Algerian DGRSDT/MESRS journal classifications directly on Google Scholar."
 url = "/DZJC/"
 type = "dzjc"
 layout = "list"
@@ -8,16 +8,16 @@ image = "/DZJC/assets/dzjc-logo-512.png"
 disable_analytics = true
 +++
 
-<div data-dzjc-lang-panel="en">
+<div data-dzjc-lang-panel="en" hidden>
 <section class="dzjc-hero">
   <div>
     <p class="dzjc-kicker">DZJC</p>
     <h1>DZ Journal Check</h1>
     <p class="dzjc-lead">Check Algerian journal classifications directly on Google Scholar.</p>
     <p>DZ Journal Check is an independent Chrome extension that displays DGRSDT/MESRS Category A, Category B, Category C, Predatory, Conference, Book / Thesis, Preprint / Repository, and Unclassified badges while you review scientific publications.</p>
-    <p class="dzjc-status">Version 1.0.7 submitted to the Chrome Web Store for review</p>
+    <p class="dzjc-status">Version 1.0.7 is publicly available on the Chrome Web Store.</p>
     <div class="dzjc-hero-actions" aria-label="Primary links">
-      <a class="dzjc-button-secondary" href="#install">Chrome Web Store status</a>
+      <a class="dzjc-button-secondary" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn">Add DZ Journal Check to Chrome</a>
       <a class="dzjc-button-secondary" href="/DZJC/PRIVACY_POLICY_PUBLIC.html">Privacy policy</a>
       <a class="dzjc-button-secondary" href="/DZJC/SUPPORT.html">Support</a>
       <a class="dzjc-button-secondary" href="/DZJC/faq/">FAQ</a>
@@ -80,7 +80,7 @@ disable_analytics = true
     <div class="dzjc-card"><h3>17,318 Category B</h3><p>Category B records in the current bundled database.</p></div>
     <div class="dzjc-card"><h3>1,063 Category C</h3><p>MESRS recensement / Category C records.</p></div>
     <div class="dzjc-card"><h3>2,635 Predatory</h3><p>Predatory journal or publisher records in the bundled source data.</p></div>
-    <div class="dzjc-card"><h3>Version 1.0.7</h3><p>Submitted release build with final browser QA completed and publication materials prepared.</p></div>
+    <div class="dzjc-card"><h3>Version 1.0.7</h3><p>Public release available on the Chrome Web Store.</p></div>
   </div>
 </section>
 
@@ -107,8 +107,8 @@ disable_analytics = true
 <section class="dzjc-section" id="install" aria-labelledby="install-en">
   <h2 id="install-en">Chrome Web Store installation</h2>
   <div class="dzjc-panel dzjc-note">
-    <p><strong>Chrome Web Store submission is in review.</strong></p>
-    <p>No public Chrome Web Store URL has been issued yet. The extension has been submitted as a private release candidate and will be linked here after Chrome Web Store approval.</p>
+    <p><strong>Version 1.0.7 is publicly available on the Chrome Web Store.</strong></p>
+    <p><a class="dzjc-button-secondary" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn">Add DZ Journal Check to Chrome</a></p>
   </div>
 </section>
 
@@ -142,16 +142,16 @@ disable_analytics = true
 </section>
 </div>
 
-<div data-dzjc-lang-panel="ar" hidden>
+<div data-dzjc-lang-panel="ar">
 <section class="dzjc-hero">
   <div>
     <p class="dzjc-kicker">DZJC</p>
     <h1>DZ Journal Check</h1>
     <p class="dzjc-lead">تحقّق من تصنيف المجلات الجزائرية مباشرةً أثناء تصفح Google Scholar.</p>
     <p>DZ Journal Check إضافة مستقلة لمتصفح Chrome تساعد الباحثين وطلبة الدكتوراه على إظهار تصنيفات DGRSDT/MESRS للمجلات: الصنف أ، الصنف ب، الصنف ج، المجلات المفترسة، المؤتمر، كتاب / أطروحة، نسخة أولية / مستودع، وغير مصنف.</p>
-    <p class="dzjc-status">الإصدار <span class="dzjc-ltr">1.0.7</span> مُرسل إلى Chrome Web Store للمراجعة</p>
+    <p class="dzjc-status">الإصدار <span class="dzjc-ltr">1.0.7</span> متاح الآن للجميع على Chrome Web Store.</p>
     <div class="dzjc-hero-actions" aria-label="روابط رئيسية">
-      <a class="dzjc-button-secondary" href="#install">حالة Chrome Web Store</a>
+      <a class="dzjc-button-secondary" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn">إضافة DZ Journal Check إلى Chrome</a>
       <a class="dzjc-button-secondary" href="/DZJC/PRIVACY_POLICY_PUBLIC.html">سياسة الخصوصية</a>
       <a class="dzjc-button-secondary" href="/DZJC/SUPPORT.html">الدعم</a>
       <a class="dzjc-button-secondary" href="/DZJC/faq/">الأسئلة الشائعة</a>
@@ -214,7 +214,7 @@ disable_analytics = true
     <div class="dzjc-card"><h3><span class="dzjc-ltr">17,318</span> من الصنف ب</h3><p>عدد سجلات الصنف ب في القاعدة الحالية.</p></div>
     <div class="dzjc-card"><h3><span class="dzjc-ltr">1,063</span> من الصنف ج</h3><p>سجلات recensement / الصنف ج الخاصة بـ MESRS.</p></div>
     <div class="dzjc-card"><h3><span class="dzjc-ltr">2,635</span> سجل مفترس</h3><p>سجلات مجلات أو ناشرين مفترسين ضمن البيانات المدمجة.</p></div>
-    <div class="dzjc-card"><h3>الإصدار <span class="dzjc-ltr">1.0.7</span></h3><p>بنية إصدار مرسلة، مع اكتمال اختبار المتصفح ومواد النشر.</p></div>
+    <div class="dzjc-card"><h3>الإصدار <span class="dzjc-ltr">1.0.7</span></h3><p>إصدار عام متاح على Chrome Web Store.</p></div>
   </div>
 </section>
 
@@ -241,8 +241,8 @@ disable_analytics = true
 <section class="dzjc-section" id="install" aria-labelledby="install-ar">
   <h2 id="install-ar">التثبيت من Chrome Web Store</h2>
   <div class="dzjc-panel dzjc-note">
-    <p><strong>طلب النشر في Chrome Web Store قيد المراجعة.</strong></p>
-    <p>لم يصدر رابط عام على Chrome Web Store بعد. أُرسلت الإضافة كمرشح إصدار خاص، وسيضاف الرابط هنا بعد موافقة Chrome Web Store.</p>
+    <p><strong>الإصدار <span class="dzjc-ltr">1.0.7</span> متاح الآن للجميع على Chrome Web Store.</strong></p>
+    <p><a class="dzjc-button-secondary" href="https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn">إضافة DZ Journal Check إلى Chrome</a></p>
   </div>
 </section>
 

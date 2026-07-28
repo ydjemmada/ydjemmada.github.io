@@ -10,7 +10,7 @@ image = "/DZJC/assets/dzjc-logo-512.png"
 disable_analytics = true
 +++
 
-<div data-dzjc-lang-panel="en">
+<div data-dzjc-lang-panel="en" hidden>
 
 Last updated: 2026-07-26
 
@@ -82,7 +82,7 @@ DZ Journal Check is an independent and unofficial tool. It is not affiliated wit
 
 </div>
 
-<div data-dzjc-lang-panel="ar" hidden>
+<div data-dzjc-lang-panel="ar">
 
 آخر تحديث: <span class="dzjc-ltr">2026-07-26</span>
 

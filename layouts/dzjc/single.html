@@ -1,23 +1,23 @@
 {{ define "main" }}
-<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title" lang="en" dir="ltr" data-dzjc-root data-dzjc-current-language="en">
+<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title" lang="ar" dir="rtl" data-dzjc-root data-dzjc-current-language="ar">
     {{ partial "dzjc-language-switcher.html" . }}
     <nav class="dzjc-breadcrumb" aria-label="Breadcrumb">
         <a href="/DZJC/">DZ Journal Check</a>
         <span aria-hidden="true">/</span>
-        <span data-dzjc-lang-panel="en">{{ .Title }}</span>
-        {{ with .Params.title_ar }}<span data-dzjc-lang-panel="ar" hidden>{{ . }}</span>{{ end }}
+        {{ if .Params.title_ar }}<span data-dzjc-lang-panel="en" hidden>{{ .Title }}</span>{{ else }}<span data-dzjc-lang-panel="en">{{ .Title }}</span>{{ end }}
+        {{ with .Params.title_ar }}<span data-dzjc-lang-panel="ar">{{ . }}</span>{{ end }}
     </nav>
     <article>
         <header class="dzjc-page-header">
             <p class="dzjc-kicker">DZJC</p>
             <h1 id="dzjc-title">
-                <span data-dzjc-lang-panel="en">{{ .Title }}</span>
-                {{ with .Params.title_ar }}<span data-dzjc-lang-panel="ar" hidden>{{ . }}</span>{{ end }}
+                {{ if .Params.title_ar }}<span data-dzjc-lang-panel="en" hidden>{{ .Title }}</span>{{ else }}<span data-dzjc-lang-panel="en">{{ .Title }}</span>{{ end }}
+                {{ with .Params.title_ar }}<span data-dzjc-lang-panel="ar">{{ . }}</span>{{ end }}
             </h1>
             {{ if or .Description .Params.description_ar }}
             <p class="dzjc-lead">
-                {{ with .Description }}<span data-dzjc-lang-panel="en">{{ . }}</span>{{ end }}
-                {{ with .Params.description_ar }}<span data-dzjc-lang-panel="ar" hidden>{{ . }}</span>{{ end }}
+                {{ if .Params.description_ar }}{{ with .Description }}<span data-dzjc-lang-panel="en" hidden>{{ . }}</span>{{ end }}{{ else }}{{ with .Description }}<span data-dzjc-lang-panel="en">{{ . }}</span>{{ end }}{{ end }}
+                {{ with .Params.description_ar }}<span data-dzjc-lang-panel="ar">{{ . }}</span>{{ end }}
             </p>
             {{ end }}
         </header>

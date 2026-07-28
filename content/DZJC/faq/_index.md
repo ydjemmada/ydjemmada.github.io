@@ -10,7 +10,7 @@ image = "/DZJC/assets/dzjc-logo-512.png"
 disable_analytics = true
 +++
 
-<div data-dzjc-lang-panel="en">
+<div data-dzjc-lang-panel="en" hidden>
 
 ## What is DZ Journal Check?
 
@@ -70,7 +70,7 @@ No. Important academic, administrative, or publication decisions should be verif
 
 </div>
 
-<div data-dzjc-lang-panel="ar" hidden>
+<div data-dzjc-lang-panel="ar">
 
 ## ما هي DZ Journal Check؟
 

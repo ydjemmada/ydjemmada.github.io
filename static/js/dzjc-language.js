@@ -5,9 +5,9 @@
   function readPreference() {
     try {
       const value = window.localStorage.getItem(STORAGE_KEY);
-      return SUPPORTED.has(value) ? value : "en";
+      return SUPPORTED.has(value) ? value : "ar";
     } catch (_) {
-      return "en";
+      return "ar";
     }
   }
 
@@ -20,7 +20,7 @@
   }
 
   function applyLanguage(root, language, persist) {
-    const selected = SUPPORTED.has(language) ? language : "en";
+    const selected = SUPPORTED.has(language) ? language : "ar";
     root.lang = selected;
     root.dir = selected === "ar" ? "rtl" : "ltr";
     root.dataset.dzjcCurrentLanguage = selected;

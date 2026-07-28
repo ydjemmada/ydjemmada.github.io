@@ -10,7 +10,7 @@ image = "/DZJC/assets/dzjc-logo-512.png"
 disable_analytics = true
 +++
 
-<div data-dzjc-lang-panel="en">
+<div data-dzjc-lang-panel="en" hidden>
 
 DZ Journal Check requests only the permissions needed for its journal-classification purpose.
 
@@ -63,7 +63,7 @@ Only DOI strings are sent to Crossref by the extension.
 
 </div>
 
-<div data-dzjc-lang-panel="ar" hidden>
+<div data-dzjc-lang-panel="ar">
 
 تطلب DZ Journal Check الصلاحيات الضرورية فقط لغرض تصنيف المجلات.
 

@@ -10,7 +10,7 @@ image = "/DZJC/assets/dzjc-logo-512.png"
 disable_analytics = true
 +++
 
-<div data-dzjc-lang-panel="en">
+<div data-dzjc-lang-panel="en" hidden>
 
 Use the email template below to report an incorrect or missing journal classification directly to [yahia.djem@gmail.com](mailto:yahia.djem@gmail.com).
 
@@ -54,7 +54,7 @@ Reports are reviewed against the bundled database and the official source eviden
 
 </div>
 
-<div data-dzjc-lang-panel="ar" hidden>
+<div data-dzjc-lang-panel="ar">
 
 استعمل قالب البريد أدناه للتبليغ عن تصنيف خاطئ أو ناقص مباشرة إلى [yahia.djem@gmail.com](mailto:yahia.djem@gmail.com).
 

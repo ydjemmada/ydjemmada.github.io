@@ -1,7 +1,21 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  {{ if .IsHome }}
+  {{ if eq .Type "dzjc" }}
+  "@type": "WebPage",
+  "name": "{{ .Title }}",
+  "url": "{{ .Permalink }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "DZ Journal Check",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome",
+    "softwareVersion": "1.0.7",
+    "url": "https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn",
+    "description": "DZ Journal Check is publicly available on the Chrome Web Store and helps researchers check Algerian DGRSDT/MESRS journal classifications on Google Scholar."
+  }
+  {{ else if .IsHome }}
   "@type": "Person",
   "name": "{{ .Site.Params.author }}",
   "url": "{{ .Site.BaseURL }}",

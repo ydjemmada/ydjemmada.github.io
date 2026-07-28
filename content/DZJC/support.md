@@ -10,7 +10,7 @@ image = "/DZJC/assets/dzjc-logo-512.png"
 disable_analytics = true
 +++
 
-<div data-dzjc-lang-panel="en">
+<div data-dzjc-lang-panel="en" hidden>
 
 Use the email template below to send a support request directly to [yahia.djem@gmail.com](mailto:yahia.djem@gmail.com).
 
@@ -71,7 +71,7 @@ DZ Journal Check is an independent and unofficial tool. It is not affiliated wit
 
 </div>
 
-<div data-dzjc-lang-panel="ar" hidden>
+<div data-dzjc-lang-panel="ar">
 
 استعمل قالب البريد أدناه لإرسال طلب دعم مباشرة إلى [yahia.djem@gmail.com](mailto:yahia.djem@gmail.com).
 
