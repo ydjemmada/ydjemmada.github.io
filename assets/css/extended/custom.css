@@ -897,9 +897,21 @@ th {
 .dzjc-store-button:visited,
 .dzjc-store-button:hover,
 .dzjc-store-button:focus,
+.dzjc-store-button:focus-visible,
+.dzjc-store-button:active,
 .dzjc-store-button .dzjc-store-button-main,
-.dzjc-store-button .dzjc-store-button-sub {
-    color: #ffffff;
+.dzjc-store-button .dzjc-store-button-sub,
+.dzjc-store-button:visited .dzjc-store-button-main,
+.dzjc-store-button:visited .dzjc-store-button-sub,
+.dzjc-store-button:hover .dzjc-store-button-main,
+.dzjc-store-button:hover .dzjc-store-button-sub,
+.dzjc-store-button:focus .dzjc-store-button-main,
+.dzjc-store-button:focus .dzjc-store-button-sub,
+.dzjc-store-button:focus-visible .dzjc-store-button-main,
+.dzjc-store-button:focus-visible .dzjc-store-button-sub,
+.dzjc-store-button:active .dzjc-store-button-main,
+.dzjc-store-button:active .dzjc-store-button-sub {
+    color: #ffffff !important;
 }
 
 .dzjc-wrap[dir="rtl"] .dzjc-store-button {
