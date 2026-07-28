@@ -745,6 +745,64 @@ th {
     padding: 2rem 1.5rem 4rem;
 }
 
+.dzjc-wrap[dir="rtl"] {
+    text-align: right;
+    font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+.dzjc-language-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.dzjc-language-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.dzjc-language-button {
+    min-height: 36px;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg-surface);
+    color: var(--text-main);
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.dzjc-language-button[aria-pressed="true"] {
+    border-color: var(--dzjc-green);
+    background: var(--dzjc-green);
+    color: #ffffff;
+}
+
+.dzjc-language-button:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.35);
+    outline-offset: 2px;
+}
+
+.dzjc-wrap[dir="rtl"] .dzjc-language-switcher,
+.dzjc-wrap[dir="rtl"] .dzjc-hero-actions,
+.dzjc-wrap[dir="rtl"] .dzjc-link-row {
+    justify-content: flex-start;
+}
+
+.dzjc-wrap[dir="rtl"] .dzjc-language-label {
+    order: 3;
+}
+
+.dzjc-ltr,
+.dzjc-wrap code,
+.dzjc-wrap pre {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
 .dzjc-wrap h1,
 .dzjc-wrap h2,
 .dzjc-wrap h3 {
@@ -910,6 +968,10 @@ th {
     background: var(--bg-surface);
 }
 
+.dzjc-wrap[dir="rtl"] .dzjc-step {
+    padding: 1rem 3.25rem 1rem 1rem;
+}
+
 .dzjc-step::before {
     counter-increment: dzjc-step;
     content: counter(dzjc-step);
@@ -924,6 +986,11 @@ th {
     background: var(--dzjc-green);
     color: #ffffff;
     font-weight: 800;
+}
+
+.dzjc-wrap[dir="rtl"] .dzjc-step::before {
+    left: auto;
+    right: 1rem;
 }
 
 .dzjc-legend {
@@ -955,8 +1022,17 @@ th {
     border-left: 5px solid var(--dzjc-green);
 }
 
+.dzjc-wrap[dir="rtl"] .dzjc-note {
+    border-left: 1px solid var(--border);
+    border-right: 5px solid var(--dzjc-green);
+}
+
 .dzjc-warning {
     border-left-color: var(--dzjc-red);
+}
+
+.dzjc-wrap[dir="rtl"] .dzjc-warning {
+    border-right-color: var(--dzjc-red);
 }
 
 .dzjc-screenshot-grid {
@@ -1007,6 +1083,10 @@ th {
     color: var(--text-muted);
 }
 
+.dzjc-wrap[dir="rtl"] .dzjc-breadcrumb {
+    direction: rtl;
+}
+
 .dzjc-page-header {
     margin-bottom: 2rem;
 }
@@ -1037,6 +1117,11 @@ th {
 
     .dzjc-wrap {
         padding: 1.25rem 1rem 3rem;
+    }
+
+    .dzjc-language-switcher {
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
 }
 

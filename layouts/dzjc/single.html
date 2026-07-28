@@ -1,19 +1,30 @@
 {{ define "main" }}
-<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title">
+<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title" lang="en" dir="ltr" data-dzjc-root data-dzjc-current-language="en">
+    {{ partial "dzjc-language-switcher.html" . }}
     <nav class="dzjc-breadcrumb" aria-label="Breadcrumb">
         <a href="/DZJC/">DZ Journal Check</a>
         <span aria-hidden="true">/</span>
-        <span>{{ .Title }}</span>
+        <span data-dzjc-lang-panel="en">{{ .Title }}</span>
+        {{ with .Params.title_ar }}<span data-dzjc-lang-panel="ar" hidden>{{ . }}</span>{{ end }}
     </nav>
     <article>
         <header class="dzjc-page-header">
             <p class="dzjc-kicker">DZJC</p>
-            <h1 id="dzjc-title">{{ .Title }}</h1>
-            {{ with .Description }}<p class="dzjc-lead">{{ . }}</p>{{ end }}
+            <h1 id="dzjc-title">
+                <span data-dzjc-lang-panel="en">{{ .Title }}</span>
+                {{ with .Params.title_ar }}<span data-dzjc-lang-panel="ar" hidden>{{ . }}</span>{{ end }}
+            </h1>
+            {{ if or .Description .Params.description_ar }}
+            <p class="dzjc-lead">
+                {{ with .Description }}<span data-dzjc-lang-panel="en">{{ . }}</span>{{ end }}
+                {{ with .Params.description_ar }}<span data-dzjc-lang-panel="ar" hidden>{{ . }}</span>{{ end }}
+            </p>
+            {{ end }}
         </header>
         <div class="dzjc-content">
             {{ .Content }}
         </div>
     </article>
 </main>
+<script src="/js/dzjc-language.js" defer></script>
 {{ end }}

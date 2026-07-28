@@ -1,12 +1,16 @@
 +++
 title = "Permissions"
+title_ar = "الصلاحيات"
 description = "Plain-language explanation of DZ Journal Check Chrome extension permissions."
+description_ar = "شرح مبسط لصلاحيات إضافة DZ Journal Check في Chrome."
 url = "/DZJC/permissions/"
 type = "dzjc"
 layout = "single"
 image = "/DZJC/assets/dzjc-logo-512.png"
 disable_analytics = true
 +++
+
+<div data-dzjc-lang-panel="en">
 
 DZ Journal Check requests only the permissions needed for its journal-classification purpose.
 
@@ -56,3 +60,58 @@ Only DOI strings are sent to Crossref by the extension.
 - [Privacy policy](/DZJC/PRIVACY_POLICY_PUBLIC.html)
 - [Support](/DZJC/SUPPORT.html)
 - [FAQ](/DZJC/faq/)
+
+</div>
+
+<div data-dzjc-lang-panel="ar" hidden>
+
+تطلب DZ Journal Check الصلاحيات الضرورية فقط لغرض تصنيف المجلات.
+
+## التخزين
+
+تُستعمل صلاحية `storage` من أجل:
+
+- قاعدة مجلات DGRSDT/MESRS المدمجة
+- بيانات وصفية عن القاعدة
+- تفضيلات الإضافة عند الحاجة
+- ذاكرات تخزين محلية محدودة
+
+لا تطلب الإضافة صلاحية `unlimitedStorage`.
+
+## الوصول إلى Google Scholar
+
+يُستعمل الوصول إلى `https://scholar.google.com/*` من أجل:
+
+- قراءة بيانات المنشورات الظاهرة على صفحات Google Scholar
+- تحديد عناوين المجلات و ISSN و DOI وروابط النتائج
+- عرض شارات التصنيف
+- حساب إحصاءات الصنف أ والصنف ب في ملفات المؤلفين العامة
+- جلب نسخ Scholar أو صفحات ملفات عامة من نفس المصدر عند الحاجة للتصنيف
+
+## الوصول إلى Crossref
+
+يُستعمل الوصول إلى `https://api.crossref.org/*` من أجل:
+
+- إرسال DOI عندما تكون بيانات عنوان المجلة أو ISSN ضرورية
+- استقبال بيانات النشر اللازمة للتصنيف
+
+لا ترسل الإضافة إلى Crossref إلا DOI.
+
+## ما الذي لا تفعله الإضافة
+
+- لا تجمع سجل التصفح.
+- لا تعرض إعلانات.
+- لا تنشئ ملفات تعريف للمستخدمين.
+- لا تبيع المعلومات.
+- لا تجمع بيانات المصادقة.
+- لا تستعمل تحليلات عن بُعد.
+- لا تطلب صلاحيات واسعة للمواقع.
+- لا تطلب صلاحيات الكوكيز أو السجل أو التنزيلات أو الهوية أو التبويبات.
+
+## صفحات ذات صلة
+
+- [سياسة الخصوصية](/DZJC/PRIVACY_POLICY_PUBLIC.html)
+- [الدعم](/DZJC/SUPPORT.html)
+- [الأسئلة الشائعة](/DZJC/faq/)
+
+</div>
