@@ -93,7 +93,7 @@
 
     
     
-    <link rel="stylesheet" href="/css/extended/custom.min.c4868e2b5ec940c638c4117b2e0b1be77b34cffbd16809270d693ca1231dd1cb.css">
+    <link rel="stylesheet" href="/css/extended/custom.min.cceb9b59f7373e87262b11e5a90d99b3a60c50ccd0d49bb25aefbe9e5c31e460.css">
     
     <script type="application/ld+json">
 {
@@ -233,73 +233,39 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 <div id="content">
-<div class="container pi-search-page">
+<div class="container pi-search-page minimal">
 
   
   <header class="pi-search-header" aria-labelledby="pi-search-title">
     <div class="pi-search-symbol" aria-hidden="true">π</div>
-    <h1 id="pi-search-title">Search Your Number in π</h1>
+    <h1 id="pi-search-title">Find Your Number in π</h1>
     <p class="pi-search-subtitle">
-      Find the first occurrence of a number, date, or digit sequence within the first
-      <strong>1,000,000 decimal digits</strong> of π.
+      Enter a number, birthday, or favourite sequence and discover where it appears in π.
     </p>
-    <div class="pi-search-limit-badge" role="note" aria-label="Search limit">
-      Searching within the first <strong>1,000,000</strong> decimal digits of π
-    </div>
   </header>
-
-  
-  <section class="pi-search-explanation" aria-label="How it works">
-    <p>
-      Enter a sequence of digits to find its first occurrence within the stored digits of π.
-      Finding a sequence here does not prove anything special about π, but it is a fun way
-      to explore its decimal expansion.
-    </p>
-    <p class="pi-search-note">
-      <strong>Position 1</strong> refers to the first digit after the decimal point —
-      the <strong>1</strong> in 3.<strong>1</strong>4159…
-      This tool searches only a finite stored portion of π.
-      A sequence not found here may appear later in the expansion.
-    </p>
-  </section>
 
   
   <section class="pi-search-form-section" aria-label="Search form">
     <form id="pi-search-form" class="pi-search-form" novalidate autocomplete="off">
       <div class="pi-search-input-group">
-        <label for="pi-search-input" class="pi-search-label">
-          Digit sequence
-          <span class="pi-search-label-hint">(digits only, 2–50 characters)</span>
-        </label>
         <div class="pi-search-input-wrap">
           <input
             type="text"
             id="pi-search-input"
             name="q"
-            class="pi-search-input"
+            class="pi-search-input minimal-input"
             inputmode="numeric"
-            placeholder="Enter a number, date, or digit sequence"
+            placeholder="Try your birthday or favourite number"
             maxlength="55"
-            aria-describedby="pi-search-error pi-search-input-hint"
+            aria-describedby="pi-search-error"
             autocomplete="off"
             spellcheck="false"
           >
-          <span class="pi-search-input-icon" aria-hidden="true">π</span>
         </div>
-        <p id="pi-search-input-hint" class="pi-search-hint">
-          Try: <button type="button" class="pi-search-example" data-value="2718">2718</button>,
-          <button type="button" class="pi-search-example" data-value="01012000">01012000</button>,
-          <button type="button" class="pi-search-example" data-value="2026">2026</button>,
-          <button type="button" class="pi-search-example" data-value="123456">123456</button>,
-          <button type="button" class="pi-search-example" data-value="9999">9999</button>
-        </p>
         <p id="pi-search-error" class="pi-search-error" role="alert" aria-live="assertive" hidden></p>
       </div>
-      <button type="submit" id="pi-search-btn" class="pi-search-btn">
+      <button type="submit" id="pi-search-btn" class="pi-search-btn minimal-btn">
         <span class="pi-search-btn-text">Search in π</span>
-        <span class="pi-search-btn-spinner" aria-hidden="true" hidden>
-          <span class="pi-search-spinner"></span>
-        </span>
       </button>
     </form>
   </section>
@@ -308,24 +274,14 @@ document.addEventListener('DOMContentLoaded', function() {
   <div id="pi-search-live" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 
   
-  <div id="pi-search-loading" class="pi-search-loading" hidden aria-label="Loading π data">
-    <div class="pi-search-spinner" aria-hidden="true"></div>
-    <p>Loading π data… this only happens once.</p>
-  </div>
-
-  
-  <section id="pi-search-results" class="pi-search-results" hidden aria-label="Search results">
+  <section id="pi-search-results" class="pi-search-results minimal-results" hidden aria-label="Search results">
     
   </section>
 
   
-  <footer class="pi-search-privacy" role="contentinfo">
+  <footer class="pi-search-transparency" role="contentinfo">
     <p>
-      🔒 Searches are performed locally in your browser and are not sent to a server.
-    </p>
-    <p class="pi-search-source">
-      π digits source: <a href="https://api.pi.delivery/v1/pi" rel="noopener noreferrer" target="_blank">pi.delivery</a>
-      (public domain). Verified against the known decimal expansion of π.
+      Real matches are verified within the first 1,000,000 digits. When no match is found there, the tool creates a playful simulated result.
     </p>
   </footer>
 
@@ -333,7 +289,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <script>
-  
   window.__PI_DATA_URL__ = '\/data\/pi-1000000.txt';
 </script>
 <script src="/js/pi-search.js" defer></script>

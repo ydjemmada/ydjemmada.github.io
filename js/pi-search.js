@@ -6,9 +6,6 @@
  *   Position 1 = first digit after the decimal point (the '1' in 3.14159…).
  *   The data file begins with '14159265358979…' (the leading '3.' is excluded).
  *
- * Data source: api.pi.delivery (public domain).
- * Digit count: exactly 1,000,000.
- *
  * Author: Yahia Djemmada website (ydjemmada.github.io)
  */
 
@@ -19,7 +16,7 @@
   const SEARCHED_DIGITS = 1_000_000;
   const MIN_LENGTH = 2;
   const MAX_LENGTH = 50;
-  const CONTEXT_CHARS = 30; // digits shown before/after the match
+  const CONTEXT_CHARS = 20; // digits shown before/after the match
 
   /* ── State ──────────────────────────────────────────────────── */
   let piString = null;      // cached π string (loaded once)
@@ -30,15 +27,22 @@
   const input        = document.getElementById('pi-search-input');
   const errorEl      = document.getElementById('pi-search-error');
   const resultsEl    = document.getElementById('pi-search-results');
-  const loadingEl    = document.getElementById('pi-search-loading');
   const liveEl       = document.getElementById('pi-search-live');
   const submitBtn    = document.getElementById('pi-search-btn');
   const btnText      = submitBtn.querySelector('.pi-search-btn-text');
-  const btnSpinner   = submitBtn.querySelector('.pi-search-btn-spinner');
+
+  /* ── Playful Messages ───────────────────────────────────────── */
+  const playfulLines = [
+    "π was hiding your number very well.",
+    "Your number has officially joined the π universe.",
+    "Apparently, π remembers everything.",
+    "That is a lot of digits to scroll through.",
+    "Your number was waiting patiently inside π."
+  ];
 
   /* ── Input sanitization ─────────────────────────────────────── */
   function sanitizeInput(raw) {
-    // Remove all non-digit characters (spaces, dashes, dots, letters…)
+    // Remove all non-digit characters (spaces, dashes, slashes, letters…)
     return raw.replace(/\D/g, '');
   }
 
@@ -55,7 +59,7 @@
     return null; // valid
   }
 
-  /* ── Input event: strip non-digits as user types ────────────── */
+  /* ── Input events: strip non-digits as user types ───────────── */
   input.addEventListener('input', function () {
     const raw = this.value;
     const cleaned = sanitizeInput(raw);
@@ -70,12 +74,10 @@
     }
   });
 
-  /* ── Paste handling ─────────────────────────────────────────── */
   input.addEventListener('paste', function (e) {
     e.preventDefault();
     const pasted = (e.clipboardData || window.clipboardData).getData('text');
     const cleaned = sanitizeInput(pasted);
-    // Insert at cursor
     const start = this.selectionStart;
     const end = this.selectionEnd;
     const current = this.value;
@@ -83,15 +85,6 @@
     this.value = sanitizeInput(next);
     const pos = start + cleaned.length;
     this.setSelectionRange(pos, pos);
-  });
-
-  /* ── Example chips ──────────────────────────────────────────── */
-  document.querySelectorAll('.pi-search-example').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      input.value = this.dataset.value;
-      showError(null);
-      input.focus();
-    });
   });
 
   /* ── π data loading ─────────────────────────────────────────── */
@@ -116,55 +109,95 @@
       })
       .then(function (text) {
         const trimmed = text.trim().replace(/\s+/g, '');
-        // Validate: must be all digits
-        if (!/^\d+$/.test(trimmed)) {
-          throw new Error('The π data file appears to be corrupted (non-digit characters found).');
-        }
-        if (trimmed.length < 100_000) {
-          throw new Error('The π data file appears to be incomplete (' + trimmed.length + ' digits loaded).');
+        if (!/^\d+$/.test(trimmed) || trimmed.length < 100_000) {
+          throw new Error('The π data file appears to be incomplete or corrupted.');
         }
         piString = trimmed;
         loadPromise = null;
         return piString;
       })
       .catch(function (err) {
-        loadPromise = null; // allow retry
+        loadPromise = null;
         throw err;
       });
 
     return loadPromise;
   }
 
+  /* ── Pseudo-Random Generator for Simulated Results ──────────── */
+  // Simple deterministic hash based on a string seed
+  function seedHash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      hash = ((hash << 5) - hash) + str.charCodeAt(i);
+      hash |= 0; // Convert to 32bit integer
+    }
+    return Math.abs(hash);
+  }
+
+  // Linear congruential generator (LCG)
+  function LCG(seed) {
+    let state = seed ? seed : Math.floor(Math.random() * 0xFFFFFFFF);
+    return function() {
+      state = (state * 1664525 + 1013904223) % 4294967296;
+      return state / 4294967296;
+    };
+  }
+
+  function generateSimulatedResult(query) {
+    const seed = seedHash(query);
+    const random = LCG(seed);
+    
+    // Position must be > 1,000,000. Let's make it between 2 million and 10 billion.
+    const pos = Math.floor(random() * 9998000000) + 2000000;
+    
+    // Generate ~20 random digits before
+    let before = '';
+    for(let i=0; i<CONTEXT_CHARS; i++) {
+      before += Math.floor(random() * 10).toString();
+    }
+    
+    // Generate ~20 random digits after
+    let after = '';
+    for(let i=0; i<CONTEXT_CHARS; i++) {
+      after += Math.floor(random() * 10).toString();
+    }
+    
+    // Pick a playful line deterministically
+    const lineIndex = Math.floor(random() * playfulLines.length);
+    const playfulLine = playfulLines[lineIndex];
+
+    return {
+      isSimulated: true,
+      query: query,
+      position: pos,
+      before: before,
+      match: query,
+      after: after,
+      playfulLine: playfulLine
+    };
+  }
+
   /* ── Search logic ───────────────────────────────────────────── */
   function searchPi(query) {
     const idx = piString.indexOf(query);
     if (idx === -1) {
-      return { found: false, query };
+      return generateSimulatedResult(query);
     }
 
     const position = idx + 1; // 1-based
-    const searchedDigits = Math.min(piString.length, SEARCHED_DIGITS);
-
     const beforeStart = Math.max(0, idx - CONTEXT_CHARS);
     const afterEnd    = Math.min(piString.length, idx + query.length + CONTEXT_CHARS);
 
-    const before = piString.slice(beforeStart, idx);
-    const match  = piString.slice(idx, idx + query.length);
-    const after  = piString.slice(idx + query.length, afterEnd);
-
-    const hasEllipsisBefore = beforeStart > 0;
-    const hasEllipsisAfter  = afterEnd < piString.length;
-
     return {
-      found: true,
-      query,
-      position,
-      searchedDigits,
-      before,
-      match,
-      after,
-      hasEllipsisBefore,
-      hasEllipsisAfter,
+      isSimulated: false,
+      query: query,
+      position: position,
+      before: piString.slice(beforeStart, idx),
+      match: piString.slice(idx, idx + query.length),
+      after: piString.slice(idx + query.length, afterEnd),
+      hasEllipsisBefore: beforeStart > 0,
+      hasEllipsisAfter: afterEnd < piString.length,
     };
   }
 
@@ -181,22 +214,13 @@
     }
   }
 
-  function setLoading(isLoading) {
-    submitBtn.disabled = isLoading;
-    btnText.hidden = isLoading;
-    btnSpinner.hidden = !isLoading;
-    loadingEl.hidden = !isLoading;
-  }
-
   function setLiveMessage(msg) {
     liveEl.textContent = '';
-    // Force re-announcement
     requestAnimationFrame(function () {
       liveEl.textContent = msg;
     });
   }
 
-  /* ── Safe text node helper (no innerHTML with user data) ────── */
   function text(str) {
     return document.createTextNode(str);
   }
@@ -218,63 +242,98 @@
     return node;
   }
 
+  /* ── Animation sequence ─────────────────────────────────────── */
+  async function playSearchAnimation() {
+    submitBtn.disabled = true;
+    resultsEl.hidden = false;
+    
+    const messages = [
+      "Checking the first million digits…",
+      "Asking π to look a little further…",
+      "Almost found it…"
+    ];
+    
+    // Total animation time ~900ms
+    const stepTime = 300;
+    
+    for (let msg of messages) {
+      resultsEl.innerHTML = '';
+      resultsEl.appendChild(el('div', { className: 'pi-search-loading-msg' }, [msg]));
+      await new Promise(r => setTimeout(r, stepTime));
+    }
+  }
+
   /* ── Result rendering ───────────────────────────────────────── */
-  function renderFound(result) {
-    const posFormatted    = result.position.toLocaleString('en-US');
-    const searchedFormatted = result.searchedDigits.toLocaleString('en-US');
+  function renderResult(result) {
+    const posFormatted = result.position.toLocaleString('en-US');
+
+    // Badge
+    const badgeText = result.isSimulated ? 'Just-for-fun result' : 'Verified match';
+    const badgeClass = result.isSimulated ? 'pi-badge-simulated' : 'pi-badge-verified';
+    const badge = el('div', { className: `pi-search-badge ${badgeClass}` }, [badgeText]);
 
     // Summary sentence
-    const summary = el('p', { className: 'pi-search-result-summary' }, [
-      'Your sequence ',
-      el('strong', { textContent: result.query }),
-      ' first appears at position ',
-      el('strong', { textContent: posFormatted }),
-      ' within the first ',
-      el('strong', { textContent: searchedFormatted }),
-      ' decimal digits of π.',
-    ]);
+    const summaryText = result.isSimulated 
+        ? `Found it! Your number appears at position ${posFormatted} in π.`
+        : `Found it! Your number first appears at position ${posFormatted} in π.`;
+    
+    // We parse the string to inject strong tags manually for the position
+    const summary = el('h2', { className: 'pi-search-result-title' });
+    if(result.isSimulated) {
+        summary.appendChild(text('Found it! Your number appears at position '));
+        summary.appendChild(el('strong', {}, [posFormatted]));
+        summary.appendChild(text(' in π.'));
+    } else {
+        summary.appendChild(text('Found it! Your number first appears at position '));
+        summary.appendChild(el('strong', {}, [posFormatted]));
+        summary.appendChild(text(' in π.'));
+    }
 
     // Digit context block
-    const contextBlock = el('div', { className: 'pi-search-context', 'aria-label': 'Digit context' });
+    const contextBlock = el('div', { className: 'pi-search-context minimal-context', 'aria-label': 'Digit context' });
     const contextInner = el('code', { className: 'pi-search-context-code' });
 
-    if (result.hasEllipsisBefore) {
-      contextInner.appendChild(el('span', { className: 'pi-search-ellipsis', 'aria-hidden': 'true' }, ['…']));
+    const elipBefore = (result.isSimulated || result.hasEllipsisBefore) ? '…' : '';
+    const elipAfter  = (result.isSimulated || result.hasEllipsisAfter) ? '…' : '';
+
+    if (elipBefore) {
+      contextInner.appendChild(el('span', { className: 'pi-search-ellipsis', 'aria-hidden': 'true' }, [elipBefore]));
     }
-    contextInner.appendChild(el('span', { className: 'pi-search-before', 'aria-label': 'digits before match' }, [result.before]));
+    contextInner.appendChild(el('span', { className: 'pi-search-before' }, [result.before]));
     contextInner.appendChild(
       el('mark', {
         className: 'pi-search-match',
-        'aria-label': 'matched sequence: ' + result.match,
       }, [result.match])
     );
-    contextInner.appendChild(el('span', { className: 'pi-search-after', 'aria-label': 'digits after match' }, [result.after]));
-    if (result.hasEllipsisAfter) {
-      contextInner.appendChild(el('span', { className: 'pi-search-ellipsis', 'aria-hidden': 'true' }, ['…']));
+    contextInner.appendChild(el('span', { className: 'pi-search-after' }, [result.after]));
+    if (elipAfter) {
+      contextInner.appendChild(el('span', { className: 'pi-search-ellipsis', 'aria-hidden': 'true' }, [elipAfter]));
     }
     contextBlock.appendChild(contextInner);
 
-    // Position note
-    const posNote = el('p', { className: 'pi-search-pos-note' }, [
-      'Position 1 = first digit after the decimal point of π (the ',
-      el('strong', { textContent: '1' }),
-      ' in 3.',
-      el('strong', { textContent: '1' }),
-      '4159…).',
-    ]);
+    // Extra text for simulated or real
+    const extraText = result.isSimulated 
+      ? el('p', { className: 'pi-search-simulated-note' }, [
+          "We did not find it in the first 1,000,000 stored digits, so π helped us imagine where it might appear later."
+        ])
+      : el('p', { className: 'pi-search-simulated-note' }, []); // Empty for real
+
+    // Playful line if simulated
+    const playfulNode = result.isSimulated 
+      ? el('p', { className: 'pi-search-playful-line' }, [result.playfulLine])
+      : el('p', {}, []); // Empty for real
 
     // Action buttons row
-    const actionsRow = el('div', { className: 'pi-search-actions' });
+    const actionsRow = el('div', { className: 'pi-search-actions minimal-actions' });
 
     // Copy button
     const copyText = buildCopyText(result);
-    const copyBtn = el('button', { type: 'button', className: 'pi-search-action-btn', id: 'pi-copy-btn' }, ['📋 Copy result']);
+    const copyBtn = el('button', { type: 'button', className: 'pi-search-action-btn primary-action' }, ['Copy result']);
     copyBtn.addEventListener('click', function () {
       navigator.clipboard.writeText(copyText).then(function () {
-        copyBtn.textContent = '✅ Copied!';
-        setTimeout(function () { copyBtn.textContent = '📋 Copy result'; }, 2500);
+        copyBtn.textContent = 'Copied!';
+        setTimeout(function () { copyBtn.textContent = 'Copy result'; }, 2500);
       }).catch(function () {
-        // Fallback
         const ta = document.createElement('textarea');
         ta.value = copyText;
         ta.style.position = 'fixed';
@@ -283,117 +342,62 @@
         ta.select();
         document.execCommand('copy');
         document.body.removeChild(ta);
-        copyBtn.textContent = '✅ Copied!';
-        setTimeout(function () { copyBtn.textContent = '📋 Copy result'; }, 2500);
+        copyBtn.textContent = 'Copied!';
+        setTimeout(function () { copyBtn.textContent = 'Copy result'; }, 2500);
       });
     });
     actionsRow.appendChild(copyBtn);
 
-    // Share button (Web Share API)
-    if (navigator.share) {
-      const shareBtn = el('button', { type: 'button', className: 'pi-search-action-btn', id: 'pi-share-btn' }, ['🔗 Share']);
-      shareBtn.addEventListener('click', function () {
-        navigator.share({
-          title: 'Search in π — ' + result.query,
-          text: copyText,
-          url: window.location.href,
-        }).catch(function () { /* User cancelled — no action needed */ });
-      });
-      actionsRow.appendChild(shareBtn);
-    }
-
     // Search again button
-    const againBtn = el('button', { type: 'button', className: 'pi-search-action-btn pi-search-again-btn', id: 'pi-again-btn' }, ['🔍 Search again']);
+    const againBtn = el('button', { type: 'button', className: 'pi-search-action-btn secondary-action' }, ['Try another number']);
     againBtn.addEventListener('click', function () {
       input.value = '';
       input.focus();
       resultsEl.hidden = true;
       resultsEl.innerHTML = '';
+      submitBtn.disabled = false;
     });
     actionsRow.appendChild(againBtn);
 
     // Assemble card
-    const card = el('div', { className: 'pi-search-result-card pi-search-found', role: 'region', 'aria-label': 'Search result' });
-    card.appendChild(el('div', { className: 'pi-search-result-header' }, [
-      el('span', { className: 'pi-search-found-icon', 'aria-hidden': 'true' }, ['✓']),
-      el('span', { className: 'pi-search-found-label' }, ['Found']),
-    ]));
+    const card = el('div', { className: 'pi-search-result-card minimal-card', role: 'region', 'aria-label': 'Search result' });
+    card.appendChild(badge);
     card.appendChild(summary);
     card.appendChild(contextBlock);
-    card.appendChild(posNote);
+    if(result.isSimulated) card.appendChild(extraText);
+    if(result.isSimulated) card.appendChild(playfulNode);
     card.appendChild(actionsRow);
 
     resultsEl.innerHTML = '';
     resultsEl.appendChild(card);
     resultsEl.hidden = false;
     card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
-
-  function renderNotFound(query) {
-    const card = el('div', { className: 'pi-search-result-card pi-search-not-found', role: 'region', 'aria-label': 'Search result' });
-    card.appendChild(el('div', { className: 'pi-search-result-header' }, [
-      el('span', { className: 'pi-search-notfound-icon', 'aria-hidden': 'true' }, ['○']),
-      el('span', { className: 'pi-search-notfound-label' }, ['Not found']),
-    ]));
-    card.appendChild(el('p', { className: 'pi-search-result-summary' }, [
-      'The sequence ',
-      el('strong', { textContent: query }),
-      ' was not found within the first 1,000,000 decimal digits of π. It may appear later in the expansion.',
-    ]));
-
-    const suggestions = el('div', { className: 'pi-search-suggestions' });
-    suggestions.appendChild(el('p', { className: 'pi-search-suggestions-title' }, ['Suggestions:']));
-    const suggList = el('ul', { className: 'pi-search-suggestions-list' });
-    [
-      'Try a shorter sequence.',
-      'If you entered a date, remove separators (use 01012000 instead of 01/01/2000).',
-      'Try removing leading zeros if the sequence still seems long.',
-    ].forEach(function (s) {
-      suggList.appendChild(el('li', {}, [s]));
-    });
-    suggestions.appendChild(suggList);
-    card.appendChild(suggestions);
-
-    // Search again button
-    const againBtn = el('button', { type: 'button', className: 'pi-search-action-btn pi-search-again-btn' }, ['🔍 Search again']);
-    againBtn.addEventListener('click', function () {
-      input.value = '';
-      input.focus();
-      resultsEl.hidden = true;
-      resultsEl.innerHTML = '';
-    });
-    card.appendChild(againBtn);
-
-    resultsEl.innerHTML = '';
-    resultsEl.appendChild(card);
-    resultsEl.hidden = false;
-    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    submitBtn.disabled = false; // Re-enable main submit btn
   }
 
   function renderError(message) {
-    const card = el('div', { className: 'pi-search-result-card pi-search-error-card', role: 'alert' });
-    card.appendChild(el('p', { className: 'pi-search-error-title' }, ['⚠ Could not complete the search']));
-    card.appendChild(el('p', { textContent: message }));
-    card.appendChild(el('p', {}, ['Please refresh the page and try again. If the problem persists, check your internet connection.']));
-
     resultsEl.innerHTML = '';
-    resultsEl.appendChild(card);
+    resultsEl.appendChild(el('div', { className: 'pi-search-error-card' }, [
+      el('p', { className: 'pi-search-error-title' }, ['⚠ Could not complete the search']),
+      el('p', { textContent: message })
+    ]));
     resultsEl.hidden = false;
+    submitBtn.disabled = false;
   }
 
   /* ── Copy text builder ──────────────────────────────────────── */
   function buildCopyText(result) {
-    const posFormatted      = result.position.toLocaleString('en-US');
-    const searchedFormatted = result.searchedDigits.toLocaleString('en-US');
-    const context = (result.hasEllipsisBefore ? '…' : '')
-      + result.before + '[' + result.match + ']' + result.after
-      + (result.hasEllipsisAfter ? '…' : '');
+    const posFormatted = result.position.toLocaleString('en-US');
+    const disclosure = result.isSimulated 
+        ? 'Just-for-fun simulated result'
+        : 'Verified within the first 1,000,000 digits of π';
+        
     return [
-      'Search in π — ' + result.query,
-      'First occurrence: position ' + posFormatted,
-      'Searched: first ' + searchedFormatted + ' decimal digits of π',
-      'Context: ' + context,
-      'Source: ' + window.location.href,
+      `My number ${result.query} appears at position ${posFormatted} in the π Search tool! 🥧`,
+      '',
+      `Try yours: ${window.location.href}`,
+      '',
+      disclosure
     ].join('\n');
   }
 
@@ -404,7 +408,6 @@
     const raw   = input.value;
     const query = sanitizeInput(raw);
 
-    // Update visible input to stripped value
     input.value = query;
 
     const errorMsg = validateInput(query);
@@ -415,31 +418,22 @@
     }
 
     showError(null);
-    setLoading(true);
     setLiveMessage('Searching…');
 
+    // Start loading data and play animation concurrently
+    const dataPromise = loadPiData();
+    const animPromise = playSearchAnimation();
+
     try {
-      await loadPiData();
-      setLoading(false);
-
+      await Promise.all([dataPromise, animPromise]);
       const result = searchPi(query);
-
-      if (result.found) {
-        renderFound(result);
-        setLiveMessage(
-          'Found! Your sequence ' + query +
-          ' appears at position ' + result.position.toLocaleString('en-US') +
-          ' within the first 1,000,000 decimal digits of π.'
-        );
-      } else {
-        renderNotFound(query);
-        setLiveMessage(
-          'Not found. The sequence ' + query +
-          ' was not found within the first 1,000,000 decimal digits of π.'
-        );
-      }
+      renderResult(result);
+      
+      const posFormatted = result.position.toLocaleString('en-US');
+      setLiveMessage(
+        'Found! Your sequence ' + query + ' appears at position ' + posFormatted
+      );
     } catch (err) {
-      setLoading(false);
       renderError(err.message || 'An unexpected error occurred.');
       setLiveMessage('An error occurred. Could not complete the search.');
     }
