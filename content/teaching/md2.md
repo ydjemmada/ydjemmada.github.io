@@ -15,7 +15,7 @@ title = "Discrete Mathematics 2"
     </div>
     <div class="resource-item">
         <div class="resource-info">
-            <span class="resource-title">Chapter 2: Stirling numbers</span>
+            <span class="resource-title">Chapter 2: Stirling Numbers and Related Sequences</span>
         </div>
         <a href="../lectures/MD2_Ch2.pdf" class="download-btn">Download PDF</a>
     </div>
@@ -27,7 +27,7 @@ title = "Discrete Mathematics 2"
     </div>
     <div class="resource-item">
         <div class="resource-info">
-            <span class="resource-title">Chapter 4: Integer partitions</span>
+            <span class="resource-title">Chapter 4: Integer Partitions</span>
         </div>
         <a href="../lectures/MD2_Ch4.pdf" class="download-btn">Download PDF</a>
     </div>

@@ -14,6 +14,13 @@ title = "Teaching"
         </div>
         <a href="/teaching/md1/" class="download-btn">View Materials &rarr;</a>
     </div>
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Discrete Mathematics 2</span>
+            <span class="resource-desc">Course materials for 1st Year students</span>
+        </div>
+        <a href="/teaching/md2/" class="download-btn">View Materials &rarr;</a>
+    </div>
 </div>
 
 ## 2nd Year

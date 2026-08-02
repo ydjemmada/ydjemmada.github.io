@@ -44,6 +44,11 @@ googleAnalytics = 'G-BLPCZY56GF'
     weight = 5
     [menu.main.params]
       rawurl = "/DZJC/"
+  [[menu.main]]
+    identifier = "pi-search"
+    name = "π Search"
+    url = "/tools/pi-search/"
+    weight = 6
 
 [markup.goldmark.renderer]
   unsafe = true
