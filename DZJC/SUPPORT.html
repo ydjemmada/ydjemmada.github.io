@@ -77,109 +77,165 @@
 
     
     
-    <link rel="stylesheet" href="/css/extended/custom.min.8ee8e1e4f4025d4c296a4dde4300923c827e338e79c1caf5676e51304a0b820a.css">
+    <link rel="stylesheet" href="/css/extended/custom.min.c4868e2b5ec940c638c4117b2e0b1be77b34cffbd16809270d693ca1231dd1cb.css">
     
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   
-  "@type": "Article",
-  "headline": "Support",
-  "image": [
-    "https:\/\/ydjemmada.github.io\/DZJC\/assets\/dzjc-logo-512.png"
-   ],
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "author": {
-    "@type": "Person",
-    "name": ""
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https:\/\/ydjemmada.github.io\/DZJC\/SUPPORT.html"
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https:\/\/ydjemmada.github.io\/logo.png"
-    }
-  },
-  "description": "Support and troubleshooting for DZ Journal Check."
+  "@type": "WebPage",
+  "name": "Support",
+  "url": "https:\/\/ydjemmada.github.io\/DZJC\/SUPPORT.html",
+  "description": "Support and troubleshooting for DZ Journal Check.",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "DZ Journal Check",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome",
+    "softwareVersion": "1.0.7",
+    "url": "https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn",
+    "description": "DZ Journal Check is publicly available on the Chrome Web Store and helps researchers check Algerian DGRSDT/MESRS journal classifications on Google Scholar."
+  }
   
 }
 </script>
+
 </head>
 
-    <body><div class="container mt-5">
-    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
-        <a class="navbar-brand mx-0 mr-sm-auto" href="https://ydjemmada.github.io/" title="YAHIA DJEMMADA">
-          
-          YAHIA DJEMMADA
+    <body><div class="site-header-shell">
+    <nav class="site-header-nav" aria-label="Main navigation">
+        <a class="site-brand" href="https://ydjemmada.github.io/" title="YAHIA DJEMMADA" aria-label="Yahia Djemmada home">
+            
+            <span class="site-brand-text">Yahia Djemmada</span>
         </a>
-        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+        <div class="site-menu">
+            <a class="site-menu-link" href="/" title="Home">Home</a>
             
                 
-                
                     
-                    <a class="nav-item nav-link" href="/publications" title="Research">
-                        Research
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
+                        
+                        <a class="site-menu-link" href="/publications" title="Research">
+                            Research
+                        </a>
                     
                 
                     
-                    <a class="nav-item nav-link" href="/teaching" title="Teaching">
-                        Teaching
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
-                    
-                
-                    
-                    <a class="nav-item nav-link" href="/cv" title="CV">
-                        CV
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
+                        
+                        <a class="site-menu-link" href="/teaching" title="Teaching">
+                            Teaching
+                        </a>
                     
                 
                     
-                    <a class="nav-item nav-link" href="/contact" title="Contact">
-                        Contact
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
+                        
+                        <a class="site-menu-link" href="/cv" title="CV">
+                            CV
+                        </a>
                     
                 
                     
-                    <a class="nav-item nav-link" href="/DZJC/" title="DZ Journal Check">
-                        DZ Journal Check
-                    </a>
+                        
+                        <a class="site-menu-link" href="/contact" title="Contact">
+                            Contact
+                        </a>
+                    
+                
+                    
+                        
+                        <a class="site-menu-link" href="/DZJC/" title="DZ Journal Check">
+                            DZ Journal Check
+                        </a>
+                    
+                
+                    
+                        <div class="site-menu-dropdown">
+                            <button class="site-menu-link site-menu-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                                Fun <span class="dropdown-caret">▼</span>
+                            </button>
+                            <div class="site-menu-dropdown-menu" role="menu">
+                                
+                                    
+                                    <a class="site-menu-dropdown-item" href="/tools/pi-search/" title="π Search" role="menuitem">
+                                        π Search
+                                    </a>
+                                
+                            </div>
+                        </div>
                     
                 
             
         </div>
     </nav>
 </div>
-<hr>
+<hr class="site-header-divider">
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.site-menu-dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.site-menu-dropdown-toggle');
+        
+        
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const isOpen = dropdown.classList.contains('is-open');
+            
+            
+            dropdowns.forEach(d => {
+                d.classList.remove('is-open');
+                d.querySelector('.site-menu-dropdown-toggle').setAttribute('aria-expanded', 'false');
+            });
+            
+            if (!isOpen) {
+                dropdown.classList.add('is-open');
+                toggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+    
+    
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.site-menu-dropdown')) {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('is-open');
+                dropdown.querySelector('.site-menu-dropdown-toggle').setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+});
+</script>
 <div id="content">
-<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title">
+<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title" lang="ar" dir="rtl" data-dzjc-root data-dzjc-current-language="ar">
+    <div class="dzjc-language-switcher" aria-label="DZ Journal Check language">
+    <span class="dzjc-language-label">اللغة / Language</span>
+    <button type="button" class="dzjc-language-button" data-dzjc-language="ar" aria-pressed="true">العربية</button>
+    <button type="button" class="dzjc-language-button" data-dzjc-language="en" aria-pressed="false">English</button>
+</div>
+
     <nav class="dzjc-breadcrumb" aria-label="Breadcrumb">
         <a href="/DZJC/">DZ Journal Check</a>
         <span aria-hidden="true">/</span>
-        <span>Support</span>
+        <span data-dzjc-lang-panel="en" hidden>Support</span>
+        <span data-dzjc-lang-panel="ar">الدعم</span>
     </nav>
     <article>
         <header class="dzjc-page-header">
             <p class="dzjc-kicker">DZJC</p>
-            <h1 id="dzjc-title">Support</h1>
-            <p class="dzjc-lead">Support and troubleshooting for DZ Journal Check.</p>
+            <h1 id="dzjc-title">
+                <span data-dzjc-lang-panel="en" hidden>Support</span>
+                <span data-dzjc-lang-panel="ar">الدعم</span>
+            </h1>
+            
+            <p class="dzjc-lead">
+                <span data-dzjc-lang-panel="en" hidden>Support and troubleshooting for DZ Journal Check.</span>
+                <span data-dzjc-lang-panel="ar">الدعم وحل المشاكل الخاصة بـ DZ Journal Check.</span>
+            </p>
+            
         </header>
         <div class="dzjc-content">
-            <p>Use the email template below to send a support request directly to <a href="mailto:yahia.djem@gmail.com">yahia.djem@gmail.com</a>.</p>
+            <div data-dzjc-lang-panel="en" hidden>
+<p>Use the email template below to send a support request directly to <a href="mailto:yahia.djem@gmail.com">yahia.djem@gmail.com</a>.</p>
 <p><a class="dzjc-button-secondary" href="mailto:yahia.djem@gmail.com?subject=DZ%20Journal%20Check%20support%20request&amp;body=Hello%20Yahia%2C%0A%0AI%20need%20support%20for%20DZ%20Journal%20Check.%0A%0AProblem%20summary%3A%0A%0AWhat%20I%20expected%3A%0A%0AWhat%20happened%20instead%3A%0A%0AChrome%20version%3A%0ADZ%20Journal%20Check%20version%3A%0AOperating%20system%3A%0A%0APage%20URL%20or%20public%20Google%20Scholar%20result%20URL%3A%0ASearch%20query%3A%0AJournal%20title%3A%0AISSN%20/%20E-ISSN%3A%0ADOI%3A%0A%0AScreenshot%20attached%3A%20yes/no%0A%0AI%20confirm%20that%20I%20did%20not%20include%20passwords%2C%20cookies%2C%20private%20account%20data%2C%20or%20private%20Google%20Scholar%20profile%20information.%0A">Open Support Email Template</a></p>
 <p>DZ Journal Check is independent and unofficial. Please do not send passwords, authentication codes, cookies, private Google Scholar account details, or private profile information.</p>
 <h2 id="before-reporting-a-problem">Before Reporting A Problem</h2>
@@ -221,11 +277,58 @@
 <li><a href="/DZJC/report-classification/">Report a classification issue</a></li>
 </ul>
 <h2 id="independent-disclaimer">Independent Disclaimer</h2>
-<p>DZ Journal Check is an independent tool using publicly available Algerian DGRSDT/MESRS journal-classification data. It is not affiliated with or endorsed by DGRSDT, MESRS, Google Scholar, Crossref, or any Algerian government institution.</p>
+<p>DZ Journal Check is an independent and unofficial tool. It is not affiliated with or endorsed by DGRSDT, MESRS, Google Scholar, Crossref, Google, or any Algerian government institution.</p>
+</div>
+<div data-dzjc-lang-panel="ar">
+<p>استعمل قالب البريد أدناه لإرسال طلب دعم مباشرة إلى <a href="mailto:yahia.djem@gmail.com">yahia.djem@gmail.com</a>.</p>
+<p><a class="dzjc-button-secondary" href="mailto:yahia.djem@gmail.com?subject=DZ%20Journal%20Check%20support%20request&amp;body=Hello%20Yahia%2C%0A%0AI%20need%20support%20for%20DZ%20Journal%20Check.%0A%0AProblem%20summary%3A%0A%0AWhat%20I%20expected%3A%0A%0AWhat%20happened%20instead%3A%0A%0AChrome%20version%3A%0ADZ%20Journal%20Check%20version%3A%0AOperating%20system%3A%0A%0APage%20URL%20or%20public%20Google%20Scholar%20result%20URL%3A%0ASearch%20query%3A%0AJournal%20title%3A%0AISSN%20/%20E-ISSN%3A%0ADOI%3A%0A%0AScreenshot%20attached%3A%20yes/no%0A%0AI%20confirm%20that%20I%20did%20not%20include%20passwords%2C%20cookies%2C%20private%20account%20data%2C%20or%20private%20Google%20Scholar%20profile%20information.%0A">فتح قالب بريد الدعم</a></p>
+<p>DZ Journal Check أداة مستقلة وغير رسمية. يرجى عدم إرسال كلمات مرور أو رموز مصادقة أو كوكيز أو تفاصيل حساب Google Scholar خاصة أو معلومات ملفات خاصة.</p>
+<h2 id="قبل-التبليغ-عن-مشكلة">قبل التبليغ عن مشكلة</h2>
+<ul>
+<li>تأكد من أن DZ Journal Check مفعلة في Chrome.</li>
+<li>تأكد من استعمال أحدث إصدار من الإضافة.</li>
+<li>جرّب البحث بـ ISSN أو E-ISSN أو DOI عندما يكون تطابق العنوان غير واضح.</li>
+<li>تحقق هل يعرض Google Scholar مجلة، أو نسخة مستودع، أو arXiv، أو كتاباً، أو أطروحة، أو بيانات ناقصة.</li>
+<li>حدّث الصفحة مرة واحدة إذا حمّل Google Scholar النتائج بعد تشغيل الإضافة.</li>
+</ul>
+<h2 id="ماذا-يتضمن-قالب-البريد">ماذا يتضمن قالب البريد؟</h2>
+<ul>
+<li>إصدار Chrome.</li>
+<li>إصدار إضافة DZ Journal Check.</li>
+<li>نظام التشغيل.</li>
+<li>رابط الصفحة التي ظهرت فيها المشكلة إذا لم يكشف بيانات خاصة.</li>
+<li>عبارة البحث أو رابط النتيجة العمومية.</li>
+<li>عنوان المجلة.</li>
+<li>ISSN الورقي.</li>
+<li>E-ISSN.</li>
+<li>DOI إذا توفر.</li>
+<li>لقطة شاشة مع إخفاء المعلومات الشخصية.</li>
+<li>النتيجة المتوقعة والنتيجة الفعلية.</li>
+</ul>
+<h2 id="بلاغات-التصنيف-غير-الصحيح">بلاغات التصنيف غير الصحيح</h2>
+<p>للتصنيفات الخاطئة أو الناقصة، استعمل <a href="/DZJC/report-classification/">قالب بريد التبليغ عن التصنيف</a>.</p>
+<h2 id="حل-المشاكل">حل المشاكل</h2>
+<h3 id="لا-تظهر-الشارة">لا تظهر الشارة</h3>
+<p>قد لا يعرض Google Scholar بيانات مجلة كافية، أو قد تكون النتيجة نسخة مستودع أو نسخة أولية أو كتاباً أو أطروحة أو منشوراً غامضاً. في هذه الحالات قد تعرض DZ Journal Check غير مصنف أو لا تعرض صنف مجلة.</p>
+<h3 id="لا-يعمل-حل-doi">لا يعمل حل DOI</h3>
+<p>قد تكون بيانات Crossref ناقصة أو غير متاحة مؤقتاً أو محجوبة بسبب الشبكة. جرّب عنوان المجلة أو ISSN في نافذة الإضافة.</p>
+<h3 id="إحصاءات-المؤلف-جزئية">إحصاءات المؤلف جزئية</h3>
+<p>قد يحد Google Scholar من طلبات ملفات المؤلفين أو يحجبها. عندما لا تستطيع الإضافة جلب كل الصفحات بأمان، قد تظهر الإحصاءات جزئية.</p>
+<h2 id="روابط-مفيدة">روابط مفيدة</h2>
+<ul>
+<li><a href="/DZJC/faq/">الأسئلة الشائعة</a></li>
+<li><a href="/DZJC/PRIVACY_POLICY_PUBLIC.html">سياسة الخصوصية</a></li>
+<li><a href="/DZJC/permissions/">الصلاحيات</a></li>
+<li><a href="/DZJC/report-classification/">التبليغ عن مشكلة تصنيف</a></li>
+</ul>
+<h2 id="تنبيه-الاستقلالية">تنبيه الاستقلالية</h2>
+<p>DZ Journal Check أداة مستقلة وغير رسمية، ولا تتبع ولا تحظى بتأييد DGRSDT أو MESRS أو Google Scholar أو Crossref أو Google أو أي مؤسسة حكومية جزائرية.</p>
+</div>
 
         </div>
     </article>
 </main>
+<script src="/js/dzjc-language.js" defer></script>
 
         </div><div id="footer" class="mb-5">
     <hr>

@@ -79,93 +79,170 @@
 
     
     
-    <link rel="stylesheet" href="/css/extended/custom.min.8ee8e1e4f4025d4c296a4dde4300923c827e338e79c1caf5676e51304a0b820a.css">
+    <link rel="stylesheet" href="/css/extended/custom.min.c4868e2b5ec940c638c4117b2e0b1be77b34cffbd16809270d693ca1231dd1cb.css">
     
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   
-  "@type": "WebSite",
-  "name": "YAHIA DJEMMADA",
-  "url": "https:\/\/ydjemmada.github.io\/"
+  "@type": "WebPage",
+  "name": "DZ Journal Check FAQ",
+  "url": "https:\/\/ydjemmada.github.io\/DZJC\/faq\/",
+  "description": "Frequently asked questions about DZ Journal Check.",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "DZ Journal Check",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome",
+    "softwareVersion": "1.0.7",
+    "url": "https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn",
+    "description": "DZ Journal Check is publicly available on the Chrome Web Store and helps researchers check Algerian DGRSDT/MESRS journal classifications on Google Scholar."
+  }
   
 }
 </script>
+
 </head>
 
-    <body><div class="container mt-5">
-    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
-        <a class="navbar-brand mx-0 mr-sm-auto" href="https://ydjemmada.github.io/" title="YAHIA DJEMMADA">
-          
-          YAHIA DJEMMADA
+    <body><div class="site-header-shell">
+    <nav class="site-header-nav" aria-label="Main navigation">
+        <a class="site-brand" href="https://ydjemmada.github.io/" title="YAHIA DJEMMADA" aria-label="Yahia Djemmada home">
+            
+            <span class="site-brand-text">Yahia Djemmada</span>
         </a>
-        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+        <div class="site-menu">
+            <a class="site-menu-link" href="/" title="Home">Home</a>
             
                 
-                
                     
-                    <a class="nav-item nav-link" href="/publications" title="Research">
-                        Research
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
+                        
+                        <a class="site-menu-link" href="/publications" title="Research">
+                            Research
+                        </a>
                     
                 
                     
-                    <a class="nav-item nav-link" href="/teaching" title="Teaching">
-                        Teaching
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
-                    
-                
-                    
-                    <a class="nav-item nav-link" href="/cv" title="CV">
-                        CV
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
+                        
+                        <a class="site-menu-link" href="/teaching" title="Teaching">
+                            Teaching
+                        </a>
                     
                 
                     
-                    <a class="nav-item nav-link" href="/contact" title="Contact">
-                        Contact
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
+                        
+                        <a class="site-menu-link" href="/cv" title="CV">
+                            CV
+                        </a>
                     
                 
                     
-                    <a class="nav-item nav-link" href="/DZJC/" title="DZ Journal Check">
-                        DZ Journal Check
-                    </a>
+                        
+                        <a class="site-menu-link" href="/contact" title="Contact">
+                            Contact
+                        </a>
+                    
+                
+                    
+                        
+                        <a class="site-menu-link" href="/DZJC/" title="DZ Journal Check">
+                            DZ Journal Check
+                        </a>
+                    
+                
+                    
+                        <div class="site-menu-dropdown">
+                            <button class="site-menu-link site-menu-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                                Fun <span class="dropdown-caret">▼</span>
+                            </button>
+                            <div class="site-menu-dropdown-menu" role="menu">
+                                
+                                    
+                                    <a class="site-menu-dropdown-item" href="/tools/pi-search/" title="π Search" role="menuitem">
+                                        π Search
+                                    </a>
+                                
+                            </div>
+                        </div>
                     
                 
             
         </div>
     </nav>
 </div>
-<hr>
+<hr class="site-header-divider">
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.site-menu-dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.site-menu-dropdown-toggle');
+        
+        
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const isOpen = dropdown.classList.contains('is-open');
+            
+            
+            dropdowns.forEach(d => {
+                d.classList.remove('is-open');
+                d.querySelector('.site-menu-dropdown-toggle').setAttribute('aria-expanded', 'false');
+            });
+            
+            if (!isOpen) {
+                dropdown.classList.add('is-open');
+                toggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+    
+    
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.site-menu-dropdown')) {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('is-open');
+                dropdown.querySelector('.site-menu-dropdown-toggle').setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+});
+</script>
 <div id="content">
-<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title">
+<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title" lang="ar" dir="rtl" data-dzjc-root data-dzjc-current-language="ar">
+    <div class="dzjc-language-switcher" aria-label="DZ Journal Check language">
+    <span class="dzjc-language-label">اللغة / Language</span>
+    <button type="button" class="dzjc-language-button" data-dzjc-language="ar" aria-pressed="true">العربية</button>
+    <button type="button" class="dzjc-language-button" data-dzjc-language="en" aria-pressed="false">English</button>
+</div>
+
     <nav class="dzjc-breadcrumb" aria-label="Breadcrumb">
         <a href="/DZJC/">DZ Journal Check</a>
         <span aria-hidden="true">/</span>
-        <span>DZ Journal Check FAQ</span>
+        <span data-dzjc-lang-panel="en" hidden>DZ Journal Check FAQ</span>
+        <span data-dzjc-lang-panel="ar">الأسئلة الشائعة حول DZ Journal Check</span>
     </nav>
     <article>
         <header class="dzjc-page-header">
             <p class="dzjc-kicker">DZJC</p>
-            <h1 id="dzjc-title">DZ Journal Check FAQ</h1>
-            <p class="dzjc-lead">Frequently asked questions about DZ Journal Check.</p>
+            <h1 id="dzjc-title">
+                <span data-dzjc-lang-panel="en" hidden>DZ Journal Check FAQ</span>
+                <span data-dzjc-lang-panel="ar">الأسئلة الشائعة حول DZ Journal Check</span>
+            </h1>
+            
+            <p class="dzjc-lead">
+                <span data-dzjc-lang-panel="en" hidden>Frequently asked questions about DZ Journal Check.</span>
+                <span data-dzjc-lang-panel="ar">أسئلة شائعة حول DZ Journal Check وطريقة استعمالها.</span>
+            </p>
+            
         </header>
         <div class="dzjc-content">
-            <h2 id="what-is-dz-journal-check">What is DZ Journal Check?</h2>
+            <div data-dzjc-lang-panel="en" hidden>
+<h2 id="what-is-dz-journal-check">What is DZ Journal Check?</h2>
 <p>DZ Journal Check is a Chrome extension that helps researchers check Algerian DGRSDT/MESRS journal classifications while using Google Scholar.</p>
 <h2 id="is-it-official">Is it official?</h2>
-<p>No. It is independent and is not affiliated with or endorsed by DGRSDT, MESRS, Google Scholar, Crossref, or any Algerian government institution.</p>
+<p>No. It is independent and is not affiliated with or endorsed by DGRSDT, MESRS, Google Scholar, Crossref, Google, or any Algerian government institution.</p>
 <h2 id="which-classifications-are-supported">Which classifications are supported?</h2>
-<p>The extension supports Category A, Category B, Category C, Predatory, Book / Thesis, and Unclassified labels.</p>
+<p>The extension supports Category A, Category B, Category C, Predatory, Conference, Book / Thesis, Preprint / Repository, and Unclassified labels.</p>
 <h2 id="where-does-the-database-come-from">Where does the database come from?</h2>
 <p>The bundled database is generated from publicly available DGRSDT/MESRS source pages and predatory source data. The current database version is 2026.07.25 and contains 34,516 records.</p>
 <h2 id="why-is-a-paper-marked-unclassified">Why is a paper marked Unclassified?</h2>
@@ -186,14 +263,44 @@
 <p>The database is bundled with the extension package. Updates require a new extension release after the source data is refreshed and verified.</p>
 <h2 id="does-it-work-without-an-internet-connection">Does it work without an internet connection?</h2>
 <p>Title, ISSN, and E-ISSN searches against the bundled database can work locally after the database is loaded. DOI resolution through Crossref and live Google Scholar page access require network access.</p>
-<h2 id="does-it-support-english-french-and-arabic">Does it support English, French, and Arabic?</h2>
-<p>The listing materials are prepared for English, French, and Arabic. The extension matching logic normalizes Latin and Arabic text where applicable, but Google Scholar page behavior can still vary by language and result format.</p>
 <h2 id="can-it-replace-official-verification">Can it replace official verification?</h2>
 <p>No. Important academic, administrative, or publication decisions should be verified against official DGRSDT/MESRS sources.</p>
+</div>
+<div data-dzjc-lang-panel="ar">
+<h2 id="ما-هي-dz-journal-check">ما هي DZ Journal Check؟</h2>
+<p>DZ Journal Check إضافة لمتصفح Chrome تساعد الباحثين على التحقق من تصنيفات DGRSDT/MESRS الجزائرية أثناء استعمال Google Scholar.</p>
+<h2 id="هل-هي-أداة-رسمية">هل هي أداة رسمية؟</h2>
+<p>لا. هي أداة مستقلة وغير رسمية، ولا تتبع ولا تحظى بتأييد DGRSDT أو MESRS أو Google Scholar أو Crossref أو Google أو أي مؤسسة حكومية جزائرية.</p>
+<h2 id="ما-التصنيفات-المدعومة">ما التصنيفات المدعومة؟</h2>
+<p>تدعم الإضافة: الصنف أ، الصنف ب، الصنف ج، مجلة مفترسة، مؤتمر، كتاب / أطروحة، نسخة أولية / مستودع، وغير مصنف.</p>
+<h2 id="من-أين-تأتي-قاعدة-البيانات">من أين تأتي قاعدة البيانات؟</h2>
+<p>تُولد القاعدة المدمجة من صفحات DGRSDT/MESRS العمومية ومن بيانات السجلات المفترسة. الإصدار الحالي هو <span class="dzjc-ltr">2026.07.25</span> ويحتوي على <span class="dzjc-ltr">34,516</span> سجلاً.</p>
+<h2 id="لماذا-تظهر-ورقة-على-أنها-غير-مصنفة">لماذا تظهر ورقة على أنها غير مصنفة؟</h2>
+<p>قد تكون نتيجة Google Scholar الظاهرة نسخة في مستودع، أو نسخة أولية، أو كتاباً، أو جهة نشر غامضة، أو نتيجة لا تعرض بيانات مجلة كافية. تتجنب DZ Journal Check التطابقات الضعيفة حتى لا تظهر تصنيفات خاطئة.</p>
+<h2 id="لماذا-قد-تبقى-ورقة-arxiv-غير-مصنفة">لماذا قد تبقى ورقة arXiv غير مصنفة؟</h2>
+<p>نتيجة arXiv فقط غالباً هي نسخة أولية وليست منشوراً في مجلة مصنفة. إذا لم يظهر أو يُسترجع دليل موثوق على المجلة، تتركها الإضافة غير مصنفة.</p>
+<h2 id="كيف-يساعد-doi">كيف يساعد DOI؟</h2>
+<p>قد يشير DOI إلى بيانات Crossref التي تحتوي على عنوان المجلة و ISSN. هذا يساعد على التعرف على المجلة عندما تكون بيانات Google Scholar الظاهرة ناقصة.</p>
+<h2 id="ماذا-يرسل-إلى-crossref">ماذا يُرسل إلى Crossref؟</h2>
+<p>قد يُرسل DOI فقط إلى Crossref عند الحاجة إلى بياناته. لا ترسل الإضافة سجل التصفح أو عناوين المقالات أو أسماء المؤلفين أو كلمات البحث أو محتوى الصفحة أو الكوكيز أو بيانات الحساب.</p>
+<h2 id="هل-تجمع-الإضافة-سجل-التصفح">هل تجمع الإضافة سجل التصفح؟</h2>
+<p>لا. تعمل الإضافة على صفحات Google Scholar ولا تجمع أو ترسل سجل التصفح.</p>
+<h2 id="لماذا-قد-تكون-إحصاءات-المؤلف-جزئية">لماذا قد تكون إحصاءات المؤلف جزئية؟</h2>
+<p>قد يحد Google Scholar من طلبات صفحات الملفات أو يحجبها. إذا لم تستطع الإضافة جلب كل الصفحات بشكل آمن، قد تظهر الإحصاءات على أنها جزئية.</p>
+<h2 id="كيف-أبلغ-عن-تصنيف-غير-صحيح">كيف أبلغ عن تصنيف غير صحيح؟</h2>
+<p>استعمل <a href="/DZJC/report-classification/">صفحة تصحيح التصنيف</a> وأرفق دليلاً رسمياً من DGRSDT/MESRS متى أمكن.</p>
+<h2 id="كم-مرة-تحدث-قاعدة-البيانات">كم مرة تُحدّث قاعدة البيانات؟</h2>
+<p>قاعدة البيانات مدمجة مع حزمة الإضافة. أي تحديث يتطلب إصداراً جديداً بعد تحديث المصادر والتحقق منها.</p>
+<h2 id="هل-تعمل-دون-اتصال">هل تعمل دون اتصال؟</h2>
+<p>البحث بالعنوان أو ISSN أو E-ISSN في القاعدة المدمجة يمكن أن يعمل محلياً بعد تحميل القاعدة. أما حل DOI عبر Crossref والوصول الحي إلى صفحات Google Scholar فيحتاجان إلى اتصال.</p>
+<h2 id="هل-تغني-عن-التحقق-الرسمي">هل تغني عن التحقق الرسمي؟</h2>
+<p>لا. القرارات الأكاديمية أو الإدارية أو قرارات النشر المهمة يجب التحقق منها في مصادر DGRSDT/MESRS الرسمية.</p>
+</div>
 
         </div>
     </article>
 </main>
+<script src="/js/dzjc-language.js" defer></script>
 
         </div><div id="footer" class="mb-5">
     <hr>

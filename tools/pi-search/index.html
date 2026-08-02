@@ -14,26 +14,26 @@
         connect-src 'self' https://www.google-analytics.com;
     ">
 
-    <title>Contact | YAHIA DJEMMADA</title>
-    <meta name="description" content="">
+    <title>Search Your Number in π | YAHIA DJEMMADA</title>
+    <meta name="description" content="Find the first occurrence of a number, date, or digit sequence within the first 1,000,000 decimal digits of π.">
     <meta name="author" content=''>
 
     
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ydjemmada.github.io/contact/">
-    <meta property="og:title" content="Contact">
+    <meta property="og:url" content="https://ydjemmada.github.io/tools/pi-search/">
+    <meta property="og:title" content="Search Your Number in π">
     <meta property="og:description"
-        content="">
+        content="Find the first occurrence of a number, date, or digit sequence within the first 1,000,000 decimal digits of π.">
     
     <meta property="og:image" content="https://ydjemmada.github.io/%20logo.png">
     
 
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ydjemmada.github.io/contact/">
-    <meta property="twitter:title" content="Contact">
+    <meta property="twitter:url" content="https://ydjemmada.github.io/tools/pi-search/">
+    <meta property="twitter:title" content="Search Your Number in π">
     <meta property="twitter:description"
-        content="">
+        content="Find the first occurrence of a number, date, or digit sequence within the first 1,000,000 decimal digits of π.">
     
     <meta property="twitter:image" content="https://ydjemmada.github.io/%20logo.png">
     
@@ -100,7 +100,7 @@
   "@context": "https://schema.org",
   
   "@type": "Article",
-  "headline": "Contact",
+  "headline": "Search Your Number in π",
   "image": [
     "https:\/\/ydjemmada.github.io\/logo.png"
    ],
@@ -112,7 +112,7 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https:\/\/ydjemmada.github.io\/contact\/"
+    "@id": "https:\/\/ydjemmada.github.io\/tools\/pi-search\/"
   },
   "publisher": {
     "@type": "Person",
@@ -122,7 +122,7 @@
       "url": "https:\/\/ydjemmada.github.io\/logo.png"
     }
   },
-  "description": "\u003ch2 id=\u0022contact\u0022\u003eContact\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003eEmail : \u003ca href=\u0022mailto:yahia.djemmada@nhsm.edu.dz\u0022\u003eyahia.djemmada@nhsm.edu.dz\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022mailing-address\u0022\u003eMailing Address\u003c\/h2\u003e\n\u003cblockquote\u003e\n\u003cp\u003eNational Higher School of Mathematics, P.O.Box 75\u003c\/p\u003e\n\u003cp\u003eMahelma 16093, Sidi Abdellah\u003c\/p\u003e\n\u003cp\u003eAlgiers, Algeria\u003c\/p\u003e\n\u003c\/blockquote\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022social\u0022\u003eSocial\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022https:\/\/www.researchgate.net\/profile\/Yahia-Djemmada\u0022\u003eResearchgate\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022https:\/\/scholar.google.com\/citations?user=3kStp0sAAAAJ\u0026amp;hl=en\u0022\u003eGoogle Scholar\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022https:\/\/www.linkedin.com\/in\/yahiadjemmada\/\u0022\u003eLinkedIn\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e"
+  "description": "Find the first occurrence of a number, date, or digit sequence within the first 1,000,000 decimal digits of π."
   
 }
 </script>
@@ -233,56 +233,110 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 <div id="content">
-<div class="container">
-    <nav class="breadcrumbs" aria-label="breadcrumb">
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="https://ydjemmada.github.io/">
-                <span itemprop="name">Home</span>
-            </a>
-            <meta itemprop="position" content="1" />
-        </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <span class="separator">/</span>
-            <a itemprop="item" href='https://ydjemmada.github.io/contact'>
-                <span itemprop="name">Contact</span>
-            </a>
-            <meta itemprop="position" content="2" />
-        </li></ol>
-</nav>
-    <div class="post-header">
-        <h1>Contact</h1>
-        <div class="post-meta">
-            
-            <span class="reading-time"><i class="far fa-clock"></i> 1 min read</span>
+<div class="container pi-search-page">
+
+  
+  <header class="pi-search-header" aria-labelledby="pi-search-title">
+    <div class="pi-search-symbol" aria-hidden="true">π</div>
+    <h1 id="pi-search-title">Search Your Number in π</h1>
+    <p class="pi-search-subtitle">
+      Find the first occurrence of a number, date, or digit sequence within the first
+      <strong>1,000,000 decimal digits</strong> of π.
+    </p>
+    <div class="pi-search-limit-badge" role="note" aria-label="Search limit">
+      Searching within the first <strong>1,000,000</strong> decimal digits of π
+    </div>
+  </header>
+
+  
+  <section class="pi-search-explanation" aria-label="How it works">
+    <p>
+      Enter a sequence of digits to find its first occurrence within the stored digits of π.
+      Finding a sequence here does not prove anything special about π, but it is a fun way
+      to explore its decimal expansion.
+    </p>
+    <p class="pi-search-note">
+      <strong>Position 1</strong> refers to the first digit after the decimal point —
+      the <strong>1</strong> in 3.<strong>1</strong>4159…
+      This tool searches only a finite stored portion of π.
+      A sequence not found here may appear later in the expansion.
+    </p>
+  </section>
+
+  
+  <section class="pi-search-form-section" aria-label="Search form">
+    <form id="pi-search-form" class="pi-search-form" novalidate autocomplete="off">
+      <div class="pi-search-input-group">
+        <label for="pi-search-input" class="pi-search-label">
+          Digit sequence
+          <span class="pi-search-label-hint">(digits only, 2–50 characters)</span>
+        </label>
+        <div class="pi-search-input-wrap">
+          <input
+            type="text"
+            id="pi-search-input"
+            name="q"
+            class="pi-search-input"
+            inputmode="numeric"
+            placeholder="Enter a number, date, or digit sequence"
+            maxlength="55"
+            aria-describedby="pi-search-error pi-search-input-hint"
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <span class="pi-search-input-icon" aria-hidden="true">π</span>
         </div>
-    </div>
+        <p id="pi-search-input-hint" class="pi-search-hint">
+          Try: <button type="button" class="pi-search-example" data-value="2718">2718</button>,
+          <button type="button" class="pi-search-example" data-value="01012000">01012000</button>,
+          <button type="button" class="pi-search-example" data-value="2026">2026</button>,
+          <button type="button" class="pi-search-example" data-value="123456">123456</button>,
+          <button type="button" class="pi-search-example" data-value="9999">9999</button>
+        </p>
+        <p id="pi-search-error" class="pi-search-error" role="alert" aria-live="assertive" hidden></p>
+      </div>
+      <button type="submit" id="pi-search-btn" class="pi-search-btn">
+        <span class="pi-search-btn-text">Search in π</span>
+        <span class="pi-search-btn-spinner" aria-hidden="true" hidden>
+          <span class="pi-search-spinner"></span>
+        </span>
+      </button>
+    </form>
+  </section>
 
+  
+  <div id="pi-search-live" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+
+  
+  <div id="pi-search-loading" class="pi-search-loading" hidden aria-label="Loading π data">
+    <div class="pi-search-spinner" aria-hidden="true"></div>
+    <p>Loading π data… this only happens once.</p>
+  </div>
+
+  
+  <section id="pi-search-results" class="pi-search-results" hidden aria-label="Search results">
     
+  </section>
 
-    <div class="post-content">
-        <h2 id="contact">Contact</h2>
-<ul>
-<li>Email : <a href="mailto:yahia.djemmada@nhsm.edu.dz">yahia.djemmada@nhsm.edu.dz</a></li>
-</ul>
-<hr>
-<h2 id="mailing-address">Mailing Address</h2>
-<blockquote>
-<p>National Higher School of Mathematics, P.O.Box 75</p>
-<p>Mahelma 16093, Sidi Abdellah</p>
-<p>Algiers, Algeria</p>
-</blockquote>
-<hr>
-<h2 id="social">Social</h2>
-<ul>
-<li><a href="https://www.researchgate.net/profile/Yahia-Djemmada">Researchgate</a></li>
-<li><a href="https://scholar.google.com/citations?user=3kStp0sAAAAJ&amp;hl=en">Google Scholar</a></li>
-<li><a href="https://www.linkedin.com/in/yahiadjemmada/">LinkedIn</a></li>
-</ul>
+  
+  <footer class="pi-search-privacy" role="contentinfo">
+    <p>
+      🔒 Searches are performed locally in your browser and are not sent to a server.
+    </p>
+    <p class="pi-search-source">
+      π digits source: <a href="https://api.pi.delivery/v1/pi" rel="noopener noreferrer" target="_blank">pi.delivery</a>
+      (public domain). Verified against the known decimal expansion of π.
+    </p>
+  </footer>
 
-    </div>
-
-    
-    
 </div>
+
+
+<script>
+  
+  window.__PI_DATA_URL__ = '\/data\/pi-1000000.txt';
+</script>
+<script src="/js/pi-search.js" defer></script>
 
         </div><div id="footer" class="mb-5">
     <hr>

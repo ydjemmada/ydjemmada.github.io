@@ -79,88 +79,165 @@
 
     
     
-    <link rel="stylesheet" href="/css/extended/custom.min.8ee8e1e4f4025d4c296a4dde4300923c827e338e79c1caf5676e51304a0b820a.css">
+    <link rel="stylesheet" href="/css/extended/custom.min.c4868e2b5ec940c638c4117b2e0b1be77b34cffbd16809270d693ca1231dd1cb.css">
     
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   
-  "@type": "WebSite",
-  "name": "YAHIA DJEMMADA",
-  "url": "https:\/\/ydjemmada.github.io\/"
+  "@type": "WebPage",
+  "name": "Report A Classification Issue",
+  "url": "https:\/\/ydjemmada.github.io\/DZJC\/report-classification\/",
+  "description": "How to report an incorrect or missing DZ Journal Check classification.",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "DZ Journal Check",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome",
+    "softwareVersion": "1.0.7",
+    "url": "https://chromewebstore.google.com/detail/dz-journal-check/ggekciegmhcfnbnlhdldkjlifmmncedn",
+    "description": "DZ Journal Check is publicly available on the Chrome Web Store and helps researchers check Algerian DGRSDT/MESRS journal classifications on Google Scholar."
+  }
   
 }
 </script>
+
 </head>
 
-    <body><div class="container mt-5">
-    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
-        <a class="navbar-brand mx-0 mr-sm-auto" href="https://ydjemmada.github.io/" title="YAHIA DJEMMADA">
-          
-          YAHIA DJEMMADA
+    <body><div class="site-header-shell">
+    <nav class="site-header-nav" aria-label="Main navigation">
+        <a class="site-brand" href="https://ydjemmada.github.io/" title="YAHIA DJEMMADA" aria-label="Yahia Djemmada home">
+            
+            <span class="site-brand-text">Yahia Djemmada</span>
         </a>
-        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+        <div class="site-menu">
+            <a class="site-menu-link" href="/" title="Home">Home</a>
             
                 
-                
                     
-                    <a class="nav-item nav-link" href="/publications" title="Research">
-                        Research
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
+                        
+                        <a class="site-menu-link" href="/publications" title="Research">
+                            Research
+                        </a>
                     
                 
                     
-                    <a class="nav-item nav-link" href="/teaching" title="Teaching">
-                        Teaching
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
-                    
-                
-                    
-                    <a class="nav-item nav-link" href="/cv" title="CV">
-                        CV
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
+                        
+                        <a class="site-menu-link" href="/teaching" title="Teaching">
+                            Teaching
+                        </a>
                     
                 
                     
-                    <a class="nav-item nav-link" href="/contact" title="Contact">
-                        Contact
-                    </a>
-                    
-                        <span class="nav-item navbar-text mx-1">/</span>
+                        
+                        <a class="site-menu-link" href="/cv" title="CV">
+                            CV
+                        </a>
                     
                 
                     
-                    <a class="nav-item nav-link" href="/DZJC/" title="DZ Journal Check">
-                        DZ Journal Check
-                    </a>
+                        
+                        <a class="site-menu-link" href="/contact" title="Contact">
+                            Contact
+                        </a>
+                    
+                
+                    
+                        
+                        <a class="site-menu-link" href="/DZJC/" title="DZ Journal Check">
+                            DZ Journal Check
+                        </a>
+                    
+                
+                    
+                        <div class="site-menu-dropdown">
+                            <button class="site-menu-link site-menu-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                                Fun <span class="dropdown-caret">▼</span>
+                            </button>
+                            <div class="site-menu-dropdown-menu" role="menu">
+                                
+                                    
+                                    <a class="site-menu-dropdown-item" href="/tools/pi-search/" title="π Search" role="menuitem">
+                                        π Search
+                                    </a>
+                                
+                            </div>
+                        </div>
                     
                 
             
         </div>
     </nav>
 </div>
-<hr>
+<hr class="site-header-divider">
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.site-menu-dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.site-menu-dropdown-toggle');
+        
+        
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const isOpen = dropdown.classList.contains('is-open');
+            
+            
+            dropdowns.forEach(d => {
+                d.classList.remove('is-open');
+                d.querySelector('.site-menu-dropdown-toggle').setAttribute('aria-expanded', 'false');
+            });
+            
+            if (!isOpen) {
+                dropdown.classList.add('is-open');
+                toggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+    
+    
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.site-menu-dropdown')) {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('is-open');
+                dropdown.querySelector('.site-menu-dropdown-toggle').setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+});
+</script>
 <div id="content">
-<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title">
+<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title" lang="ar" dir="rtl" data-dzjc-root data-dzjc-current-language="ar">
+    <div class="dzjc-language-switcher" aria-label="DZ Journal Check language">
+    <span class="dzjc-language-label">اللغة / Language</span>
+    <button type="button" class="dzjc-language-button" data-dzjc-language="ar" aria-pressed="true">العربية</button>
+    <button type="button" class="dzjc-language-button" data-dzjc-language="en" aria-pressed="false">English</button>
+</div>
+
     <nav class="dzjc-breadcrumb" aria-label="Breadcrumb">
         <a href="/DZJC/">DZ Journal Check</a>
         <span aria-hidden="true">/</span>
-        <span>Report A Classification Issue</span>
+        <span data-dzjc-lang-panel="en" hidden>Report A Classification Issue</span>
+        <span data-dzjc-lang-panel="ar">التبليغ عن مشكلة في التصنيف</span>
     </nav>
     <article>
         <header class="dzjc-page-header">
             <p class="dzjc-kicker">DZJC</p>
-            <h1 id="dzjc-title">Report A Classification Issue</h1>
-            <p class="dzjc-lead">How to report an incorrect or missing DZ Journal Check classification.</p>
+            <h1 id="dzjc-title">
+                <span data-dzjc-lang-panel="en" hidden>Report A Classification Issue</span>
+                <span data-dzjc-lang-panel="ar">التبليغ عن مشكلة في التصنيف</span>
+            </h1>
+            
+            <p class="dzjc-lead">
+                <span data-dzjc-lang-panel="en" hidden>How to report an incorrect or missing DZ Journal Check classification.</span>
+                <span data-dzjc-lang-panel="ar">كيفية التبليغ عن تصنيف خاطئ أو ناقص في DZ Journal Check.</span>
+            </p>
+            
         </header>
         <div class="dzjc-content">
-            <p>Use the email template below to report an incorrect or missing journal classification directly to <a href="mailto:yahia.djem@gmail.com">yahia.djem@gmail.com</a>.</p>
+            <div data-dzjc-lang-panel="en" hidden>
+<p>Use the email template below to report an incorrect or missing journal classification directly to <a href="mailto:yahia.djem@gmail.com">yahia.djem@gmail.com</a>.</p>
 <p><a class="dzjc-button-secondary" href="mailto:yahia.djem@gmail.com?subject=DZ%20Journal%20Check%20classification%20report&amp;body=Hello%20Yahia%2C%0A%0AI%20want%20to%20report%20a%20DZ%20Journal%20Check%20classification%20issue.%0A%0AJournal%20title%3A%0APrint%20ISSN%3A%0AElectronic%20ISSN%3A%0AArticle%20title%20%28optional%29%3A%0ADOI%20%28optional%29%3A%0A%0ADisplayed%20category%3A%0AExpected%20category%3A%0AOfficial%20DGRSDT/MESRS%20source%20URL%3A%0A%0AExtension%20version%3A%0AChrome%20version%3A%0AOperating%20system%3A%0A%0AGoogle%20Scholar%20page%20URL%20%28if%20public%29%3A%0AScreenshot%20attached%3A%20yes/no%0A%0AAdditional%20explanation%3A%0A%0AI%20confirm%20that%20I%20did%20not%20include%20passwords%2C%20cookies%2C%20private%20account%20data%2C%20or%20private%20Google%20Scholar%20profile%20information.%0A">Open Classification Report Email Template</a></p>
 <p>Please include enough public evidence to verify the issue. Do not send private Google Scholar profile data, cookies, passwords, authentication codes, or private account information.</p>
 <h2 id="email-template-preview">Email Template Preview</h2>
@@ -191,10 +268,45 @@
 </ul>
 <h2 id="what-happens-next">What Happens Next</h2>
 <p>Reports are reviewed against the bundled database and the official source evidence. If a correction is needed, it will be included in a future database and extension release.</p>
+</div>
+<div data-dzjc-lang-panel="ar">
+<p>استعمل قالب البريد أدناه للتبليغ عن تصنيف خاطئ أو ناقص مباشرة إلى <a href="mailto:yahia.djem@gmail.com">yahia.djem@gmail.com</a>.</p>
+<p><a class="dzjc-button-secondary" href="mailto:yahia.djem@gmail.com?subject=DZ%20Journal%20Check%20classification%20report&amp;body=Hello%20Yahia%2C%0A%0AI%20want%20to%20report%20a%20DZ%20Journal%20Check%20classification%20issue.%0A%0AJournal%20title%3A%0APrint%20ISSN%3A%0AElectronic%20ISSN%3A%0AArticle%20title%20%28optional%29%3A%0ADOI%20%28optional%29%3A%0A%0ADisplayed%20category%3A%0AExpected%20category%3A%0AOfficial%20DGRSDT/MESRS%20source%20URL%3A%0A%0AExtension%20version%3A%0AChrome%20version%3A%0AOperating%20system%3A%0A%0AGoogle%20Scholar%20page%20URL%20%28if%20public%29%3A%0AScreenshot%20attached%3A%20yes/no%0A%0AAdditional%20explanation%3A%0A%0AI%20confirm%20that%20I%20did%20not%20include%20passwords%2C%20cookies%2C%20private%20account%20data%2C%20or%20private%20Google%20Scholar%20profile%20information.%0A">فتح قالب بريد التبليغ عن التصنيف</a></p>
+<p>يرجى إرسال أدلة عمومية كافية للتحقق من المشكلة. لا ترسل بيانات خاصة من Google Scholar أو كوكيز أو كلمات مرور أو رموز مصادقة أو معلومات حساب خاصة.</p>
+<h2 id="معاينة-القالب">معاينة القالب</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Journal title:
+</span></span><span style="display:flex;"><span>Print ISSN:
+</span></span><span style="display:flex;"><span>Electronic ISSN:
+</span></span><span style="display:flex;"><span>Article title (optional):
+</span></span><span style="display:flex;"><span>DOI (optional):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Displayed category:
+</span></span><span style="display:flex;"><span>Expected category:
+</span></span><span style="display:flex;"><span>Official DGRSDT/MESRS source URL:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Extension version:
+</span></span><span style="display:flex;"><span>Chrome version:
+</span></span><span style="display:flex;"><span>Operating system:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Google Scholar page URL (if public):
+</span></span><span style="display:flex;"><span>Screenshot attached: yes/no
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Additional explanation:
+</span></span></code></pre></div><h2 id="نصائح-للأدلة">نصائح للأدلة</h2>
+<ul>
+<li>فضّل روابط مصادر DGRSDT/MESRS الرسمية.</li>
+<li>أدرج ISSN الورقي و E-ISSN عند توفرهما.</li>
+<li>أخفِ المعلومات الشخصية من لقطات الشاشة.</li>
+<li>إذا ظهرت المشكلة فقط في ملف خاص أو صفحة تتطلب تسجيل الدخول، صف بيانات المجلة العمومية بدل إرسال تفاصيل خاصة.</li>
+</ul>
+<h2 id="ماذا-يحدث-بعد-ذلك">ماذا يحدث بعد ذلك؟</h2>
+<p>تُراجع البلاغات مقارنة بالقاعدة المدمجة وبالدليل الرسمي. إذا لزم تصحيح، سيدرج في تحديث لاحق للقاعدة أو للإضافة.</p>
+</div>
 
         </div>
     </article>
 </main>
+<script src="/js/dzjc-language.js" defer></script>
 
         </div><div id="footer" class="mb-5">
     <hr>
