@@ -45,10 +45,15 @@ googleAnalytics = 'G-BLPCZY56GF'
     [menu.main.params]
       rawurl = "/DZJC/"
   [[menu.main]]
+    identifier = "fun"
+    name = "Fun"
+    weight = 6
+  [[menu.main]]
     identifier = "pi-search"
+    parent = "fun"
     name = "π Search"
     url = "/tools/pi-search/"
-    weight = 6
+    weight = 10
 
 [markup.goldmark.renderer]
   unsafe = true

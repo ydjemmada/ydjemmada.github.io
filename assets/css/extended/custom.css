@@ -1590,6 +1590,99 @@ th {
     font-family: var(--font-mono);
 }
 
+/* ── Dropdown Menu ── */
+.site-menu-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.site-menu-dropdown-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.site-menu-dropdown-toggle:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.dropdown-caret {
+    font-size: 0.7em;
+    transition: transform 0.2s ease;
+}
+
+.site-menu-dropdown-toggle[aria-expanded="true"] .dropdown-caret {
+    transform: rotate(180deg);
+}
+
+.site-menu-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+
+/* Hover support on desktop */
+@media (hover: hover) and (pointer: fine) {
+    .site-menu-dropdown:hover .site-menu-dropdown-menu {
+        display: flex;
+    }
+}
+
+/* Open state for touch/JS */
+.site-menu-dropdown.is-open .site-menu-dropdown-menu {
+    display: flex;
+}
+
+.site-menu-dropdown-item {
+    padding: 0.5rem 1rem;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.site-menu-dropdown-item:hover,
+.site-menu-dropdown-item:focus {
+    background: var(--code-bg);
+    color: var(--accent);
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .site-menu-dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        padding: 0 0 0 1rem;
+        background: transparent;
+        margin-top: 0.5rem;
+        border-left: 2px solid var(--border);
+        border-radius: 0;
+    }
+    .site-menu-dropdown-item {
+        padding: 0.4rem 0.5rem;
+    }
+}
+
 /* ═══════════════════════════════════════════════════════════════
    π Search Tool  ─  page-scoped styles (.pi-search-*)
    ═══════════════════════════════════════════════════════════════ */
