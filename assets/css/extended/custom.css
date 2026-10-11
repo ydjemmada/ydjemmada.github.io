@@ -1,5 +1,4 @@
-/* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Fonts (Inter, JetBrains Mono) are loaded in layouts/partials/head.html */
 
 :root {
     /* Modern Professional Palette */

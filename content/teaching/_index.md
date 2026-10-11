@@ -34,3 +34,15 @@ title = "Teaching"
         <a href="/teaching/mct/" class="download-btn">View Materials &rarr;</a>
     </div>
 </div>
+
+## 4th Year
+
+<div class="resource-list">
+    <div class="resource-item">
+        <div class="resource-info">
+            <span class="resource-title">Operations Research</span>
+            <span class="resource-desc">Course materials for 4th Year students</span>
+        </div>
+        <a href="/teaching/or/" class="download-btn">View Materials &rarr;</a>
+    </div>
+</div>
