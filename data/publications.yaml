@@ -8,7 +8,7 @@
 #   authors   list, in the order on the paper
 #   venue     journal or conference name
 #   year      publication year
-#   type      article | preprint | conference | chapter
+#   type      article | accepted | preprint | conference | chapter
 #   volume / pages   optional
 #   doi       e.g. 10.2298/FIL2301001B         (optional, shows a DOI button)
 #   arxiv     e.g. 2407.04409                   (optional, shows an arXiv button)
@@ -20,12 +20,70 @@
 
 papers:
 
+  - id: djemmada2024fibonacci
+    title: "The Fibonacci-Fubini and Lucas-Fubini numbers"
+    authors: ["Yahia Djemmada", "Abdelghani Mehdaoui", "László Németh", "László Szalay"]
+    venue: "The Fibonacci Quarterly"
+    year: 2026
+    type: article
+    doi: ""
+    arxiv: "2407.04409"
+    pdf: ""
+    summary: "We introduce and study Fibonacci-Fubini and Lucas-Fubini numbers, establishing their properties and connections to known sequences."
+    bibtex: |
+      @article{djemmada2024fibonacci,
+        title={The Fibonacci-Fubini and Lucas-Fubini numbers},
+        author={Djemmada, Yahia and Mehdaoui, Abdelghani and N{\'e}meth, L{\'a}szl{\'o} and Szalay, L{\'a}szl{\'o}},
+        journal={The Fibonacci Quarterly},
+        year={2026}
+      }
+
+  - id: belbachir2026mestrovic
+    title: "On Meštrović's generalization of the Chu–Vandermonde identity"
+    authors: ["Hacène Belbachir", "Yahia Djemmada"]
+    venue: "Filomat"
+    year: 2026
+    type: accepted
+    doi: ""
+    arxiv: ""
+    pdf: ""
+    summary: ""
+    bibtex: |
+      @article{belbachir2026mestrovic,
+        title={On Me{\v{s}}trovi{\'c}'s generalization of the {Chu--Vandermonde} identity},
+        author={Belbachir, Hac{\`e}ne and Djemmada, Yahia},
+        journal={Filomat},
+        note={Accepted},
+        year={2026}
+      }
+
+  - id: djemmada2025partial
+    title: "Partial Deranged Bell Numbers and Their Combinatorial Properties"
+    authors: ["Yahia Djemmada", "Levent Kargın", "Mümün Can"]
+    venue: "Mediterranean Journal of Mathematics"
+    year: 2025
+    type: accepted
+    doi: ""
+    arxiv: "2507.21643"
+    pdf: ""
+    summary: "We introduce partial deranged Bell numbers and investigate their combinatorial properties, providing generating functions and recurrence relations."
+    bibtex: |
+      @article{djemmada2025partial,
+        title={Partial Deranged Bell Numbers and Their Combinatorial Properties},
+        author={Djemmada, Yahia and Karg{\i}n, Levent and Can, M{\"u}m{\"u}n},
+        journal={Mediterranean Journal of Mathematics},
+        note={Accepted},
+        year={2025}
+      }
+
   - id: djemmada2024identity
     title: "An identity for two sequences and its combinatorial interpretation"
     authors: ["Yahia Djemmada", "Abdelghani Mehdaoui", "László Németh", "László Szalay"]
     venue: "Annales Mathematicae et Informaticae"
     year: 2024
     type: article
+    volume: "60"
+    pages: "37–43"
     doi: ""
     arxiv: ""
     pdf: ""
@@ -44,6 +102,8 @@ papers:
     venue: "Filomat"
     year: 2023
     type: article
+    volume: "37(8)"
+    pages: "2587–2598"
     doi: ""
     arxiv: ""
     pdf: ""
@@ -62,6 +122,8 @@ papers:
     venue: "Mathematica Slovaca"
     year: 2023
     type: article
+    volume: "73(4)"
+    pages: "849–860"
     doi: ""
     arxiv: ""
     pdf: ""
@@ -80,6 +142,7 @@ papers:
     venue: "Indian Journal of Pure and Applied Mathematics"
     year: 2022
     type: article
+    pages: "1–8"
     doi: ""
     arxiv: ""
     pdf: ""
@@ -98,6 +161,8 @@ papers:
     venue: "Miskolc Mathematical Notes"
     year: 2021
     type: article
+    volume: "22(1)"
+    pages: "77–90"
     doi: ""
     arxiv: ""
     pdf: ""
@@ -116,6 +181,8 @@ papers:
     venue: "Indian Journal of Pure and Applied Mathematics"
     year: 2020
     type: article
+    volume: "51(4)"
+    pages: "1713–1727"
     doi: ""
     arxiv: ""
     pdf: ""
@@ -134,6 +201,8 @@ papers:
     venue: "Les Annales RECITS"
     year: 2019
     type: article
+    volume: "6"
+    pages: "37–44"
     doi: ""
     arxiv: ""
     pdf: ""
@@ -144,40 +213,4 @@ papers:
         author={Belbachir, Hac{\`e}ne and Djemmada, Yahia},
         journal={Les Annales RECITS},
         year={2019}
-      }
-
-  - id: djemmada2025partial
-    title: "Partial Deranged Bell Numbers and Their Combinatorial Properties"
-    authors: ["Yahia Djemmada", "Levent Kargın", "Mümün Can"]
-    venue: "arXiv preprint"
-    year: 2025
-    type: preprint
-    doi: ""
-    arxiv: "2507.21643"
-    pdf: ""
-    summary: "We introduce partial deranged Bell numbers and investigate their combinatorial properties, providing generating functions and recurrence relations."
-    bibtex: |
-      @article{djemmada2025partial,
-        title={Partial Deranged Bell Numbers and Their Combinatorial Properties},
-        author={Djemmada, Yahia and Karg{\i}n, Levent and Can, M{\"u}m{\"u}n},
-        journal={arXiv preprint arXiv:2507.21643},
-        year={2025}
-      }
-
-  - id: djemmada2024fibonacci
-    title: "The Fibonacci-Fubini and Lucas-Fubini numbers"
-    authors: ["Yahia Djemmada", "Abdelghani Mehdaoui", "László Németh", "László Szalay"]
-    venue: "arXiv preprint"
-    year: 2024
-    type: preprint
-    doi: ""
-    arxiv: "2407.04409"
-    pdf: ""
-    summary: "We introduce and study Fibonacci-Fubini and Lucas-Fubini numbers, establishing their properties and connections to known sequences."
-    bibtex: |
-      @article{djemmada2024fibonacci,
-        title={The Fibonacci-Fubini and Lucas-Fubini numbers},
-        author={Djemmada, Yahia and Mehdaoui, Abdelghani and N{\'e}meth, L{\'a}szl{\'o} and Szalay, L{\'a}szl{\'o}},
-        journal={arXiv preprint arXiv:2407.04409},
-        year={2024}
       }

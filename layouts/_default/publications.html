@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{- $papers := sort site.Data.publications.papers "year" "desc" }}
-{{- $articles := where $papers "type" "!=" "preprint" }}
+{{- $articles := where $papers "type" "article" }}
+{{- $accepted := where $papers "type" "accepted" }}
+{{- $preprints := where $papers "type" "preprint" }}
 {{- $years := slice }}
 {{- range $papers }}{{ if not (in $years .year) }}{{ $years = $years | append .year }}{{ end }}{{ end }}
 <div class="wrap page">
@@ -11,7 +13,8 @@
     </ul>
     <p class="pub-stats">
       <span><strong>{{ len $articles }}</strong> journal articles</span>
-      <span><strong>{{ sub (len $papers) (len $articles) }}</strong> preprints</span>
+      {{- with $accepted }}<span><strong>{{ len . }}</strong> accepted</span>{{ end }}
+      {{- with $preprints }}<span><strong>{{ len . }}</strong> {{ cond (eq (len .) 1) "preprint" "preprints" }}</span>{{ end }}
       {{- with last 1 $years }}<span>publishing since <strong>{{ index . 0 }}</strong></span>{{ end }}
     </p>
   </header>

@@ -1,0 +1,21 @@
+{{- /* Compact publication list for the CV page, from data/publications.yaml. */ -}}
+{{- $papers := sort site.Data.publications.papers "year" "desc" }}
+{{- $groups := slice
+  (dict "type" "article"  "label" "Published papers")
+  (dict "type" "accepted" "label" "Accepted papers")
+  (dict "type" "preprint" "label" "Preprints") }}
+{{- range $groups }}
+{{- $label := .label }}
+{{- with where $papers "type" .type }}
+<h3>{{ $label }}</h3>
+<ul class="cv-pubs">
+  {{- range . }}
+  <li>
+    {{- range $i, $a := .authors }}{{ if $i }}, {{ end }}{{ if in $a "Djemmada" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}.
+    <a href="/publications/#{{ .id }}">{{ .title | markdownify }}</a>.
+    <em>{{ .venue }}</em>{{ with .volume }}, {{ . }}{{ end }}{{ with .pages }}, {{ . }}{{ end }} ({{ .year }}){{ if eq .type "accepted" }}, accepted{{ end }}.
+  </li>
+  {{- end }}
+</ul>
+{{- end }}
+{{- end }}

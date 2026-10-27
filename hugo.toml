@@ -38,7 +38,7 @@ disableKinds = ['taxonomy', 'term']
   [[params.profiles]]
     name = "ORCID"
     icon = "orcid"
-    url = ""   # TODO: e.g. "https://orcid.org/0000-0000-0000-0000"
+    url = "https://orcid.org/0000-0002-9425-0216"
   [[params.profiles]]
     name = "ResearchGate"
     icon = "researchgate"

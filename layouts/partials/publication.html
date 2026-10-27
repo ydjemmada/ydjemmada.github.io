@@ -6,6 +6,7 @@
   </p>
   <p class="pub-venue">
     {{- if eq .type "preprint" }}<span class="badge">Preprint</span> {{ end -}}
+    {{- if eq .type "accepted" }}<span class="badge">Accepted</span> {{ end -}}
     <em>{{ .venue }}</em>{{ with .volume }}, vol. {{ . }}{{ end }}{{ with .pages }}, pp. {{ . }}{{ end }} ({{ .year }})
   </p>
   {{- with .summary }}

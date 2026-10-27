@@ -56,7 +56,7 @@
       {{- range first 3 $papers }}
       <article class="card pub-card">
         <p class="card-kicker">
-          {{- .year }}{{ if eq .type "preprint" }} <span class="badge">Preprint</span>{{ end -}}
+          {{- .year }}{{ if eq .type "preprint" }} <span class="badge">Preprint</span>{{ else if eq .type "accepted" }} <span class="badge">Accepted</span>{{ end -}}
         </p>
         <h3 class="pub-title"><a class="card-link" href="/publications/#{{ .id }}">{{ .title | markdownify }}</a></h3>
         <p class="card-meta">{{ if ne .type "preprint" }}<em>{{ .venue }}</em> · {{ end }}{{ delimit .authors ", " }}</p>
