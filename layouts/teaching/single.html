@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{- $p := . }}
+{{- $sections := partial "course-sections.html" . }}
+<article class="wrap page course">
+  <header class="page-header">
+    {{ partial "breadcrumbs.html" . }}
+    {{- with .Params.level }}<span class="badge">{{ . }}</span>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    <ul class="course-meta">
+      {{- with .Params.program }}<li>{{ partial "icon.html" "book" }}<strong>{{ . }}</strong></li>{{ end }}
+      {{- with .Params.institution }}<li>{{ partial "icon.html" "pin" }}{{ . }}</li>{{ end }}
+      {{- with .Params.semester }}<li>{{ partial "icon.html" "clock" }}{{ . }}</li>{{ end }}
+      {{- with .Params.academic_year }}<li>{{ partial "icon.html" "clock" }}{{ . }}</li>{{ end }}
+    </ul>
+    <nav class="jump" aria-label="Jump to">
+      <ul class="chips">
+        {{- range $sections }}{{ if index $p.Params .key }}
+        <li><a class="chip" href="#{{ .key }}">{{ .label }}</a></li>
+        {{- end }}{{ end }}
+      </ul>
+    </nav>
+  </header>
+
+  {{ with .Content }}<div class="prose course-notes">{{ . }}</div>{{ end }}
+
+  <div class="materials">
+    {{- range $sections }}
+    {{- $s := . }}
+    {{- with index $p.Params .key }}
+    <section class="material-section" id="{{ $s.key }}" aria-labelledby="{{ $s.key }}-title">
+      <h2 id="{{ $s.key }}-title">{{ partial "icon.html" $s.icon }}{{ $s.label }}</h2>
+      <ul class="material-list">
+        {{- range . }}
+        {{ partial "material.html" . }}
+        {{- end }}
+      </ul>
+    </section>
+    {{- end }}
+    {{- end }}
+  </div>
+</article>
+{{ end }}

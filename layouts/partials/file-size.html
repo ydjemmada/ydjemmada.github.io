@@ -1,0 +1,23 @@
+{{- /*
+  Returns a human-readable size ("1.2 MB") for a site-relative file path,
+  looking in content/ and static/. Warns at build time if the file is missing,
+  so a broken PDF link is caught before deploying.
+*/ -}}
+{{- $out := "" }}
+{{- $path := . | urls.Parse }}
+{{- $rel := $path.Path }}
+{{- if not (or (hasPrefix . "http") (hasPrefix . "mailto:")) }}
+  {{- $found := "" }}
+  {{- range slice "content" "static" }}
+    {{- $f := path.Join . $rel }}
+    {{- if and (not $found) (fileExists $f) }}{{ $found = $f }}{{ end }}
+  {{- end }}
+  {{- with $found }}
+    {{- $size := (os.Stat .).Size }}
+    {{- if ge $size 1048576 }}{{ $out = printf "%.1f MB" (div (float $size) 1048576) }}
+    {{- else }}{{ $out = printf "%d KB" (int (math.Ceil (div (float $size) 1024))) }}{{ end }}
+  {{- else }}
+    {{- warnf "Course material not found: %s (looked in content/ and static/)" $rel }}
+  {{- end }}
+{{- end }}
+{{- return $out -}}

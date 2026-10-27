@@ -1,0 +1,12 @@
+{{- /*
+  The kinds of material a course page can list, in display order.
+  Each `key` is a front-matter list in content/teaching/<course>.md.
+*/ -}}
+{{- return slice
+  (dict "key" "lectures"  "label" "Lecture notes"   "one" "lecture"       "many" "lectures"        "icon" "book")
+  (dict "key" "exercises" "label" "Exercise sheets" "one" "exercise sheet" "many" "exercise sheets" "icon" "pencil")
+  (dict "key" "labs"      "label" "Lab work"        "one" "lab"           "many" "labs"            "icon" "flask")
+  (dict "key" "solutions" "label" "Solutions"       "one" "solution"      "many" "solutions"       "icon" "check")
+  (dict "key" "exams"     "label" "Exams"           "one" "exam"          "many" "exams"           "icon" "exam")
+  (dict "key" "projects"  "label" "Projects"        "one" "project"       "many" "projects"        "icon" "folder")
+-}}

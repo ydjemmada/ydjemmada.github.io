@@ -1,104 +1,46 @@
-+++
-title = "MCT Lectures"
-+++
+---
+title: "Mathematical Computing Tools"
+short: "MCT"
+level: "2nd year"
+weight: 40
+institution: "NHSM"
+semester: ""
+academic_year: ""
+description: "Python for mathematicians: data structures, functions, files and exceptions, NumPy, SciPy and Matplotlib."
 
-# Mathematical Computing Tools
+lectures:
+  - title: "Lecture 0: Introduction to Python (Part 1)"
+    desc: "Python basics review"
+    file: "/lectures/Lecture_0_Part_1_Python_basics_review.pdf"
+  - title: "Lecture 0: Introduction to Python (Part 2)"
+    desc: "Data structures"
+    file: "/lectures/Lecture_0_Part_2_Data_structures.pdf"
+  - title: "Lecture 0: Introduction to Python (Part 3)"
+    desc: "Comprehensions and functions"
+    file: "/lectures/Lecture_0_Part_3_Comprehensions_and_Functions.pdf"
+  - title: "Lecture 1: Files and Exceptions"
+    file: "/lectures/Lecture_1%20Files%20and%20Excepitons.pdf"
+  - title: "Lecture 2: Introduction to NumPy and SciPy"
+    file: "/lectures/Lecture_2_part_1_Introduction_to_numpy_and_scipy.pdf"
+  - title: "Lecture 3: Matplotlib Basics"
+    file: "/lectures/Lecture_3_Matplotlib_Basics.pdf"
 
-### Lectures
+exercises:
+  - title: "Worksheet 0"
+    file: "/teaching/ws/WS_0.pdf"
+    solution: "/teaching/ws/WS_0_Sol.pdf"
+  - title: "Worksheet 1"
+    file: "/teaching/ws/WS_1.pdf"
+  - title: "Worksheet 2"
+    file: "/teaching/ws/WS_2.pdf"
 
-<div class="resource-list">
-    <!-- Lecture 0 -->
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Lecture 0: Introduction to Python (Part 1)</span>
-<span class="resource-desc">Python basics review</span>
-</div>
-<a href="../../lectures/Lecture_0_Part_1_Python_basics_review.pdf" class="download-btn">Download PDF</a>
-</div>
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Lecture 0: Introduction to Python (Part 2)</span>
-<span class="resource-desc">Data Structures</span>
-</div>
-<a href="../../lectures/Lecture_0_Part_2_Data_structures.pdf" class="download-btn">Download PDF</a>
-</div>
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Lecture 0: Introduction to Python (Part 3)</span>
-<span class="resource-desc">Comprehensions and Functions</span>
-</div>
-<a href="../../lectures/Lecture_0_Part_3_Comprehensions_and_Functions.pdf" class="download-btn">Download PDF</a>
-</div>
+labs:
+  - title: "Labwork 01"
+    file: "/teaching/ws/LW_1.pdf"
+  - title: "Labwork 02"
+    file: "/teaching/ws/LW_2.pdf"
 
-    <!-- Other Lectures -->
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Lecture 1: Files and Exceptions</span>
-</div>
-<a href="../../lectures/Lecture_1%20Files%20and%20Excepitons.pdf" class="download-btn">Download PDF</a>
-</div>
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Lecture 2: Introduction to Numpy and Scipy</span>
-</div>
-<a href="../../lectures/Lecture_2_part_1_Introduction_to_numpy_and_scipy.pdf" class="download-btn">Download PDF</a>
-</div>
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Lecture 3: Matplotlib Basics</span>
-</div>
-<a href="../../lectures/Lecture_3_Matplotlib_Basics.pdf" class="download-btn">Download PDF</a>
-</div>
-</div>
-
-### Worksheets and Labworks
-
-<div class="resource-list">
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Worksheet 0</span>
-</div>
-<a href="../ws/WS_0.pdf" class="download-btn">Download PDF</a>
-</div>
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Worksheet 0 Solutions</span>
-</div>
-<a href="../ws/WS_0_Sol.pdf" class="download-btn">Download PDF</a>
-</div>
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Worksheet 1</span>
-</div>
-<a href="../ws/WS_1.pdf" class="download-btn">Download PDF</a>
-</div>
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Worksheet 2</span>
-</div>
-<a href="../ws/WS_2.pdf" class="download-btn">Download PDF</a>
-</div>
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Labwork 01</span>
-</div>
-<a href="../ws/LW_1.pdf" class="download-btn">Download PDF</a>
-</div>
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Labwork 02</span>
-</div>
-<a href="../ws/LW_2.pdf" class="download-btn">Download PDF</a>
-</div>
-</div>
-
-### Projects
-
-<div class="resource-list">
-<div class="resource-item">
-<div class="resource-info">
-<span class="resource-title">Projects List</span>
-</div>
-<a href="../../projects/MCT_Projects.pdf" class="download-btn">Download PDF</a>
-</div>
-</div>
+projects:
+  - title: "Projects list"
+    file: "/projects/MCT_Projects.pdf"
+---

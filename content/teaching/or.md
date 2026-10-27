@@ -1,78 +1,42 @@
-+++
-title = "Operations Research"
-+++
+---
+title: "Operations Research"
+short: "OR"
+level: "4th year"
+weight: 50
+program: "Autonomous and Embedded Systems Engineering"
+institution: "NHSAST"
+semester: ""
+academic_year: ""
+description: "Linear programming: writing a model, the graphical method, the simplex method and the two-phase method."
 
-# Operations Research
+lectures:
+  - title: "Lecture 1: Writing a Linear Program"
+    desc: "From a problem in words to a mathematical model"
+    file: "/teaching/lectures/OR_Lecture_1.pdf"
+  - title: "Lecture 2: Solving a Linear Program"
+    desc: "The graphical method, the corner method, and all the possible cases"
+    file: "/teaching/lectures/OR_Lecture_2.pdf"
+  - title: "Lecture 3: The Simplex Method"
+    desc: "Moving from corner to corner with algebra"
+    file: "/teaching/lectures/OR_Lecture_3.pdf"
+  - title: "Lecture 4: Starting the Simplex Method"
+    desc: "The two-phase method, infeasible problems and degeneracy"
+    file: "/teaching/lectures/OR_Lecture_4.pdf"
+    new: true
 
-Autonomous and Embedded Systems Engineering, National Higher School of Autonomous Systems Technology (NHSAST)
+exercises:
+  - title: "TD 1: Formulating Linear Programs"
+    desc: "Lecture 1"
+    file: "/teaching/worksheets/OR_TD_1.pdf"
+    solution: "/teaching/worksheets/OR_TD_1_Sol.pdf"
+  - title: "TD 2: From the Picture to the Simplex Method"
+    desc: "Lectures 2 and 3"
+    file: "/teaching/worksheets/OR_TD_2.pdf"
+    solution: "/teaching/worksheets/OR_TD_2_Sol.pdf"
+  - title: "TD 3: The Two-Phase Method"
+    desc: "Lecture 4"
+    file: "/teaching/worksheets/OR_TD_3.pdf"
+    new: true
+---
 
-### Lectures
-
-<div class="resource-list">
-    <div class="resource-item">
-        <div class="resource-info">
-            <span class="resource-title">Lecture 1: Writing a Linear Program</span>
-            <span class="resource-desc">From a problem in words to a mathematical model</span>
-        </div>
-        <a href="../lectures/OR_Lecture_1.pdf" class="download-btn">Download PDF</a>
-    </div>
-    <div class="resource-item">
-        <div class="resource-info">
-            <span class="resource-title">Lecture 2: Solving a Linear Program</span>
-            <span class="resource-desc">The graphical method, the corner method, and all the possible cases</span>
-        </div>
-        <a href="../lectures/OR_Lecture_2.pdf" class="download-btn">Download PDF</a>
-    </div>
-    <div class="resource-item">
-        <div class="resource-info">
-            <span class="resource-title">Lecture 3: The Simplex Method</span>
-            <span class="resource-desc">Moving from corner to corner with algebra</span>
-        </div>
-        <a href="../lectures/OR_Lecture_3.pdf" class="download-btn">Download PDF</a>
-    </div>
-    <div class="resource-item">
-        <div class="resource-info">
-            <span class="resource-title">Lecture 4: Starting the Simplex Method</span>
-            <span class="resource-desc">The two-phase method, infeasible problems and degeneracy</span>
-        </div>
-        <a href="../lectures/OR_Lecture_4.pdf" class="download-btn">Download PDF</a>
-    </div>
-</div>
-
-### Worksheets
-
-<div class="resource-list">
-    <div class="resource-item">
-        <div class="resource-info">
-            <span class="resource-title">TD 1: Formulating Linear Programs</span>
-            <span class="resource-desc">Lecture 1</span>
-        </div>
-        <a href="../worksheets/OR_TD_1.pdf" class="download-btn">Download PDF</a>
-    </div>
-    <div class="resource-item">
-        <div class="resource-info">
-            <span class="resource-title">TD 1 Solutions</span>
-        </div>
-        <a href="../worksheets/OR_TD_1_Sol.pdf" class="download-btn">Download PDF</a>
-    </div>
-    <div class="resource-item">
-        <div class="resource-info">
-            <span class="resource-title">TD 2: From the Picture to the Simplex Method</span>
-            <span class="resource-desc">Lectures 2 and 3</span>
-        </div>
-        <a href="../worksheets/OR_TD_2.pdf" class="download-btn">Download PDF</a>
-    </div>
-    <div class="resource-item">
-        <div class="resource-info">
-            <span class="resource-title">TD 2 Solutions</span>
-        </div>
-        <a href="../worksheets/OR_TD_2_Sol.pdf" class="download-btn">Download PDF</a>
-    </div>
-    <div class="resource-item">
-        <div class="resource-info">
-            <span class="resource-title">TD 3: The Two-Phase Method</span>
-            <span class="resource-desc">Lecture 4</span>
-        </div>
-        <a href="../worksheets/OR_TD_3.pdf" class="download-btn">Download PDF</a>
-    </div>
-</div>
+Course taught at the National Higher School of Autonomous Systems Technology (NHSAST).

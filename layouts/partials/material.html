@@ -1,0 +1,24 @@
+{{- /* One row of course material: title, description, PDF (+ solution) links. */ -}}
+<li class="material">
+  <div>
+    <p class="material-title">{{ .title | markdownify }}{{ if .new }} <span class="badge badge-new">New</span>{{ end }}</p>
+    {{- with .desc }}<p class="material-desc">{{ . | markdownify }}</p>{{ end }}
+  </div>
+  <div class="material-links">
+    {{- with .file }}
+    {{- $size := partial "file-size.html" . }}
+    <a class="pill pill-strong" href="{{ . }}" aria-label="{{ $.title | plainify }}: PDF{{ with $size }}, {{ . }}{{ end }}">
+      {{ partial "icon.html" "download" }}PDF{{ with $size }} <span class="material-size">{{ . }}</span>{{ end }}
+    </a>
+    {{- end }}
+    {{- with .solution }}
+    {{- $size := partial "file-size.html" . }}
+    <a class="pill" href="{{ . }}" aria-label="{{ $.title | plainify }}: solution PDF{{ with $size }}, {{ . }}{{ end }}">
+      {{ partial "icon.html" "check" }}Solution{{ with $size }} <span class="material-size">{{ . }}</span>{{ end }}
+    </a>
+    {{- end }}
+    {{- with .url }}
+    <a class="pill" href="{{ . }}" rel="noopener">{{ partial "icon.html" "external" }}Link</a>
+    {{- end }}
+  </div>
+</li>

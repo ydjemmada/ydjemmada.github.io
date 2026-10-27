@@ -1,0 +1,26 @@
+{{- /* Summary card for one course. Context: a page in content/teaching/. */ -}}
+{{- $p := . }}
+{{- $meta := slice }}
+{{- with .Params.institution }}{{ $meta = $meta | append . }}{{ end }}
+{{- with .Params.semester }}{{ $meta = $meta | append . }}{{ end }}
+{{- with .Params.academic_year }}{{ $meta = $meta | append . }}{{ end }}
+<article class="card course-card">
+  {{- with .Params.level }}<span class="course-level">{{ . }}</span>{{ end }}
+  <h3><a class="card-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  {{- with $meta }}<p class="card-meta">{{ delimit . " · " }}</p>{{ end }}
+  {{- with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}
+  <ul class="chips card-foot" aria-label="Materials in {{ .Title }}">
+    {{- range partial "course-sections.html" . }}
+    {{- $n := len (index $p.Params .key | default slice) }}
+    {{- $anchor := .key }}
+    {{- if eq .key "solutions" }}
+      {{- $inline := len (where (index $p.Params "exercises" | default slice) "solution" "!=" nil) }}
+      {{- if and (eq $n 0) (gt $inline 0) }}{{ $anchor = "exercises" }}{{ end }}
+      {{- $n = add $n $inline }}
+    {{- end }}
+    {{- if gt $n 0 }}
+    <li><a class="chip" href="{{ $p.RelPermalink }}#{{ $anchor }}">{{ $n }} {{ cond (eq $n 1) .one .many }}</a></li>
+    {{- end }}
+    {{- end }}
+  </ul>
+</article>

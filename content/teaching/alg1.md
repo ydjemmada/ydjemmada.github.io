@@ -1,16 +1,14 @@
-+++
-title = "Algebra 1"
-+++
+---
+title: "Algebra 1"
+short: "Algebra 1"
+level: "1st year"
+weight: 30
+institution: "NHSM"
+semester: ""
+academic_year: ""
+description: "Solutions to Algebra 1 exercise sheets."
 
-# Algebra 1
-
-## Solutions
-
-<div class="resource-list">
-    <div class="resource-item">
-        <div class="resource-info">
-            <span class="resource-title">Worksheet 2 Solutions</span>
-        </div>
-        <a href="../worksheets/alg1_ws_2_sol.pdf" class="download-btn">Download PDF</a>
-    </div>
-</div>
+solutions:
+  - title: "Worksheet 2: Solutions"
+    file: "/teaching/worksheets/alg1_ws_2_sol.pdf"
+---
