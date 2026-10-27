@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-text">
+      <p>© {{ now.Year }} {{ site.Params.author }} · {{ site.Params.institutionShort }}, {{ site.Params.city }}</p>
+      <p class="muted">Last updated <time datetime="{{ now.Format "2006-01-02" }}">{{ now.Format "2 January 2006" }}</time></p>
+    </div>
+    {{ partial "profile-links.html" (dict) }}
+  </div>
+</footer>

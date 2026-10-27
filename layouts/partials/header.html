@@ -1,75 +1,56 @@
-<div class="site-header-shell">
-    <nav class="site-header-nav" aria-label="Main navigation">
-        <a class="site-brand" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}" aria-label="Yahia Djemmada home">
-            {{ with .Site.Params.logo }}
-                <img class="site-brand-logo" src="/avatar.png" alt="">
-            {{ end }}
-            <span class="site-brand-text">Yahia Djemmada</span>
-        </a>
-        <div class="site-menu">
-            <a class="site-menu-link" href="/" title="Home">Home</a>
-            {{ with .Site.Menus.main }}
-                {{ range $nav_item := . }}
-                    {{ if $nav_item.HasChildren }}
-                        <div class="site-menu-dropdown">
-                            <button class="site-menu-link site-menu-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-                                {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }} <span class="dropdown-caret">▼</span>
-                            </button>
-                            <div class="site-menu-dropdown-menu" role="menu">
-                                {{ range $child := $nav_item.Children }}
-                                    {{ $href := default $child.URL $child.Params.rawurl }}
-                                    <a class="site-menu-dropdown-item" href="{{ $href }}" title="{{ $child.Name }}" role="menuitem">
-                                        {{ $child.Pre }}{{ $child.Name }}{{ $child.Post }}
-                                    </a>
-                                {{ end }}
-                            </div>
-                        </div>
-                    {{ else }}
-                        {{ $href := default $nav_item.URL $nav_item.Params.rawurl }}
-                        <a class="site-menu-link" href="{{ $href }}" title="{{ $nav_item.Name }}">
-                            {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
-                        </a>
-                    {{ end }}
-                {{ end }}
-            {{ end }}
-        </div>
-    </nav>
-</div>
-<hr class="site-header-divider">
+{{- $current := .RelPermalink }}
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="{{ site.Title }}, home">
+      <span class="brand-mark" aria-hidden="true">Σ</span>
+      <span class="brand-text">
+        <span class="brand-name">{{ site.Title }}</span>
+        <span class="brand-sub">Mathematics · {{ site.Params.institutionShort }}</span>
+      </span>
+    </a>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const dropdowns = document.querySelectorAll('.site-menu-dropdown');
-    
-    dropdowns.forEach(dropdown => {
-        const toggle = dropdown.querySelector('.site-menu-dropdown-toggle');
-        
-        // Handle click to toggle
-        toggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            const isOpen = dropdown.classList.contains('is-open');
-            
-            // Close all other dropdowns
-            dropdowns.forEach(d => {
-                d.classList.remove('is-open');
-                d.querySelector('.site-menu-dropdown-toggle').setAttribute('aria-expanded', 'false');
-            });
-            
-            if (!isOpen) {
-                dropdown.classList.add('is-open');
-                toggle.setAttribute('aria-expanded', 'true');
-            }
-        });
-    });
-    
-    // Close when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.site-menu-dropdown')) {
-            dropdowns.forEach(dropdown => {
-                dropdown.classList.remove('is-open');
-                dropdown.querySelector('.site-menu-dropdown-toggle').setAttribute('aria-expanded', 'false');
-            });
-        }
-    });
-});
-</script>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul class="nav-list">
+        {{- range site.Menus.main }}
+        {{- if .HasChildren }}
+        {{- $open := false }}
+        {{- range .Children }}{{ if hasPrefix (lower $current) (lower (.Params.rawurl | default .URL)) }}{{ $open = true }}{{ end }}{{ end }}
+        <li class="nav-item has-dropdown">
+          <button class="nav-link dropdown-toggle{{ if $open }} is-active{{ end }}" type="button" aria-expanded="false" aria-controls="menu-{{ .Identifier }}">
+            {{ .Name }}{{ partial "icon.html" "chevron" }}
+          </button>
+          <ul class="dropdown" id="menu-{{ .Identifier }}">
+            {{- range .Children }}
+            {{- $href := .Params.rawurl | default .URL }}
+            <li>
+              <a class="dropdown-link" href="{{ $href }}"{{ if hasPrefix (lower $current) (lower $href) }} aria-current="page"{{ end }}>
+                <span class="dropdown-title">{{ .Name }}</span>
+                {{- with .Params.note }}<span class="dropdown-note">{{ . }}</span>{{ end }}
+              </a>
+            </li>
+            {{- end }}
+          </ul>
+        </li>
+        {{- else }}
+        {{- $href := .Params.rawurl | default .URL }}
+        {{- $active := cond (eq $href "/") (eq $current "/") (hasPrefix $current $href) }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ $href }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+        </li>
+        {{- end }}
+        {{- end }}
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" aria-label="Switch to dark mode" title="Light / dark mode">
+        <span class="when-light">{{ partial "icon.html" "moon" }}</span>
+        <span class="when-dark">{{ partial "icon.html" "sun" }}</span>
+      </button>
+      <button class="icon-button nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="when-closed">{{ partial "icon.html" "menu" }}</span>
+        <span class="when-open">{{ partial "icon.html" "close" }}</span>
+      </button>
+    </div>
+  </div>
+</header>

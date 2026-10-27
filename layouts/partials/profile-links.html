@@ -1,0 +1,29 @@
+{{- /*
+  Academic profile icons from [params.profiles] in hugo.toml.
+  Pass a dict: (dict "labels" true) shows names next to the icons.
+  Profiles without a url are hidden, except in `hugo server`, where they
+  are shown as a reminder to fill them in.
+*/ -}}
+{{- $labels := .labels | default false }}
+<ul class="profile-links{{ if $labels }} with-labels{{ end }}">
+  <li>
+    <a href="mailto:{{ site.Params.email }}" title="Email" aria-label="Email {{ site.Params.email }}">
+      {{ partial "icon.html" "mail" }}{{ if $labels }}<span>Email</span>{{ end }}
+    </a>
+  </li>
+  {{- range site.Params.profiles }}
+  {{- if .url }}
+  <li>
+    <a href="{{ .url }}" rel="me noopener" title="{{ .name }}" aria-label="{{ .name }} profile">
+      {{ partial "icon.html" .icon }}{{ if $labels }}<span>{{ .name }}</span>{{ end }}
+    </a>
+  </li>
+  {{- else if hugo.IsServer }}
+  <li>
+    <span class="placeholder" title="Add your {{ .name }} link in hugo.toml">
+      {{ partial "icon.html" .icon }}{{ if $labels }}<span>{{ .name }}: add link in hugo.toml</span>{{ end }}
+    </span>
+  </li>
+  {{- end }}
+  {{- end }}
+</ul>

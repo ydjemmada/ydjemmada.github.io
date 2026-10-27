@@ -1,27 +1,12 @@
-<nav class="breadcrumbs" aria-label="breadcrumb">
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-        {{- $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" -}}
-        {{- $.Scratch.Add "path" .Site.BaseURL -}}
-
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="{{ .Site.BaseURL }}">
-                <span itemprop="name">Home</span>
-            </a>
-            <meta itemprop="position" content="1" />
-        </li>
-
-        {{- range $index, $element := split $url "/" -}}
-        {{- $.Scratch.Add "path" $element -}}
-        {{- if ne $element "" -}}
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <span class="separator">/</span>
-            <a itemprop="item" href='{{ $.Scratch.Get "path" | absURL }}'>
-                <span itemprop="name">{{ humanize $element }}</span>
-            </a>
-            <meta itemprop="position" content="{{ add $index 2 }}" />
-        </li>
-        {{- $.Scratch.Add "path" "/" -}}
-        {{- end -}}
-        {{- end -}}
-    </ol>
+{{- /* Breadcrumbs, only for pages nested inside a section (e.g. Teaching › MD1). */ -}}
+{{- if and .Parent (not .Parent.IsHome) }}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    {{- range .Ancestors.Reverse }}{{ if not .IsHome }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{- end }}{{ end }}
+    <li><span aria-current="page">{{ .Params.short | default .LinkTitle }}</span></li>
+  </ol>
 </nav>
+{{- end }}

@@ -1,0 +1,27 @@
+{{- /* One publication. Context: an entry of data/publications.yaml. */ -}}
+<li class="pub" id="{{ .id }}">
+  <h3 class="pub-title">{{ .title | markdownify }}</h3>
+  <p class="pub-authors">
+    {{- range $i, $a := .authors }}{{ if $i }}, {{ end }}{{ if in $a "Djemmada" }}<span class="me">{{ $a }}</span>{{ else }}{{ $a }}{{ end }}{{ end -}}
+  </p>
+  <p class="pub-venue">
+    {{- if eq .type "preprint" }}<span class="badge">Preprint</span> {{ end -}}
+    <em>{{ .venue }}</em>{{ with .volume }}, vol. {{ . }}{{ end }}{{ with .pages }}, pp. {{ . }}{{ end }} ({{ .year }})
+  </p>
+  {{- with .summary }}
+  <p class="pub-summary">{{ . }}</p>
+  {{- end }}
+  {{- if or .pdf .doi .arxiv .bibtex }}
+  <div class="pub-links">
+    {{- with .pdf }}<a class="pill pill-strong" href="{{ . }}">{{ partial "icon.html" "file" }}PDF</a>{{ end }}
+    {{- with .doi }}<a class="pill" href="https://doi.org/{{ . }}" rel="noopener">{{ partial "icon.html" "external" }}DOI</a>{{ end }}
+    {{- with .arxiv }}<a class="pill" href="https://arxiv.org/abs/{{ . }}" rel="noopener">{{ partial "icon.html" "external" }}arXiv</a>{{ end }}
+    {{- with .bibtex }}
+    <details class="pub-cite">
+      <summary class="pill">{{ partial "icon.html" "quote" }}Cite</summary>
+      <pre><code>{{ . | strings.TrimSpace }}</code></pre>
+    </details>
+    {{- end }}
+  </div>
+  {{- end }}
+</li>

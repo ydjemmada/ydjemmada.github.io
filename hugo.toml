@@ -1,72 +1,124 @@
 baseURL = 'https://ydjemmada.github.io/'
 languageCode = 'en-us'
-title = 'YAHIA DJEMMADA'
-theme = 'researcher'
-#theme = 'PaperMod'
+title = 'Yahia Djemmada'
 enableEmoji = true
-googleAnalytics = 'G-BLPCZY56GF'
+enableRobotsTXT = true
+# The old "researcher"/"PaperMod" themes are no longer used: every template
+# now lives in layouts/. (The theme folders can be deleted later.)
 
+# Empty /tags/ and /categories/ listing pages are not needed.
+disableKinds = ['taxonomy', 'term']
+
+[services.googleAnalytics]
+  ID = 'G-BLPCZY56GF'
+
+# ──────────────────────────────────────────────────────────────────────
+# Site-wide information (used by the header, footer, home page, contact
+# page and search-engine metadata).
+# ──────────────────────────────────────────────────────────────────────
 [params]
-    defaultTheme = "auto"
-    # ProfileMode is disabled because we are using a custom layouts/index.html
-    [params.profileMode]
-        enabled = false
+  author = "Yahia Djemmada"
+  jobTitle = "Mathematics Lecturer & Researcher"
+  institution = "National Higher School of Mathematics (NHSM)"
+  institutionShort = "NHSM"
+  institutionURL = "https://nhsm.edu.dz/"
+  city = "Algiers, Algeria"
+  description = "Yahia Djemmada, Mathematics Lecturer & Researcher at the National Higher School of Mathematics (NHSM), Algiers. Research in combinatorics, discrete mathematics and operations research; lecture notes and exercise sheets for students."
+  researchAreas = ["Combinatorics", "Discrete Mathematics", "Operations Research"]
+  email = "yahia.djemmada@nhsm.edu.dz"
+  # Default image shown when a page is shared on social media (1200×630).
+  ogImage = "images/og-card.png"
 
-    [[params.socialIcons]]
-        name = "email"
-        url = "mailto:yahia.djemmada@nhsm.edu.dz"
+  # Academic profiles. Leave url = "" for a profile you don't have yet:
+  # it is hidden on the live site and shown as a reminder in `hugo server`.
+  [[params.profiles]]
+    name = "Google Scholar"
+    icon = "scholar"
+    url = "https://scholar.google.com/citations?user=3kStp0sAAAAJ&hl=en"
+  [[params.profiles]]
+    name = "ORCID"
+    icon = "orcid"
+    url = ""   # TODO: e.g. "https://orcid.org/0000-0000-0000-0000"
+  [[params.profiles]]
+    name = "ResearchGate"
+    icon = "researchgate"
+    url = "https://www.researchgate.net/profile/Yahia-Djemmada"
+  [[params.profiles]]
+    name = "GitHub"
+    icon = "github"
+    url = "https://github.com/ydjemmada"
+  [[params.profiles]]
+    name = "LinkedIn"
+    icon = "linkedin"
+    url = "https://www.linkedin.com/in/yahiadjemmada/"
 
+# ──────────────────────────────────────────────────────────────────────
+# Main navigation. Items with a `parent` appear in a dropdown.
+# `rawurl` keeps the capital letters of /DZJC/ (Hugo lowercases `url`).
+# ──────────────────────────────────────────────────────────────────────
 [menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
   [[menu.main]]
     identifier = "research"
     name = "Research"
-    url = "/publications"
-    weight = 1
+    url = "/publications/"
+    weight = 2
   [[menu.main]]
     identifier = "teaching"
     name = "Teaching"
-    url = "/teaching"
-    weight = 2
+    url = "/teaching/"
+    weight = 3
   [[menu.main]]
     identifier = "cv"
     name = "CV"
-    url = "/cv"
-    weight = 3
+    url = "/cv/"
+    weight = 4
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
-    url = "/contact"
-    weight = 4
-  [[menu.main]]
-    identifier = "dzjc"
-    name = "DZ Journal Check"
-    url = "/DZJC/"
+    url = "/contact/"
     weight = 5
-    [menu.main.params]
-      rawurl = "/DZJC/"
   [[menu.main]]
-    identifier = "fun"
-    name = "Fun"
+    identifier = "tools"
+    name = "Tools"
     weight = 6
   [[menu.main]]
+    identifier = "dzjc"
+    parent = "tools"
+    name = "DZ Journal Check"
+    url = "/DZJC/"
+    weight = 10
+    [menu.main.params]
+      rawurl = "/DZJC/"
+      note = "Journal classifications on Google Scholar"
+  [[menu.main]]
     identifier = "pi-search"
-    parent = "fun"
+    parent = "tools"
     name = "π Search"
     url = "/tools/pi-search/"
-    weight = 10
+    weight = 20
+    [menu.main.params]
+      note = "Find your number in the digits of π"
 
 [markup.goldmark.renderer]
   unsafe = true
 
-[related]
-  includeNewer = true
-  threshold = 80
-  toLower = false
+# Math: $…$ / \(…\) inline and $$…$$ / \[…\] display are passed untouched to
+# layouts/_default/_markup/render-passthrough.html, which renders them with
+# KaTeX at build time (no JavaScript in the browser).
+[markup.goldmark.extensions.passthrough]
+  enable = true
+  [markup.goldmark.extensions.passthrough.delimiters]
+    block = [['\[', '\]'], ['$$', '$$']]
+    inline = [['\(', '\)'], ['$', '$']]
 
-[[related.indices]]
-  name = "tags"
-  weight = 100
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
 
-[[related.indices]]
-  name = "section"
-  weight = 10
+[sitemap]
+  changeFreq = 'monthly'

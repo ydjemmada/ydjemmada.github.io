@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="wrap page">
+  <header class="page-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+  </header>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  <ul class="link-list">
+    {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ with .Description }}<p class="muted">{{ . }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

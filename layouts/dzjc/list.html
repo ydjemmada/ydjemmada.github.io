@@ -1,7 +1,7 @@
 {{ define "main" }}
-<main class="dzjc-wrap" aria-label="DZ Journal Check" lang="ar" dir="rtl" data-dzjc-root data-dzjc-current-language="ar">
+<div class="dzjc-wrap" aria-label="DZ Journal Check" lang="ar" dir="rtl" data-dzjc-root data-dzjc-current-language="ar">
     {{ partial "dzjc-language-switcher.html" . }}
     {{ .Content }}
-</main>
+</div>
 <script src="/js/dzjc-language.js" defer></script>
 {{ end }}

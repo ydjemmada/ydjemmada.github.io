@@ -1,0 +1,243 @@
+/* ==========================================================================
+   π Search (/tools/pi-search/): loaded only on that page, after main.css.
+   ========================================================================== */
+
+.pi-search-page.minimal {
+    max-width: 600px;
+    margin: 4rem auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.pi-search-symbol {
+    font-size: 5rem;
+    font-family: var(--font-head);
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    user-select: none;
+}
+
+.pi-search-header h1 {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+    color: var(--ink);
+}
+
+.pi-search-subtitle {
+    font-size: 1.1rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+.pi-search-input-wrap {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+}
+
+.pi-search-input.minimal-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-family: var(--font-mono);
+    border: 2px solid var(--line);
+    border-radius: 50px;
+    background: var(--surface);
+    color: var(--ink);
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.pi-search-input.minimal-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--mark);
+}
+
+.pi-search-input.minimal-input[aria-invalid="true"] {
+    border-color: var(--link-hover);
+}
+
+.pi-search-error {
+    color: var(--link-hover);
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.pi-search-btn.minimal-btn {
+    background: var(--btn-bg);
+    color: var(--btn-ink);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.pi-search-btn.minimal-btn:hover:not(:disabled) {
+    background: var(--btn-hover);
+    transform: translateY(-1px);
+}
+
+.pi-search-btn.minimal-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.pi-search-btn.minimal-btn:disabled {
+    background: var(--line);
+    color: var(--muted);
+    cursor: not-allowed;
+}
+
+.pi-search-transparency {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
+}
+
+/* Results & Animations */
+.pi-search-loading-msg {
+    font-size: 1.2rem;
+    color: var(--muted);
+    margin: 2rem 0;
+    font-style: italic;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+}
+
+.pi-search-result-card.minimal-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.pi-search-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.pi-badge-verified {
+    background: rgba(16, 185, 129, 0.15);
+    color: #059669;
+}
+
+.pi-badge-simulated {
+    background: rgba(245, 158, 11, 0.15);
+    color: #d97706;
+}
+
+.pi-search-result-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 0 1.5rem;
+    color: var(--ink);
+}
+
+.pi-search-context.minimal-context {
+    background: var(--surface-2);
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    word-break: break-all;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.pi-search-match {
+    background: var(--mark);
+    color: var(--ink);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    padding: 0.1rem 0.2rem;
+    border-radius: 4px;
+}
+
+.pi-search-before, .pi-search-after {
+    color: var(--muted);
+}
+
+.pi-search-ellipsis {
+    color: var(--line);
+    margin: 0 0.5rem;
+}
+
+.pi-search-simulated-note {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+}
+
+.pi-search-playful-line {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.pi-search-actions.minimal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pi-search-action-btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid var(--line);
+}
+
+.pi-search-action-btn.primary-action {
+    background: var(--surface);
+    color: var(--ink);
+}
+
+.pi-search-action-btn.primary-action:hover {
+    background: var(--surface-2);
+    border-color: var(--muted);
+}
+
+.pi-search-action-btn.secondary-action {
+    background: transparent;
+    color: var(--muted);
+    border-color: transparent;
+}
+
+.pi-search-action-btn.secondary-action:hover {
+    color: var(--ink);
+    background: var(--surface-2);
+}
+
+@media (max-width: 600px) {
+    .pi-search-symbol { font-size: 4rem; }
+    .pi-search-header h1 { font-size: 1.75rem; }
+    .pi-search-input.minimal-input { font-size: 1.1rem; }
+    .pi-search-context.minimal-context { font-size: 1rem; }
+    .pi-search-actions.minimal-actions { flex-direction: column; }
+    .pi-search-action-btn { width: 100%; }
+}

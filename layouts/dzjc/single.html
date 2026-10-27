@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title" lang="ar" dir="rtl" data-dzjc-root data-dzjc-current-language="ar">
+<div class="dzjc-wrap dzjc-page" aria-labelledby="dzjc-title" lang="ar" dir="rtl" data-dzjc-root data-dzjc-current-language="ar">
     {{ partial "dzjc-language-switcher.html" . }}
     <nav class="dzjc-breadcrumb" aria-label="Breadcrumb">
         <a href="/DZJC/">DZ Journal Check</a>
@@ -25,6 +25,6 @@
             {{ .Content }}
         </div>
     </article>
-</main>
+</div>
 <script src="/js/dzjc-language.js" defer></script>
 {{ end }}
