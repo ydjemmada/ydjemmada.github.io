@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="wrap page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    <p class="lede">The quickest way to reach me is by email.</p>
+  </header>
+
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+
+  <div class="contact-grid">
+    <section class="card contact-card" aria-labelledby="c-email">
+      <h2 id="c-email">{{ partial "icon.html" "mail" }}Email</h2>
+      <p><a class="big-email" href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></p>
+    </section>
+
+    <section class="card contact-card" aria-labelledby="c-address">
+      <h2 id="c-address">{{ partial "icon.html" "pin" }}Mailing address</h2>
+      <address>
+        {{- range $i, $line := .Params.address }}{{ if $i }}<br>{{ end }}{{ $line }}{{ end -}}
+      </address>
+    </section>
+
+    {{- if or .Params.office_hours hugo.IsServer }}
+    <section class="card contact-card" aria-labelledby="c-hours">
+      <h2 id="c-hours">{{ partial "icon.html" "clock" }}Office hours</h2>
+      {{- with .Params.office_hours }}
+      <ul class="hours">
+        {{- range . }}
+        <li><strong>{{ .day }}</strong><span>{{ .time }}{{ with .place }} · {{ . }}{{ end }}</span></li>
+        {{- end }}
+      </ul>
+      {{- else }}
+      <p class="todo">Placeholder (only visible in <code>hugo server</code>): add your office hours in <code>content/contact.md</code>.</p>
+      {{- end }}
+    </section>
+    {{- end }}
+  </div>
+
+  <section class="section" aria-labelledby="c-profiles">
+    <div class="section-head"><h2 id="c-profiles">Academic profiles</h2></div>
+    {{ partial "profile-links.html" (dict "labels" true) }}
+  </section>
+</div>
+{{ end }}

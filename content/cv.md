@@ -1,18 +1,11 @@
 +++
 title = "Curriculum Vitae"
+description = "CV of Yahia Djemmada: PhD in Mathematics (USTHB), Assistant Professor at the National Higher School of Mathematics, Algiers; education, teaching, grants and research visits."
 +++
 
-## Curriculum Vitae
+<p class="button-row"><a class="btn btn-primary" href="/DJEMMADA_Yahia.pdf">Download the full CV (PDF)</a></p>
 
-<div class="buttons">
-    <a class="button" href="/DJEMMADA_Yahia.pdf" target="_blank">
-        <span class="button-inner">Download Full CV (PDF)</span>
-    </a>
-</div>
-
----
-
-### Personal Information
+## Personal Information
 
 - **Name:** Yahia DJEMMADA
 - **Current Position:** Assistant Professor
@@ -21,7 +14,7 @@ title = "Curriculum Vitae"
 
 ---
 
-### Education
+## Education
 
 - **PhD in Mathematics (Discrete Mathematics & Operations Research)**
   *USTHB, Algiers | Feb 2021*
@@ -35,19 +28,19 @@ title = "Curriculum Vitae"
 
 ---
 
-### Work Experience
+## Work Experience
 
-#### Assistant Professor (April 2022 – Present)
+### Assistant Professor (April 2022 – Present)
 **National School of Mathematics, Algiers**
 - **Courses Taught:** Discrete Mathematics 1 & 2, Algebra 1 & 2, Algorithms and Data Structures, Python Programming, Mathematical Computing Tools.
 
-#### Previous Roles (Assistant & Part-time)
+### Previous Roles (Assistant & Part-time)
 **USTHB & National School of Artificial Intelligence (Apr 2021 – Jul 2024)**
 - **Courses Taught:** History of Mathematics, Numerical Analysis, Linear Algebra, Mathematics/Statistics/Informatics.
 
 ---
 
-### Grants, Awards & Scientific Visits
+## Grants, Awards & Scientific Visits
 
 - **Award from the Minister of National Education** (July 2024) for role in ALMO24.
 - **PNE Grant** for a 14-month research visit to Sopron University, Hungary (Dec 2019 – Feb 2021).
@@ -58,7 +51,7 @@ title = "Curriculum Vitae"
 
 ---
 
-### Conferences & Scientific Activities
+## Conferences & Scientific Activities
 
 - **Leader, Trainer, Corrector** at the First Algerian Mathematical Olympiad (ALMO24), 2024.
 - **Organizer & Tutor** for training days in R, Python, and SageMath (2023-2024).
@@ -67,7 +60,7 @@ title = "Curriculum Vitae"
 
 ---
 
-### Research Interests
+## Research Interests
 
 - Enumerative & Analytic Combinatorics
 - Graph Theory
@@ -75,7 +68,7 @@ title = "Curriculum Vitae"
 
 ---
 
-### Skills
+## Skills
 
 - **Languages:** Arabic (Native), English (Very Good), French (Very Good), German (Basics)
 - **Programming:** Python, C/C++, MATLAB, Mathematica, SageMath, LaTeX
@@ -83,7 +76,7 @@ title = "Curriculum Vitae"
 
 ---
 
-### References
+## References
 
 - **Prof. Hacène Belbachir** (USTHB, Algeria)
 - **Prof. Ayhan Dil** (Akdeniz University, Turkey)

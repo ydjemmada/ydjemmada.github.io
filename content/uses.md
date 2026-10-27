@@ -29,7 +29,7 @@ This is a list of the tools and software I rely on for my mathematics research, 
 ### Website
 *   **Generator**: [Hugo](https://gohugo.io/) (Static Site Generator)
 *   **Hosting**: GitHub Pages
-*   **Theme**: Modified Researcher theme with custom CSS
+*   **Design**: Custom minimal Hugo templates (no theme), one CSS file
 
 ### Teaching
 *   **Presentation**: Beamer (LaTeX)

@@ -3,6 +3,11 @@ title = "Now"
 date = "2025-12-19"
 description = "What I'm currently focused on."
 showToc = false
+# Draft page: still contains template text. Hidden from search engines
+# and the sitemap until it is rewritten.
+noindex = true
+[sitemap]
+  disable = true
 +++
 
 This is a **["now" page](https://nownownow.com/about)**, and if you have your own site, you should make one, too.
