@@ -1,66 +1,103 @@
 {{ define "main" }}
+{{- $papers := sort site.Data.publications.papers "year" "desc" }}
+{{- $courses := (where site.RegularPages "Section" "teaching").ByWeight }}
+{{- $news := first 4 (sort site.Data.news.news "date" "desc") }}
 
-<div class="container home-page">
-    <div class="hero-minimal">
-        <p class="hero-intro">Hello, I am</p>
-        <h1 class="hero-name">Yahia Djemmada</h1>
-        <p class="hero-bio">
-            Mathematics Lecturer & Researcher at the National Higher School of Mathematics (NHSM), Algiers.
-            Specializing in <strong>Combinatorics</strong>, <strong>Discrete Mathematics</strong>, and <strong>Operations
-                Research</strong>.
+{{/* ── Hero: the chalkboard ─────────────────────────────────────────── */}}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="board">
+      <div class="board-text">
+        <p class="hand">Hello, I am</p>
+        <h1 id="hero-title">{{ site.Params.author }}</h1>
+        <p class="hero-role">
+          {{ site.Params.jobTitle }}
+          <span>{{ site.Params.institution }}, {{ site.Params.city }}</span>
         </p>
-        <div class="hero-actions">
-            <a href="/publications" class="btn btn-primary">View Research</a>
-            <a href="/cv" class="btn btn-outline">Download CV</a>
+        <ul class="chips hero-areas" aria-label="Research areas">
+          {{- range site.Params.researchAreas }}<li class="chip">{{ . }}</li>{{ end }}
+        </ul>
+        <p class="hero-intro">
+          I teach discrete mathematics, Python for mathematicians and operations research.
+          My research is about counting: special numbers and polynomials, set partitions
+          and the identities that connect them. Students: your lecture notes, exercise sheets
+          and solutions are one click away.
+        </p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="/teaching/">{{ partial "icon.html" "book" }}For Students</a>
+          <a class="btn btn-chalk" href="/publications/">Research</a>
+          <a class="btn btn-chalk" href="/cv/">CV</a>
         </div>
+      </div>
+
+      {{- /* Chalk version of static/avatar.png (text strokes only, chalk white). */}}
+      {{- with resources.Get "images/portrait-chalk.png" }}
+      {{- $img := .Process "resize 480x png" }}
+      <figure class="portrait">
+        <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="Portrait of {{ site.Params.author }}, drawn with lines of text" fetchpriority="high">
+      </figure>
+      {{- end }}
+
+      <ul class="board-symbols" aria-hidden="true">
+        <li>Σ</li><li>∫</li><li>π</li><li>n!</li>
+      </ul>
     </div>
+  </div>
+</section>
 
-    <section class="section">
-        <div class="section-header">
-            <h2>Latest Research</h2>
-        </div>
-        <div class="card-grid">
-            <div class="card">
-                <h3 class="card-title"><a href="/publications">An identity for two sequences and its combinatorial
-                        interpretation</a></h3>
-                <div class="card-meta">Annales Mathematicae et Informaticae • 2024</div>
-                <p class="card-desc">Exploring new identities in combinatorial sequences with applications in number
-                    theory.
-                </p>
-            </div>
-            <div class="card">
-                <h3 class="card-title"><a href="/publications">The (l, r)-Stirling numbers: a combinatorial approach</a>
-                </h3>
-                <div class="card-meta">Filomat • 2023</div>
-                <p class="card-desc">A novel approach to Stirling numbers using combinatorial arguments.</p>
-            </div>
-            <div class="card">
-                <h3 class="card-title"><a href="/publications">The deranged Bell numbers</a></h3>
-                <div class="card-meta">Mathematica Slovaca • 2023</div>
-                <p class="card-desc">Investigation of Bell numbers in the context of derangements.</p>
-            </div>
-        </div>
-        <div style="margin-top: 2rem; text-align: center;">
-            <a href="/publications" style="font-weight: 600;">View All Publications &rarr;</a>
-        </div>
-    </section>
+{{/* ── Latest research ─────────────────────────────────────────────── */}}
+<section class="section" aria-labelledby="research-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="research-title">Latest Research</h2>
+      <a class="more-link" href="/publications/">All publications {{ partial "icon.html" "arrow" }}</a>
+    </div>
+    <div class="card-grid">
+      {{- range first 3 $papers }}
+      <article class="card pub-card">
+        <p class="card-kicker">
+          {{- .year }}{{ if eq .type "preprint" }} <span class="badge">Preprint</span>{{ end -}}
+        </p>
+        <h3 class="pub-title"><a class="card-link" href="/publications/#{{ .id }}">{{ .title | markdownify }}</a></h3>
+        <p class="card-meta">{{ if ne .type "preprint" }}<em>{{ .venue }}</em> · {{ end }}{{ delimit .authors ", " }}</p>
+      </article>
+      {{- end }}
+    </div>
+  </div>
+</section>
 
-    <section class="section" style="margin-top: 4rem;">
-        <div class="section-header">
-            <h2>Teaching & Resources</h2>
-        </div>
-        <div class="card-grid">
-            <div class="card">
-                <h3 class="card-title"><a href="/teaching/md1/">Discrete Mathematics 1</a></h3>
-                <p class="card-desc">Lecture notes and problem sets for first-year students. Covers counting, logic, and
-                    sets.</p>
-            </div>
-            <div class="card">
-                <h3 class="card-title"><a href="/teaching/mct/">Mathematical Computing Tools</a></h3>
-                <p class="card-desc">Python programming, NumPy, SciPy, and Matplotlib resources for mathematics.</p>
-            </div>
-        </div>
-    </section>
-</div>
+{{/* ── Courses ─────────────────────────────────────────────────────── */}}
+<section class="section" aria-labelledby="courses-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="courses-title">Courses</h2>
+      <a class="more-link" href="/teaching/">All course materials {{ partial "icon.html" "arrow" }}</a>
+    </div>
+    <div class="card-grid">
+      {{- range $courses }}{{ partial "course-card.html" . }}{{ end }}
+    </div>
+  </div>
+</section>
 
+{{/* ── News & announcements ────────────────────────────────────────── */}}
+{{- with $news }}
+<section class="section" aria-labelledby="news-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="news-title">News &amp; Announcements</h2>
+      <p class="hand">check before class!</p>
+    </div>
+    <ol class="news-list">
+      {{- range . }}
+      {{- $date := time.AsTime .date }}
+      <li class="news-item">
+        <time class="news-date" datetime="{{ $date.Format "2006-01-02" }}">{{ $date.Format "2 January 2006" }}</time>
+        <h3 class="news-title">{{ with .link }}<a href="{{ . }}">{{ end }}{{ .title }}{{ with .link }}</a>{{ end }}</h3>
+        {{- with .text }}<div class="news-text">{{ . | markdownify }}</div>{{ end }}
+      </li>
+      {{- end }}
+    </ol>
+  </div>
+</section>
+{{- end }}
 {{ end }}
