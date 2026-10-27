@@ -168,6 +168,7 @@ a:hover { color: var(--link-hover); text-decoration-color: var(--red-pen); }
 
 ::selection { background: var(--mark); color: inherit; }
 
+button, input, select, textarea { font: inherit; }
 img, svg { max-width: 100%; height: auto; }
 .icon { width: 1.15em; height: 1.15em; flex: none; vertical-align: -0.2em; }
 
@@ -557,6 +558,7 @@ a.chip:hover { border-color: var(--red-pen); color: var(--link-hover); }
 .level-group > h2 { display: flex; align-items: center; gap: 0.75rem; }
 .level-group > h2 .count { font-family: var(--font-body); font-size: 0.95rem; font-weight: 600; color: var(--muted); }
 
+.level-group .course-level { display: none; } /* year is already the group heading */
 .course-card .course-level {
   align-self: flex-start;
   padding: 0.1rem 0.6rem; border-radius: 4px;
@@ -613,7 +615,7 @@ a.chip:hover { border-color: var(--red-pen); color: var(--link-hover); }
 .pub-venue em { color: var(--ink); }
 .pub-summary { margin: 0.4rem 0 0; color: var(--muted); font-size: 0.95rem; }
 .pub-links { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.6rem; align-items: center; }
-.pub-cite { width: 100%; }
+.pub-cite[open] { flex-basis: 100%; }
 .pub-cite > summary { list-style: none; display: inline-flex; }
 .pub-cite > summary::-webkit-details-marker { display: none; }
 .pub-cite pre { margin: 0.6rem 0 0; font-size: 0.8rem; white-space: pre-wrap; word-break: break-word; }
