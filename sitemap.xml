@@ -2,55 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ydjemmada.github.io/now/</loc>
-    <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+    <loc>https://ydjemmada.github.io/teaching/md1/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
-    <loc>https://ydjemmada.github.io/uses/</loc>
-    <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+    <loc>https://ydjemmada.github.io/teaching/md2/</loc>
+    <changefreq>monthly</changefreq>
+  </url><url>
+    <loc>https://ydjemmada.github.io/teaching/alg1/</loc>
+    <changefreq>monthly</changefreq>
+  </url><url>
+    <loc>https://ydjemmada.github.io/teaching/mct/</loc>
+    <changefreq>monthly</changefreq>
+  </url><url>
+    <loc>https://ydjemmada.github.io/teaching/or/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/</loc>
     <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
   </url><url>
-    <loc>https://ydjemmada.github.io/cp1_nhsm/</loc>
+    <loc>https://ydjemmada.github.io/uses/</loc>
+    <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/about/</loc>
-  </url><url>
-    <loc>https://ydjemmada.github.io/teaching/alg1/</loc>
-  </url><url>
-    <loc>https://ydjemmada.github.io/categories/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/contact/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/cv/</loc>
-  </url><url>
-    <loc>https://ydjemmada.github.io/teaching/md1/</loc>
-  </url><url>
-    <loc>https://ydjemmada.github.io/teaching/md2/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/DZJC/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/DZJC/faq/</loc>
-  </url><url>
-    <loc>https://ydjemmada.github.io/teaching/mct/</loc>
-  </url><url>
-    <loc>https://ydjemmada.github.io/teaching/or/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/DZJC/permissions/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/DZJC/PRIVACY_POLICY_PUBLIC.html</loc>
-  </url><url>
-    <loc>https://ydjemmada.github.io/publications/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/DZJC/report-classification/</loc>
+    <changefreq>monthly</changefreq>
+  </url><url>
+    <loc>https://ydjemmada.github.io/publications/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/tools/pi-search/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/DZJC/SUPPORT.html</loc>
-  </url><url>
-    <loc>https://ydjemmada.github.io/tags/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/teaching/</loc>
+    <changefreq>monthly</changefreq>
   </url><url>
     <loc>https://ydjemmada.github.io/tools/</loc>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>
