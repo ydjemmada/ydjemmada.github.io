@@ -10,8 +10,10 @@
     <ul class="course-meta">
       {{- with .Params.program }}<li>{{ partial "icon.html" "book" }}<strong>{{ . }}</strong></li>{{ end }}
       {{- with .Params.institution }}<li>{{ partial "icon.html" "pin" }}{{ . }}</li>{{ end }}
-      {{- with .Params.semester }}<li>{{ partial "icon.html" "clock" }}{{ . }}</li>{{ end }}
-      {{- with .Params.academic_year }}<li>{{ partial "icon.html" "clock" }}{{ . }}</li>{{ end }}
+      {{- $when := slice }}
+      {{- with .Params.semester }}{{ $when = $when | append . }}{{ end }}
+      {{- with .Params.academic_year }}{{ $when = $when | append . }}{{ end }}
+      {{- with $when }}<li>{{ partial "icon.html" "clock" }}{{ delimit . " · " }}</li>{{ end }}
     </ul>
     <nav class="jump" aria-label="Jump to">
       <ul class="chips">

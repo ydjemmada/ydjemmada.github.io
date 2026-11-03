@@ -11,6 +11,12 @@
       {{ partial "icon.html" "download" }}PDF{{ with $size }} <span class="material-size">{{ . }}</span>{{ end }}
     </a>
     {{- end }}
+    {{- with .slides }}
+    {{- $size := partial "file-size.html" . }}
+    <a class="pill" href="{{ . }}" aria-label="{{ $.title | plainify }}: slides PDF{{ with $size }}, {{ . }}{{ end }}">
+      {{ partial "icon.html" "slides" }}Slides{{ with $size }} <span class="material-size">{{ . }}</span>{{ end }}
+    </a>
+    {{- end }}
     {{- with .solution }}
     {{- $size := partial "file-size.html" . }}
     <a class="pill" href="{{ . }}" aria-label="{{ $.title | plainify }}: solution PDF{{ with $size }}, {{ . }}{{ end }}">

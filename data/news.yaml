@@ -9,6 +9,11 @@
 # ─────────────────────────────────────────────────────────────────────────
 
 news:
+  - date: 2026-11-03
+    title: "Operations Research: Lecture 5 (Duality) and TD 4 are online"
+    text: "Lecture notes and TD 4 on duality, plus the slides of every lecture so far."
+    link: "/teaching/or/"
+
   - date: 2026-10-27
     title: "Operations Research: Lectures 3–4 and TD 3 are online"
     text: "The simplex method and the two-phase method, with solutions to TD 1 and TD 2."

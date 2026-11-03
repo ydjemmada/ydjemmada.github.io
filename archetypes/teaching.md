@@ -14,7 +14,8 @@ academic_year: ""     # e.g. "2026–2027"
 description: "One sentence about what the course covers."
 
 # Each item: title (required), desc (optional), file (PDF path),
-# solution (optional PDF path), url (optional external link), new: true (badge)
+# slides (optional PDF path), solution (optional PDF path),
+# url (optional external link), new: true (badge)
 lectures:
   - title: "Chapter 1: …"
     desc: ""
