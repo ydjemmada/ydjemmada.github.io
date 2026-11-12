@@ -20,4 +20,10 @@ lectures:
     file: "/teaching/lectures/MD1_Ch3.pdf"
   - title: "Chapter 4: Generating Functions"
     file: "/teaching/lectures/MD1_Ch4.pdf"
+
+exercises:
+  - title: "Worksheet 1: Counting"
+    desc: "Chapter 1. Exercises marked ⋆ first"
+    file: "/teaching/worksheets/MD1_WS_1.pdf"
+    new: true
 ---
