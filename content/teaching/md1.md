@@ -10,7 +10,10 @@ description: "Counting principles, advanced counting, an introduction to graph t
 
 lectures:
   - title: "Chapter 1: Counting"
+    desc: "Updated for 2026/2027, with slides"
     file: "/teaching/lectures/MD1_Ch1.pdf"
+    slides: "/teaching/lectures/MD1_Ch1_Slides.pdf"
+    new: true
   - title: "Chapter 2: Advanced Counting Principles"
     file: "/teaching/lectures/MD1_Ch2.pdf"
   - title: "Chapter 3: Introduction to Graph Theory"

@@ -9,6 +9,11 @@
 # ─────────────────────────────────────────────────────────────────────────
 
 news:
+  - date: 2026-11-12
+    title: "Discrete Mathematics 1: Chapter 1 (Counting) updated, slides online"
+    text: "The 2026/2027 lecture notes for Chapter 1 and the slides used in class."
+    link: "/teaching/md1/"
+
   - date: 2026-11-03
     title: "Operations Research: Lecture 5 (Duality) and TD 4 are online"
     text: "Lecture notes and TD 4 on duality, plus the slides of every lecture so far."
