@@ -10,6 +10,11 @@
 
 news:
   - date: 2026-11-15
+    title: "Operations Research: solutions of TD 3, TD 4 and TD 5 are online"
+    text: "Each question with its step-by-step solution."
+    link: "/teaching/or/#exercises"
+
+  - date: 2026-11-15
     title: "Operations Research: TD 5 and the test (with solutions) are online"
     text: "TD 5 on duality, and the test on Lectures 1 to 5 with its detailed answers."
     link: "/teaching/or/"

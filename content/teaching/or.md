@@ -43,12 +43,15 @@ exercises:
   - title: "TD 3: The Two-Phase Method"
     desc: "Lecture 4"
     file: "/teaching/worksheets/OR_TD_3.pdf"
+    solution: "/teaching/worksheets/OR_TD_3_Sol.pdf"
   - title: "TD 4: Duality"
     desc: "Lecture 5"
     file: "/teaching/worksheets/OR_TD_4.pdf"
+    solution: "/teaching/worksheets/OR_TD_4_Sol.pdf"
   - title: "TD 5: Duality"
     desc: "Lecture 5"
     file: "/teaching/worksheets/OR_TD_5.pdf"
+    solution: "/teaching/worksheets/OR_TD_5_Sol.pdf"
     new: true
 
 exams:
