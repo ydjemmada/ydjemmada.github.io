@@ -30,7 +30,6 @@ lectures:
     desc: "The price of the resources"
     file: "/teaching/lectures/OR_Lecture_5.pdf"
     slides: "/teaching/lectures/OR_Lecture_5_Slides.pdf"
-    new: true
 
 exercises:
   - title: "TD 1: Formulating Linear Programs"
@@ -47,6 +46,16 @@ exercises:
   - title: "TD 4: Duality"
     desc: "Lecture 5"
     file: "/teaching/worksheets/OR_TD_4.pdf"
+  - title: "TD 5: Duality"
+    desc: "Lecture 5"
+    file: "/teaching/worksheets/OR_TD_5.pdf"
+    new: true
+
+exams:
+  - title: "Test: Bread and pastries"
+    desc: "Lectures 1 to 5. Detailed answers with a suggested marking out of 20"
+    file: "/teaching/worksheets/OR_Test_1.pdf"
+    solution: "/teaching/worksheets/OR_Test_1_Sol.pdf"
     new: true
 ---
 

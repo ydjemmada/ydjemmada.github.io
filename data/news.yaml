@@ -9,6 +9,11 @@
 # ─────────────────────────────────────────────────────────────────────────
 
 news:
+  - date: 2026-11-15
+    title: "Operations Research: TD 5 and the test (with solutions) are online"
+    text: "TD 5 on duality, and the test on Lectures 1 to 5 with its detailed answers."
+    link: "/teaching/or/"
+
   - date: 2026-11-12
     title: "Discrete Mathematics 1: Chapter 1 (Counting) updated, slides and Worksheet 1 online"
     text: "The 2026/2027 lecture notes for Chapter 1, the slides used in class, and Worksheet 1."
